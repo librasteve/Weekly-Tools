@@ -5,19 +5,18 @@ unit class Weekly::Tools;
 
 =head1 NAME
 
-Weekly::Tools - blah blah blah
+Weekly::Tools
 
 =head1 SYNOPSIS
 
 =begin code :lang<raku>
 
-use Weekly::Tools;
 
 =end code
 
 =head1 DESCRIPTION
 
-Weekly::Tools is ...
+Weekly::Tools - a set of ad hoc "helper" scripts to get the raku weekly written
 
 =head1 AUTHOR
 
@@ -25,7 +24,7 @@ librasteve <librasteve@furnival.net>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2025 librasteve
+Copyright 2025 Henley Cloud Consulting Ltd.
 
 This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 
