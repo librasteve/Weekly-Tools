@@ -11,6 +11,7 @@ Weekly::Tools
 
 =begin code :lang<raku>
 
+weekly-helper.raku
 
 =end code
 

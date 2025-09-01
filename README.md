@@ -9,7 +9,7 @@ SYNOPSIS
 ========
 
 ```raku
-
+weekly-helper.raku
 ```
 
 DESCRIPTION
