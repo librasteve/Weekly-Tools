@@ -20,9 +20,13 @@ my %authors = (
     'zef:melezhik'    => 'Alexey Melezhik',
     'zef:dwarring'    => 'David Warring',
     'zef:bduggan'     => 'Brian Duggan',
+    'zef:tony-o'      => 'Tony O\'Dell',
+    'zef:ingy'        => 'Ingy döt Net',
+    'github:nkh'      => 'Nadim Khemir',
 );
 
 # version and datetime indexes
+my $aut = 2;
 my $vsi = 3;
 my $dti = 5;
 
@@ -69,19 +73,59 @@ sub fetch-table-data($url) {
 #]
 
 sub output-table-data(@rows) {
-    #ddt @rows;
 
+    my $as = 'text';
 
-    #iamerejh
-    for @rows -> @cells {
-
-        sub HTML { 
-            ul li [ a(:href(@cells[1]), @cells[0]), safe(' by '), em(@cells[2]), safe('.') ];
+    if $as eq 'text' {
+        for @rows -> @cells {
+            say "@cells[0] by @cells[2].";
         }
-        
-        print HTML;
+    }
+
+    if $as eq 'HTML' {
+        for @rows -> @cells {
+
+            sub HTML {
+                ul li [ a(:href(@cells[1]), @cells[0]), safe(' by '), em(@cells[2]), safe('.') ];
+            }
+
+            print HTML;
+        }
     }
 }
+
+sub output-hash-data(%hash) {
+
+#    my $as = 'HTML';
+    my $as = 'text';
+
+    if $as eq 'text' {
+        for %hash.kv -> $author, @items {
+            say @items.map(*[0]).join(', ') ~ ' by ' ~ $author,
+        }
+    }
+
+    if $as eq 'HTML' {
+        for %hash.kv -> $author, @items {
+
+            my @anchors;
+            for @items -> @cells {
+                @anchors.push: a(:href(@cells[1]), @cells[0]);
+            }
+
+            say @anchors;
+
+#            sub HTML {
+#                ul li [ a(:href(@cells[1]), @cells[0]), safe(' by '), em(@cells[2]), safe('.') ];
+#            }
+#
+#            print HTML;
+
+        }
+    }
+}
+
+
 
 my $url = 'https://raku.land/recent';
 react {
@@ -103,9 +147,21 @@ react {
                 }
             }
             my @latest = %by-module.values;
-            my @sorted = @latest.sort: { $^b[$dti] <=> $^a[$dti] };
 
-            output-table-data @sorted;
+            my %by-author;
+            for @latest -> @row {
+                my $author = @row[$aut];
+
+                %by-author{$author}.push: @row;
+            }
+
+            output-hash-data %by-author;
+
+#            ddt %by-author{'Steve Roe'};
+
+#            my @sorted = @latest.sort: { $^b[$dti] <=> $^a[$dti] };
+#
+#            output-table-data @sorted;
 
         } else {
             say "No table found at $url";
