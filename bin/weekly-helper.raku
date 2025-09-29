@@ -1,17 +1,16 @@
 use v6.d;
 use Cro::HTTP::Client;
 use DOM::Tiny;
-use Data::Dump::Tree;
 use Air::Functional :BASE;
 use Air::Base;
 
-my %authors = ( 
+my %authors = (
+    'zef:raku-community-modules' => 'Various Artistes',
+    'zef:l10n'        => 'Various Artistes',
     'zef:FCO'         => 'Fernando Correa de Oliveira',
     'zef:antononcube' => 'Anton Antonov',
     'zef:finanalyst'  => 'Richard Hainsworth',
     'zef:librasteve'  => 'Steve Roe',
-    'zef:l10n'        => 'Various Artists',
-    'zef:raku-community-modules' => 'Various Artists',
     'zef:avuserow'    => 'Adrian Kreher',
     'zef:lizmat'      => 'Elizabeth Mattijsen',
     'zef:jjatria'     => 'JJ Atria',
@@ -23,6 +22,10 @@ my %authors = (
     'zef:tony-o'      => 'Tony O\'Dell',
     'zef:ingy'        => 'Ingy döt Net',
     'github:nkh'      => 'Nadim Khemir',
+    'zef:nkh'         => 'Nadim Khemir',
+    'zef:patrickb'    => 'Patrick Böker',
+    'zef:arunvickram' => 'Arun Vickram',
+    'zef:kuerbis'     => 'kuerbis',
 );
 
 # version and datetime indexes
@@ -72,60 +75,37 @@ sub fetch-table-data($url) {
 </ul>
 #]
 
-sub output-table-data(@rows) {
-
-    my $as = 'text';
-
-    if $as eq 'text' {
+sub output-table-data(@rows, :$HTML=1) {
+    if !$HTML {
         for @rows -> @cells {
             say "@cells[0] by @cells[2].";
         }
     }
 
-    if $as eq 'HTML' {
+    if $HTML {
         for @rows -> @cells {
-
-            sub HTML {
-                ul li [ a(:href(@cells[1]), @cells[0]), safe(' by '), em(@cells[2]), safe('.') ];
-            }
-
-            print HTML;
+            say (
+                li [ a(:href(@cells[1]), @cells[0]), safe(' by '), em(@cells[2]), safe('.') ]
+            )
         }
     }
 }
 
-sub output-hash-data(%hash) {
-
-#    my $as = 'HTML';
-    my $as = 'text';
-
-    if $as eq 'text' {
+sub output-hash-data(%hash, :$HTML=1) {
+    if !$HTML {
         for %hash.kv -> $author, @items {
             say @items.map(*[0]).join(', ') ~ ' by ' ~ $author,
         }
     }
 
-    if $as eq 'HTML' {
-        for %hash.kv -> $author, @items {
-
-            my @anchors;
-            for @items -> @cells {
-                @anchors.push: a(:href(@cells[1]), @cells[0]);
+    if $HTML {
+        say ul do for %hash.kv -> $author, @items {
+            given @items.map( {a(:href(.[1]), .[0]).HTML } ).join(',') {
+                li safe( $_ ~ ' by ' ~ em $author );
             }
-
-            say @anchors;
-
-#            sub HTML {
-#                ul li [ a(:href(@cells[1]), @cells[0]), safe(' by '), em(@cells[2]), safe('.') ];
-#            }
-#
-#            print HTML;
-
         }
     }
 }
-
-
 
 my $url = 'https://raku.land/recent';
 react {
@@ -151,16 +131,16 @@ react {
             my %by-author;
             for @latest -> @row {
                 my $author = @row[$aut];
-
                 %by-author{$author}.push: @row;
             }
 
             output-hash-data %by-author;
 
-#            ddt %by-author{'Steve Roe'};
+            for @latest -> @cells {
+                say @cells[0] ~ ': ' ~ @cells[3] if @cells[$vsi] < v0.0.10
+            }
 
 #            my @sorted = @latest.sort: { $^b[$dti] <=> $^a[$dti] };
-#
 #            output-table-data @sorted;
 
         } else {
