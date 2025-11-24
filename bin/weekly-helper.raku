@@ -1,4 +1,4 @@
-use v6.d;
+#!/usr/bin/env raku
 use Cro::HTTP::Client;
 use DOM::Tiny;
 use Air::Functional :BASE;
@@ -25,7 +25,18 @@ my %authors = (
     'zef:nkh'         => 'Nadim Khemir',
     'zef:patrickb'    => 'Patrick Böker',
     'zef:arunvickram' => 'Arun Vickram',
-    'zef:kuerbis'     => 'kuerbis',
+    'zef:kuerbis'     => 'Matthäus Kiem',
+    'zef:japhb'       => 'Geoffrey Broadwell',
+    'zef:ab5tract'    => 'John Longwalker',
+    'zef:arkiuat'     => 'Eric Forste',
+    'zef:tbrowder'    => 'Tom Browder',
+    'zef:martimm'     => 'Marcel Timmerman',
+    'zef:raiph'       => 'Ralph Mellor',
+    'zef:masterduke'  => 'Daniel Green',
+    'zef:nige123'     => 'Nigel Hamilton',
+    'cpan:NINE'       => 'Stefan Seifert',
+    'zef:massa'       => 'Massa Humberto',
+    'github:Raku'     => 'Core Mongers',
 );
 
 # version and datetime indexes
@@ -62,18 +73,6 @@ sub fetch-table-data($url) {
         @rows;
     }
 }
-
-#`[
-<ul class="wp-block-list">
-<li><a href="https://raku.land/zef:lizmat/SBOM::CycloneDX">SBOM::CycloneDX</a>,  <a href="https://raku.land/zef:lizmat/Trap">Trap</a>, <a href="https://raku.land/zef:lizmat/Test::Output">Test::Output</a>, <a href="https://raku.land/zef:lizmat/SBOM::Raku">SBOM::Raku</a> by <em>Elizabeth Mattijsen.</em></li>
-<li><a href="https://raku.land/zef:FCO/Red">Red</a> by <em>Fernando Correa de Oliveira</em>.</li>
-<li><a href="https://raku.land/zef:avuserow/Audio::TagLib">Audio::TagLib</a> by <em>Adrian Kreher</em>.</li>
-<li><a href="https://raku.land/zef:l10n/L10N">L10N</a>, <a href="https://raku.land/zef:raku-community-modules/OpenSSL">OpenSSL</a> by <em>Various Artists</em>.</li>
-<li><a href="https://raku.land/zef:librasteve/Physics::Unit">Physics::Unit</a>, <a href="https://raku.land/zef:librasteve/Physics::Measure">Physics::Measure</a>, <a href="https://raku.land/zef:librasteve/App::Crag">App::Crag</a> by <em>Steve Roe</em>.</li>
-<li><a href="https://raku.land/zef:finanalyst/Elucid8::Build">Elucid8::Build</a> by <em>Richard Hainsworth</em>.</li>
-<li><a href="https://raku.land/zef:antononcube/Graph">Graph</a>, <a href="https://raku.land/zef:antononcube/LLM::Functions">LLM::Functions</a> by <em>Anton Antonov</em>.</li>
-</ul>
-#]
 
 sub output-table-data(@rows, :$HTML=1) {
     if !$HTML {
@@ -119,10 +118,15 @@ react {
             my %by-module;
             for @recent -> @row {
                 my $name    = @row[0];
-                my $version = @row[$vsi];   
                 my $stored  = %by-module{$name};
 
-                if !$stored.defined || $version > $stored[$vsi] {
+                my Version() $version = @row[$vsi];
+                my Version() $v-stored = $stored[$vsi] // '';
+
+                if !$stored.defined {
+                    %by-module{$name} = @row;
+                }
+                elsif $version > $v-stored {
                     %by-module{$name} = @row;         # keep only the highest version
                 }
             }

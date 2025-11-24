@@ -17,6 +17,17 @@ DESCRIPTION
 
 Weekly::Tools - a set of ad hoc "helper" scripts to get the raku weekly written
 
+
+ROADMAP
+=======
+
+### HackerNews Search
+
+```site:https://news.ycombinator.com raku```  < put this is a browser and use Google Tools to limit to last week
+
+then integrate with rak https://chatgpt.com/share/68dab109-df04-8009-bc4c-99449b305f4f
+
+
 AUTHOR
 ======
 

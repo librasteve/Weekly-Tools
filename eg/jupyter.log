@@ -1,0 +1,1398 @@
+2025-10-09T18:11:20.806174+01:00 (1) info: starting jupyter kernel
+2025-10-09T18:11:20.813578+01:00 (1) debug: read /Users/stephenroe/Library/Jupyter/runtime/kernel-d7d5d00b-36aa-4ad5-baf1-2d5182b7c201.json
+2025-10-09T18:11:20.813768+01:00 (1) debug: listening on tcp://127.0.0.1
+2025-10-09T18:11:20.814279+01:00 (1) debug: setting up control on 57767
+2025-10-09T18:11:20.891693+01:00 (1) debug: setting up shell on 57763
+2025-10-09T18:11:20.892099+01:00 (1) debug: setting up iopub on 57764
+2025-10-09T18:11:20.892378+01:00 (1) debug: setting up hb on 57766
+2025-10-09T18:11:21.026818+01:00 (10) info: iopub: sending execute_input message
+2025-10-09T18:11:21.066042+01:00 (10) debug: shell got a message: kernel_info_request
+2025-10-09T18:11:21.066479+01:00 (10) info: shell: sending kernel_info_reply message
+2025-10-09T18:11:21.076049+01:00 (10) info: iopub: sending status message
+2025-10-09T18:11:21.083771+01:00 (4) debug: ctl got a message: kernel_info_request
+2025-10-09T18:11:21.086169+01:00 (10) debug: shell got a message: kernel_info_request
+2025-10-09T18:11:21.086300+01:00 (10) info: shell: sending kernel_info_reply message
+2025-10-09T18:11:21.094684+01:00 (10) info: iopub: sending status message
+2025-10-09T18:11:21.104567+01:00 (10) debug: shell got a message: execute_request
+2025-10-09T18:11:21.104953+01:00 (10) info: iopub: sending status message
+2025-10-09T18:11:21.123324+01:00 (11) info: iopub: sending stream message
+2025-10-09T18:11:21.132094+01:00 (11) info: iopub: sending execute_input message
+2025-10-09T18:11:21.139382+01:00 (11) info: iopub: sending status message
+2025-10-09T18:11:21.146791+01:00 (10) info: shell: sending execute_reply message
+2025-10-09T18:11:21.208294+01:00 (10) debug: shell got a message: execute_request
+2025-10-09T18:11:21.208584+01:00 (10) info: iopub: sending status message
+2025-10-09T18:11:21.220490+01:00 (10) info: iopub: sending status message
+2025-10-09T18:11:27.420519+01:00 (10) debug: shell got a message: execute_request
+2025-10-09T18:11:27.421012+01:00 (10) info: iopub: sending status message
+2025-10-09T18:11:27.446587+01:00 (11) info: iopub: sending stream message
+2025-10-09T18:11:27.454795+01:00 (10) info: iopub: sending execute_input message
+2025-10-09T18:11:27.461273+01:00 (10) info: iopub: sending status message
+2025-10-09T18:11:27.469380+01:00 (10) info: shell: sending execute_reply message
+2025-10-09T18:11:27.534475+01:00 (10) debug: shell got a message: execute_request
+2025-10-09T18:11:27.534753+01:00 (10) info: iopub: sending status message
+2025-10-09T18:11:27.544713+01:00 (10) info: iopub: sending status message
+2025-10-09T18:12:23.517742+01:00 (10) debug: shell got a message: execute_request
+2025-10-09T18:12:23.518790+01:00 (10) info: iopub: sending status message
+2025-10-09T18:12:23.575758+01:00 (11) info: iopub: sending execute_input message
+2025-10-09T18:12:23.582893+01:00 (11) info: iopub: sending execute_result message
+2025-10-09T18:12:23.590463+01:00 (11) info: iopub: sending status message
+2025-10-09T18:12:23.596282+01:00 (11) info: shell: sending execute_reply message
+2025-10-09T18:12:23.670016+01:00 (11) debug: shell got a message: execute_request
+2025-10-09T18:12:23.670292+01:00 (11) info: iopub: sending status message
+2025-10-09T18:12:23.678968+01:00 (10) info: iopub: sending status message
+2025-10-09T18:13:13.958830+01:00 (10) debug: shell got a message: execute_request
+2025-10-09T18:13:13.961668+01:00 (10) info: iopub: sending status message
+2025-10-09T18:13:14.045306+01:00 (11) info: iopub: sending execute_input message
+2025-10-09T18:13:14.050477+01:00 (11) info: iopub: sending execute_result message
+2025-10-09T18:13:14.055446+01:00 (11) info: iopub: sending status message
+2025-10-09T18:13:14.065362+01:00 (11) info: shell: sending execute_reply message
+2025-10-09T18:13:14.156085+01:00 (11) debug: shell got a message: execute_request
+2025-10-09T18:13:14.156338+01:00 (11) info: iopub: sending status message
+2025-10-09T18:13:14.165239+01:00 (11) info: iopub: sending status message
+2025-10-09T18:13:36.749172+01:00 (11) debug: shell got a message: execute_request
+2025-10-09T18:13:36.752895+01:00 (11) info: iopub: sending status message
+2025-10-09T18:13:39.259952+01:00 (10) info: iopub: sending stream message
+2025-10-09T18:13:39.279363+01:00 (10) info: iopub: sending stream message
+2025-10-09T18:13:39.286589+01:00 (11) info: iopub: sending execute_input message
+2025-10-09T18:13:39.292708+01:00 (11) info: iopub: sending execute_result message
+2025-10-09T18:13:39.298362+01:00 (11) info: iopub: sending status message
+2025-10-09T18:13:39.303799+01:00 (11) info: shell: sending execute_reply message
+2025-10-09T18:13:39.400527+01:00 (11) debug: shell got a message: execute_request
+2025-10-09T18:13:39.400804+01:00 (11) info: iopub: sending status message
+2025-10-09T18:13:39.409376+01:00 (10) info: iopub: sending status message
+2025-10-09T18:21:39.314063+01:00 (10) debug: shell got a message: execute_request
+2025-10-09T18:21:39.321916+01:00 (10) info: iopub: sending status message
+2025-10-09T18:21:39.484641+01:00 (11) info: iopub: sending stream message
+2025-10-09T18:21:41.110619+01:00 (11) info: iopub: sending execute_input message
+2025-10-09T18:21:41.117562+01:00 (11) info: iopub: sending execute_result message
+2025-10-09T18:21:41.123386+01:00 (11) info: iopub: sending status message
+2025-10-09T18:21:41.136405+01:00 (10) info: shell: sending execute_reply message
+2025-10-09T18:21:41.187487+01:00 (10) debug: shell got a message: execute_request
+2025-10-09T18:21:41.188207+01:00 (10) info: iopub: sending status message
+2025-10-09T18:21:41.201494+01:00 (11) info: iopub: sending status message
+2025-10-09T18:22:11.325525+01:00 (11) debug: shell got a message: execute_request
+2025-10-09T18:22:11.328497+01:00 (11) info: iopub: sending status message
+2025-10-09T18:22:15.656231+01:00 (10) info: iopub: sending execute_input message
+2025-10-09T18:22:15.666471+01:00 (10) info: iopub: sending execute_result message
+2025-10-09T18:22:15.675731+01:00 (10) info: iopub: sending status message
+2025-10-09T18:22:15.692758+01:00 (10) info: shell: sending execute_reply message
+2025-10-09T18:22:15.822473+01:00 (10) debug: shell got a message: execute_request
+2025-10-09T18:22:15.822737+01:00 (10) info: iopub: sending status message
+2025-10-09T18:22:15.836049+01:00 (11) info: iopub: sending status message
+2025-10-09T18:28:07.905054+01:00 (1) info: starting jupyter kernel
+2025-10-09T18:28:07.911880+01:00 (1) debug: read /Users/stephenroe/Library/Jupyter/runtime/kernel-804f9f30-73f7-4406-9525-f274435d7b12.json
+2025-10-09T18:28:07.912088+01:00 (1) debug: listening on tcp://127.0.0.1
+2025-10-09T18:28:07.912580+01:00 (1) debug: setting up control on 64681
+2025-10-09T18:28:07.921940+01:00 (1) debug: setting up shell on 64677
+2025-10-09T18:28:07.922272+01:00 (1) debug: setting up iopub on 64678
+2025-10-09T18:28:07.922519+01:00 (1) debug: setting up hb on 64680
+2025-10-09T18:28:08.035679+01:00 (10) info: iopub: sending execute_input message
+2025-10-09T18:28:58.294162+01:00 (9) info: Got sigint
+2025-10-09T18:28:58.298274+01:00 (9) info: iopub: sending stream message
+2025-10-09T18:28:58.327794+01:00 (8) debug: ctl got a message: shutdown_request
+2025-10-09T18:28:58.328573+01:00 (8) info: Exiting
+
+2025-10-09T18:28:58.329304+01:00 (8) info: iopub: sending stream message
+2025-10-09T18:28:58.339393+01:00 (8) info: control: sending shutdown_reply message
+2025-10-09T18:30:45.494941+01:00 (1) info: starting jupyter kernel
+2025-10-09T18:30:45.503832+01:00 (1) debug: read /Users/stephenroe/Library/Jupyter/runtime/kernel-3f8302a2-7151-48bc-805a-f1d3f473c853.json
+2025-10-09T18:30:45.504049+01:00 (1) debug: listening on tcp://127.0.0.1
+2025-10-09T18:30:45.504540+01:00 (1) debug: setting up control on 49381
+2025-10-09T18:30:45.515151+01:00 (1) debug: setting up shell on 49377
+2025-10-09T18:30:45.515531+01:00 (1) debug: setting up iopub on 49378
+2025-10-09T18:30:45.517107+01:00 (1) debug: setting up hb on 49380
+2025-10-09T18:30:45.627039+01:00 (10) info: iopub: sending execute_input message
+2025-10-09T18:30:45.662379+01:00 (10) debug: shell got a message: kernel_info_request
+2025-10-09T18:30:45.662824+01:00 (10) info: shell: sending kernel_info_reply message
+2025-10-09T18:30:45.672783+01:00 (10) info: iopub: sending status message
+2025-10-09T18:30:45.682547+01:00 (10) debug: shell got a message: kernel_info_request
+2025-10-09T18:30:45.682781+01:00 (10) info: shell: sending kernel_info_reply message
+2025-10-09T18:30:45.682781+01:00 (4) debug: ctl got a message: kernel_info_request
+2025-10-09T18:30:45.690438+01:00 (10) info: iopub: sending status message
+2025-10-09T18:30:45.700679+01:00 (10) debug: shell got a message: execute_request
+2025-10-09T18:30:45.701119+01:00 (10) info: iopub: sending status message
+2025-10-09T18:30:45.739758+01:00 (10) info: iopub: sending execute_input message
+2025-10-09T18:30:45.745713+01:00 (10) info: iopub: sending execute_result message
+2025-10-09T18:30:45.750959+01:00 (10) info: iopub: sending status message
+2025-10-09T18:30:45.758893+01:00 (10) info: shell: sending execute_reply message
+2025-10-09T18:30:47.819459+01:00 (10) debug: shell got a message: execute_request
+2025-10-09T18:30:47.820044+01:00 (10) info: iopub: sending status message
+2025-10-09T18:30:49.729874+01:00 (11) info: iopub: sending execute_input message
+2025-10-09T18:30:49.737308+01:00 (11) info: iopub: sending execute_result message
+2025-10-09T18:30:49.746781+01:00 (11) info: iopub: sending status message
+2025-10-09T18:30:49.753535+01:00 (10) info: shell: sending execute_reply message
+2025-10-09T18:30:59.096669+01:00 (10) debug: shell got a message: execute_request
+2025-10-09T18:30:59.098156+01:00 (10) info: iopub: sending status message
+2025-10-09T18:31:16.505685+01:00 (11) info: iopub: sending execute_input message
+2025-10-09T18:31:16.517094+01:00 (11) info: iopub: sending execute_result message
+2025-10-09T18:31:16.526662+01:00 (11) info: iopub: sending status message
+2025-10-09T18:31:16.536197+01:00 (11) info: shell: sending execute_reply message
+2025-10-09T18:33:25.756954+01:00 (10) debug: shell got a message: execute_request
+2025-10-09T18:33:25.758583+01:00 (10) info: iopub: sending status message
+2025-10-09T18:33:25.792575+01:00 (11) info: iopub: sending execute_input message
+2025-10-09T18:33:25.798041+01:00 (11) info: iopub: sending execute_result message
+2025-10-09T18:33:25.816345+01:00 (11) info: iopub: sending status message
+2025-10-09T18:33:25.821816+01:00 (10) info: shell: sending execute_reply message
+2025-10-09T18:33:25.919796+01:00 (10) debug: shell got a message: execute_request
+2025-10-09T18:33:25.920094+01:00 (10) info: iopub: sending status message
+2025-10-09T18:33:25.936420+01:00 (11) info: iopub: sending status message
+2025-10-09T18:33:26.814251+01:00 (11) debug: shell got a message: execute_request
+2025-10-09T18:33:26.814673+01:00 (11) info: iopub: sending status message
+2025-10-09T18:33:54.008533+01:00 (9) info: Got sigint
+2025-10-09T18:33:54.009783+01:00 (9) info: iopub: sending stream message
+2025-10-09T18:33:54.029536+01:00 (11) info: iopub: sending execute_input message
+2025-10-09T18:33:54.036405+01:00 (11) info: iopub: sending execute_result message
+2025-10-09T18:33:54.042051+01:00 (11) info: iopub: sending status message
+2025-10-09T18:33:54.050740+01:00 (12) info: shell: sending execute_reply message
+2025-10-09T18:33:54.090241+01:00 (12) debug: shell got a message: execute_request
+2025-10-09T18:33:54.090503+01:00 (12) info: iopub: sending status message
+2025-10-09T18:33:54.101649+01:00 (11) info: iopub: sending status message
+2025-10-09T18:34:02.300303+01:00 (9) info: Got sigint
+2025-10-09T18:34:02.301080+01:00 (9) info: iopub: sending stream message
+2025-10-09T18:34:02.315580+01:00 (4) debug: ctl got a message: shutdown_request
+2025-10-09T18:34:02.316894+01:00 (4) info: Restarting
+
+2025-10-09T18:34:02.317486+01:00 (4) info: iopub: sending stream message
+2025-10-09T18:34:02.327890+01:00 (4) info: iopub: sending stream message
+2025-10-09T18:34:02.336283+01:00 (4) info: iopub: sending stream message
+2025-10-09T18:34:02.411819+01:00 (4) info: control: sending shutdown_reply message
+2025-10-09T18:34:02.422771+01:00 (4) info: iopub: sending execute_input message
+2025-10-09T18:34:02.428416+01:00 (4) info: iopub: sending stream message
+2025-10-09T18:34:05.679367+01:00 (1) info: starting jupyter kernel
+2025-10-09T18:34:05.688182+01:00 (1) debug: read /Users/stephenroe/Library/Jupyter/runtime/kernel-3678d2f3-5666-4aab-8e7f-cb186a4dbf64.json
+2025-10-09T18:34:05.688406+01:00 (1) debug: listening on tcp://127.0.0.1
+2025-10-09T18:34:05.688899+01:00 (1) debug: setting up control on 52133
+2025-10-09T18:34:05.698068+01:00 (1) debug: setting up shell on 52129
+2025-10-09T18:34:05.698377+01:00 (1) debug: setting up iopub on 52130
+2025-10-09T18:34:05.698598+01:00 (1) debug: setting up hb on 52132
+2025-10-09T18:34:05.808306+01:00 (10) info: iopub: sending execute_input message
+2025-10-09T18:34:49.512630+01:00 (10) debug: shell got a message: kernel_info_request
+2025-10-09T18:34:49.513665+01:00 (10) info: shell: sending kernel_info_reply message
+2025-10-09T18:34:49.528166+01:00 (10) info: iopub: sending status message
+2025-10-09T18:34:49.548762+01:00 (4) debug: ctl got a message: kernel_info_request
+2025-10-09T18:34:49.553350+01:00 (10) debug: shell got a message: kernel_info_request
+2025-10-09T18:34:49.553630+01:00 (10) info: shell: sending kernel_info_reply message
+2025-10-09T18:34:49.563049+01:00 (10) info: iopub: sending status message
+2025-10-09T18:34:49.580277+01:00 (10) debug: shell got a message: comm_info_request
+2025-10-09T18:34:49.583630+01:00 (10) debug: comm_info_request ${}
+2025-10-09T18:34:49.584784+01:00 (10) info: shell: sending comm_info_reply message
+2025-10-09T18:35:31.838852+01:00 (10) debug: shell got a message: execute_request
+2025-10-09T18:35:31.844419+01:00 (10) info: iopub: sending status message
+2025-10-09T18:35:31.927383+01:00 (10) info: iopub: sending execute_input message
+2025-10-09T18:35:31.935367+01:00 (10) info: iopub: sending execute_result message
+2025-10-09T18:35:31.940783+01:00 (10) info: iopub: sending status message
+2025-10-09T18:35:31.952058+01:00 (10) info: shell: sending execute_reply message
+2025-10-09T18:35:32.002006+01:00 (10) debug: shell got a message: execute_request
+2025-10-09T18:35:32.002304+01:00 (10) info: iopub: sending status message
+2025-10-09T18:35:32.013865+01:00 (10) info: iopub: sending status message
+2025-10-09T18:47:13.120421+01:00 (11) debug: shell got a message: execute_request
+2025-10-09T18:47:13.122599+01:00 (11) info: iopub: sending status message
+2025-10-09T18:47:13.212396+01:00 (11) info: iopub: sending execute_input message
+2025-10-09T18:47:13.222978+01:00 (11) info: iopub: sending execute_result message
+2025-10-09T18:47:13.238682+01:00 (11) info: iopub: sending status message
+2025-10-09T18:47:13.249130+01:00 (10) info: shell: sending execute_reply message
+2025-10-09T18:47:13.287215+01:00 (10) debug: shell got a message: execute_request
+2025-10-09T18:47:13.287519+01:00 (10) info: iopub: sending status message
+2025-10-09T18:47:13.299993+01:00 (10) info: iopub: sending status message
+2025-10-10T10:14:26.351895+01:00 (11) debug: shell got a message: comm_info_request
+2025-10-10T10:14:26.358047+01:00 (11) debug: comm_info_request ${}
+2025-10-10T10:14:26.361282+01:00 (11) info: shell: sending comm_info_reply message
+2025-10-10T10:14:26.369134+01:00 (11) debug: shell got a message: comm_info_request
+2025-10-10T10:14:26.393672+01:00 (11) debug: comm_info_request ${}
+2025-10-10T10:14:26.400174+01:00 (11) info: shell: sending comm_info_reply message
+2025-10-10T10:14:27.811620+01:00 (11) debug: shell got a message: comm_info_request
+2025-10-10T10:14:27.812282+01:00 (11) debug: comm_info_request ${}
+2025-10-10T10:14:27.812921+01:00 (11) info: shell: sending comm_info_reply message
+2025-10-10T10:14:27.814838+01:00 (11) debug: shell got a message: comm_info_request
+2025-10-10T10:14:27.815873+01:00 (11) debug: comm_info_request ${}
+2025-10-10T10:14:27.816100+01:00 (11) info: shell: sending comm_info_reply message
+2025-10-10T10:14:30.298697+01:00 (11) debug: shell got a message: comm_info_request
+2025-10-10T10:14:30.300035+01:00 (11) debug: comm_info_request ${}
+2025-10-10T10:14:30.300454+01:00 (11) info: shell: sending comm_info_reply message
+2025-10-10T10:14:30.315550+01:00 (11) debug: shell got a message: comm_info_request
+2025-10-10T10:14:30.316881+01:00 (11) debug: comm_info_request ${}
+2025-10-10T10:14:30.317356+01:00 (11) info: shell: sending comm_info_reply message
+2025-10-10T10:14:33.021770+01:00 (11) debug: shell got a message: comm_info_request
+2025-10-10T10:14:33.022100+01:00 (11) debug: comm_info_request ${}
+2025-10-10T10:14:33.022355+01:00 (11) info: shell: sending comm_info_reply message
+2025-10-10T10:14:33.029311+01:00 (11) debug: shell got a message: comm_info_request
+2025-10-10T10:14:33.029772+01:00 (11) debug: comm_info_request ${}
+2025-10-10T10:14:33.030307+01:00 (11) info: shell: sending comm_info_reply message
+2025-10-10T10:14:44.711027+01:00 (11) debug: shell got a message: comm_info_request
+2025-10-10T10:14:44.711296+01:00 (11) debug: comm_info_request ${}
+2025-10-10T10:14:44.711482+01:00 (11) info: shell: sending comm_info_reply message
+2025-10-10T10:14:44.715539+01:00 (11) debug: shell got a message: comm_info_request
+2025-10-10T10:14:44.715837+01:00 (11) debug: comm_info_request ${}
+2025-10-10T10:14:44.716022+01:00 (11) info: shell: sending comm_info_reply message
+2025-10-10T10:15:00.668544+01:00 (11) debug: shell got a message: comm_info_request
+2025-10-10T10:15:00.670530+01:00 (11) debug: comm_info_request ${}
+2025-10-10T10:15:00.671247+01:00 (11) info: shell: sending comm_info_reply message
+2025-10-10T10:15:00.679107+01:00 (11) debug: shell got a message: comm_info_request
+2025-10-10T10:15:00.679804+01:00 (11) debug: comm_info_request ${}
+2025-10-10T10:15:00.680187+01:00 (11) info: shell: sending comm_info_reply message
+2025-10-10T10:15:03.500684+01:00 (11) debug: shell got a message: comm_info_request
+2025-10-10T10:15:03.500984+01:00 (11) debug: comm_info_request ${}
+2025-10-10T10:15:03.501187+01:00 (11) info: shell: sending comm_info_reply message
+2025-10-10T10:15:03.504475+01:00 (11) debug: shell got a message: comm_info_request
+2025-10-10T10:15:03.504865+01:00 (11) debug: comm_info_request ${}
+2025-10-10T10:15:03.505080+01:00 (11) info: shell: sending comm_info_reply message
+2025-10-10T10:15:17.453072+01:00 (11) debug: shell got a message: comm_info_request
+2025-10-10T10:15:17.455320+01:00 (11) debug: comm_info_request ${}
+2025-10-10T10:15:17.456532+01:00 (11) info: shell: sending comm_info_reply message
+2025-10-10T10:15:17.470006+01:00 (11) debug: shell got a message: comm_info_request
+2025-10-10T10:15:17.470984+01:00 (11) debug: comm_info_request ${}
+2025-10-10T10:15:17.471530+01:00 (11) info: shell: sending comm_info_reply message
+2025-10-10T10:15:19.378366+01:00 (11) debug: shell got a message: comm_info_request
+2025-10-10T10:15:19.378703+01:00 (11) debug: comm_info_request ${}
+2025-10-10T10:15:19.378942+01:00 (11) info: shell: sending comm_info_reply message
+2025-10-10T10:15:19.385558+01:00 (11) debug: shell got a message: comm_info_request
+2025-10-10T10:15:19.385866+01:00 (11) debug: comm_info_request ${}
+2025-10-10T10:15:19.386079+01:00 (11) info: shell: sending comm_info_reply message
+2025-10-10T10:15:20.547244+01:00 (11) debug: shell got a message: comm_info_request
+2025-10-10T10:15:20.547507+01:00 (11) debug: comm_info_request ${}
+2025-10-10T10:15:20.547672+01:00 (11) info: shell: sending comm_info_reply message
+2025-10-10T10:15:20.552213+01:00 (11) debug: shell got a message: comm_info_request
+2025-10-10T10:15:20.552497+01:00 (11) debug: comm_info_request ${}
+2025-10-10T10:15:20.552668+01:00 (11) info: shell: sending comm_info_reply message
+2025-10-10T10:15:21.920255+01:00 (11) debug: shell got a message: comm_info_request
+2025-10-10T10:15:21.920593+01:00 (11) debug: comm_info_request ${}
+2025-10-10T10:15:21.920835+01:00 (11) info: shell: sending comm_info_reply message
+2025-10-10T10:15:21.928143+01:00 (11) debug: shell got a message: comm_info_request
+2025-10-10T10:15:21.928430+01:00 (11) debug: comm_info_request ${}
+2025-10-10T10:15:21.928629+01:00 (11) info: shell: sending comm_info_reply message
+2025-10-10T10:15:23.923913+01:00 (11) debug: shell got a message: comm_info_request
+2025-10-10T10:15:23.924222+01:00 (11) debug: comm_info_request ${}
+2025-10-10T10:15:23.924447+01:00 (11) info: shell: sending comm_info_reply message
+2025-10-10T10:15:23.927835+01:00 (11) debug: shell got a message: comm_info_request
+2025-10-10T10:15:23.928172+01:00 (11) debug: comm_info_request ${}
+2025-10-10T10:15:23.928443+01:00 (11) info: shell: sending comm_info_reply message
+2025-10-10T10:17:58.258781+01:00 (11) debug: shell got a message: execute_request
+2025-10-10T10:17:58.262962+01:00 (11) info: iopub: sending status message
+2025-10-10T10:17:58.407814+01:00 (11) info: iopub: sending execute_input message
+2025-10-10T10:17:58.419493+01:00 (11) info: iopub: sending execute_result message
+2025-10-10T10:17:58.437898+01:00 (11) info: iopub: sending status message
+2025-10-10T10:17:58.445452+01:00 (11) info: shell: sending execute_reply message
+2025-10-10T10:17:58.531038+01:00 (11) debug: shell got a message: execute_request
+2025-10-10T10:17:58.531593+01:00 (11) info: iopub: sending status message
+2025-10-10T10:17:58.545975+01:00 (10) info: iopub: sending status message
+2025-10-10T10:21:32.464252+01:00 (10) debug: shell got a message: execute_request
+2025-10-10T10:21:32.466591+01:00 (10) info: iopub: sending status message
+2025-10-10T10:21:32.551713+01:00 (11) info: iopub: sending execute_input message
+2025-10-10T10:21:32.559551+01:00 (11) info: iopub: sending execute_result message
+2025-10-10T10:21:32.566253+01:00 (11) info: iopub: sending status message
+2025-10-10T10:21:32.572420+01:00 (10) info: shell: sending execute_reply message
+2025-10-10T10:21:32.668552+01:00 (10) debug: shell got a message: execute_request
+2025-10-10T10:21:32.669144+01:00 (10) info: iopub: sending status message
+2025-10-10T10:21:32.679962+01:00 (11) info: iopub: sending status message
+2025-10-10T10:30:21.728898+01:00 (11) debug: shell got a message: execute_request
+2025-10-10T10:30:21.732174+01:00 (11) info: iopub: sending status message
+2025-10-10T10:30:31.757206+01:00 (10) info: iopub: sending execute_input message
+2025-10-10T10:30:31.764014+01:00 (10) info: iopub: sending execute_result message
+2025-10-10T10:30:31.777889+01:00 (10) info: iopub: sending status message
+2025-10-10T10:30:31.784362+01:00 (10) info: shell: sending execute_reply message
+2025-10-10T10:30:31.991163+01:00 (10) debug: shell got a message: execute_request
+2025-10-10T10:30:31.991428+01:00 (10) info: iopub: sending status message
+2025-10-10T10:30:32.000182+01:00 (11) info: iopub: sending status message
+2025-10-10T10:32:49.027005+01:00 (11) debug: shell got a message: comm_info_request
+2025-10-10T10:32:49.027982+01:00 (11) debug: comm_info_request ${}
+2025-10-10T10:32:49.028825+01:00 (11) info: shell: sending comm_info_reply message
+2025-10-10T10:32:49.041312+01:00 (11) debug: shell got a message: comm_info_request
+2025-10-10T10:32:49.043352+01:00 (11) debug: comm_info_request ${}
+2025-10-10T10:32:49.043771+01:00 (11) info: shell: sending comm_info_reply message
+2025-10-10T10:41:45.495360+01:00 (11) debug: shell got a message: execute_request
+2025-10-10T10:41:45.500968+01:00 (11) info: iopub: sending status message
+2025-10-10T10:41:45.558265+01:00 (11) info: iopub: sending execute_input message
+2025-10-10T10:41:45.565013+01:00 (11) info: iopub: sending execute_result message
+2025-10-10T10:41:45.583730+01:00 (11) info: iopub: sending status message
+2025-10-10T10:41:45.590091+01:00 (11) info: shell: sending execute_reply message
+2025-10-10T10:41:45.748356+01:00 (11) debug: shell got a message: execute_request
+2025-10-10T10:41:45.748797+01:00 (11) info: iopub: sending status message
+2025-10-10T10:41:45.758271+01:00 (11) info: iopub: sending status message
+2025-10-10T10:42:17.429758+01:00 (11) debug: shell got a message: execute_request
+2025-10-10T10:42:17.430468+01:00 (11) info: iopub: sending status message
+2025-10-10T10:42:17.550045+01:00 (10) info: iopub: sending execute_input message
+2025-10-10T10:42:17.556277+01:00 (10) info: iopub: sending execute_result message
+2025-10-10T10:42:17.561095+01:00 (10) info: iopub: sending status message
+2025-10-10T10:42:17.567969+01:00 (11) info: shell: sending execute_reply message
+2025-10-10T10:42:17.638610+01:00 (11) debug: shell got a message: execute_request
+2025-10-10T10:42:17.638912+01:00 (11) info: iopub: sending status message
+2025-10-10T10:42:17.649499+01:00 (11) info: iopub: sending status message
+2025-10-10T10:44:43.942215+01:00 (11) debug: shell got a message: execute_request
+2025-10-10T10:44:43.945383+01:00 (11) info: iopub: sending status message
+2025-10-10T10:44:44.060687+01:00 (10) info: iopub: sending execute_input message
+2025-10-10T10:44:44.072257+01:00 (10) info: iopub: sending execute_result message
+2025-10-10T10:44:44.077410+01:00 (10) info: iopub: sending status message
+2025-10-10T10:44:44.082420+01:00 (11) info: shell: sending execute_reply message
+2025-10-10T10:44:51.706074+01:00 (11) debug: shell got a message: execute_request
+2025-10-10T10:44:51.706416+01:00 (11) info: iopub: sending status message
+2025-10-10T10:44:51.763593+01:00 (10) info: iopub: sending stream message
+2025-10-10T10:44:51.780223+01:00 (11) info: iopub: sending execute_input message
+2025-10-10T10:44:51.786454+01:00 (11) info: iopub: sending execute_result message
+2025-10-10T10:44:51.792235+01:00 (11) info: iopub: sending status message
+2025-10-10T10:44:51.798626+01:00 (11) info: shell: sending execute_reply message
+2025-10-10T10:45:15.585033+01:00 (11) debug: shell got a message: execute_request
+2025-10-10T10:45:15.587595+01:00 (11) info: iopub: sending status message
+2025-10-10T10:45:15.622267+01:00 (10) info: iopub: sending execute_input message
+2025-10-10T10:45:15.627096+01:00 (10) info: iopub: sending execute_result message
+2025-10-10T10:45:15.644530+01:00 (10) info: iopub: sending status message
+2025-10-10T10:45:15.650352+01:00 (11) info: shell: sending execute_reply message
+2025-10-10T10:45:18.707859+01:00 (11) debug: shell got a message: execute_request
+2025-10-10T10:45:18.711824+01:00 (11) info: iopub: sending status message
+2025-10-10T10:45:20.823200+01:00 (10) info: iopub: sending execute_input message
+2025-10-10T10:45:20.830086+01:00 (10) info: iopub: sending execute_result message
+2025-10-10T10:45:20.846391+01:00 (10) info: iopub: sending status message
+2025-10-10T10:45:20.852377+01:00 (11) info: shell: sending execute_reply message
+2025-10-10T10:48:47.223973+01:00 (1) info: starting jupyter kernel
+2025-10-10T10:48:47.230446+01:00 (1) debug: read /Users/stephenroe/Library/Jupyter/runtime/kernel-df8470ee-2131-454f-b8a1-188e0965fe7c.json
+2025-10-10T10:48:47.230621+01:00 (1) debug: listening on tcp://127.0.0.1
+2025-10-10T10:48:47.231199+01:00 (1) debug: setting up control on 59314
+2025-10-10T10:48:47.241575+01:00 (1) debug: setting up shell on 59310
+2025-10-10T10:48:47.241867+01:00 (1) debug: setting up iopub on 59311
+2025-10-10T10:48:47.243611+01:00 (1) debug: setting up hb on 59313
+2025-10-10T10:48:47.362560+01:00 (10) info: iopub: sending execute_input message
+2025-10-10T10:48:47.396776+01:00 (10) debug: shell got a message: kernel_info_request
+2025-10-10T10:48:47.397213+01:00 (10) info: shell: sending kernel_info_reply message
+2025-10-10T10:48:47.406821+01:00 (10) info: iopub: sending status message
+2025-10-10T10:48:47.418943+01:00 (10) debug: shell got a message: kernel_info_request
+2025-10-10T10:48:47.419147+01:00 (10) info: shell: sending kernel_info_reply message
+2025-10-10T10:48:47.419172+01:00 (8) debug: ctl got a message: kernel_info_request
+2025-10-10T10:48:47.425334+01:00 (10) info: iopub: sending status message
+2025-10-10T10:48:47.437105+01:00 (10) debug: shell got a message: execute_request
+2025-10-10T10:48:47.437505+01:00 (10) info: iopub: sending status message
+2025-10-10T10:48:49.505349+01:00 (11) info: iopub: sending execute_input message
+2025-10-10T10:48:49.518615+01:00 (11) info: iopub: sending execute_result message
+2025-10-10T10:48:49.526641+01:00 (11) info: iopub: sending status message
+2025-10-10T10:48:49.535476+01:00 (11) info: shell: sending execute_reply message
+2025-10-10T10:48:53.239031+01:00 (11) debug: shell got a message: execute_request
+2025-10-10T10:48:53.239723+01:00 (11) info: iopub: sending status message
+2025-10-10T10:48:54.927247+01:00 (11) info: iopub: sending execute_input message
+2025-10-10T10:48:54.935996+01:00 (11) info: iopub: sending execute_result message
+2025-10-10T10:48:54.943432+01:00 (11) info: iopub: sending status message
+2025-10-10T10:48:54.962710+01:00 (10) info: shell: sending execute_reply message
+2025-10-10T10:49:40.758600+01:00 (11) debug: shell got a message: execute_request
+2025-10-10T10:49:40.761981+01:00 (11) info: iopub: sending status message
+2025-10-10T10:49:42.018404+01:00 (10) info: iopub: sending execute_input message
+2025-10-10T10:49:42.028865+01:00 (10) info: iopub: sending execute_result message
+2025-10-10T10:49:42.052735+01:00 (10) info: iopub: sending status message
+2025-10-10T10:49:42.060248+01:00 (10) info: shell: sending execute_reply message
+2025-10-10T10:49:42.146510+01:00 (10) debug: shell got a message: execute_request
+2025-10-10T10:49:42.146783+01:00 (10) info: iopub: sending status message
+2025-10-10T10:49:42.161356+01:00 (11) info: iopub: sending status message
+2025-10-10T10:50:05.391826+01:00 (11) debug: shell got a message: execute_request
+2025-10-10T10:50:05.393478+01:00 (11) info: iopub: sending status message
+2025-10-10T10:50:07.172774+01:00 (10) info: iopub: sending execute_input message
+2025-10-10T10:50:07.182301+01:00 (10) info: iopub: sending execute_result message
+2025-10-10T10:50:07.191233+01:00 (10) info: iopub: sending status message
+2025-10-10T10:50:07.205150+01:00 (11) info: shell: sending execute_reply message
+2025-10-10T10:50:07.335544+01:00 (11) debug: shell got a message: execute_request
+2025-10-10T10:50:07.335896+01:00 (11) info: iopub: sending status message
+2025-10-10T10:50:07.346968+01:00 (11) info: iopub: sending status message
+2025-10-10T10:50:23.223045+01:00 (11) debug: shell got a message: execute_request
+2025-10-10T10:50:23.225155+01:00 (11) info: iopub: sending status message
+2025-10-10T10:50:24.087542+01:00 (11) info: iopub: sending execute_input message
+2025-10-10T10:50:24.120617+01:00 (11) info: iopub: sending execute_result message
+2025-10-10T10:50:24.127632+01:00 (11) info: iopub: sending status message
+2025-10-10T10:50:24.134734+01:00 (10) info: shell: sending execute_reply message
+2025-10-10T10:50:24.270425+01:00 (10) debug: shell got a message: execute_request
+2025-10-10T10:50:24.270822+01:00 (10) info: iopub: sending status message
+2025-10-10T10:50:24.287303+01:00 (11) info: iopub: sending status message
+2025-10-10T10:53:15.834033+01:00 (11) debug: shell got a message: execute_request
+2025-10-10T10:53:15.835312+01:00 (11) info: iopub: sending status message
+2025-10-10T10:53:17.334665+01:00 (11) info: iopub: sending execute_input message
+2025-10-10T10:53:17.349437+01:00 (11) info: iopub: sending execute_result message
+2025-10-10T10:53:17.354830+01:00 (11) info: iopub: sending status message
+2025-10-10T10:53:17.360173+01:00 (11) info: shell: sending execute_reply message
+2025-10-10T10:53:17.474377+01:00 (11) debug: shell got a message: execute_request
+2025-10-10T10:53:17.474618+01:00 (11) info: iopub: sending status message
+2025-10-10T10:53:17.481634+01:00 (10) info: iopub: sending status message
+2025-10-10T10:53:30.694412+01:00 (10) debug: shell got a message: execute_request
+2025-10-10T10:53:30.695199+01:00 (10) info: iopub: sending status message
+2025-10-10T10:53:31.750523+01:00 (10) info: iopub: sending execute_input message
+2025-10-10T10:53:31.757786+01:00 (10) info: iopub: sending execute_result message
+2025-10-10T10:53:31.764339+01:00 (10) info: iopub: sending status message
+2025-10-10T10:53:31.773511+01:00 (10) info: shell: sending execute_reply message
+2025-10-10T10:53:31.817605+01:00 (10) debug: shell got a message: execute_request
+2025-10-10T10:53:31.817850+01:00 (10) info: iopub: sending status message
+2025-10-10T10:53:31.827352+01:00 (10) info: iopub: sending status message
+2025-10-10T10:53:45.399440+01:00 (10) debug: shell got a message: execute_request
+2025-10-10T10:53:45.403116+01:00 (10) info: iopub: sending status message
+2025-10-10T10:53:46.265575+01:00 (10) info: iopub: sending execute_input message
+2025-10-10T10:53:46.273592+01:00 (10) info: iopub: sending execute_result message
+2025-10-10T10:53:46.288371+01:00 (10) info: iopub: sending status message
+2025-10-10T10:53:46.294260+01:00 (10) info: shell: sending execute_reply message
+2025-10-10T10:53:46.400207+01:00 (10) debug: shell got a message: execute_request
+2025-10-10T10:53:46.400450+01:00 (10) info: iopub: sending status message
+2025-10-10T10:53:46.408241+01:00 (10) info: iopub: sending status message
+2025-10-10T11:04:25.020021+01:00 (1) info: starting jupyter kernel
+2025-10-10T11:04:25.026914+01:00 (1) debug: read /Users/stephenroe/Library/Jupyter/runtime/kernel-ae7729f9-33a8-4af0-9a6e-ab6276a18f0d.json
+2025-10-10T11:04:25.027101+01:00 (1) debug: listening on tcp://127.0.0.1
+2025-10-10T11:04:25.027589+01:00 (1) debug: setting up control on 61822
+2025-10-10T11:04:25.040021+01:00 (1) debug: setting up shell on 61818
+2025-10-10T11:04:25.040370+01:00 (1) debug: setting up iopub on 61819
+2025-10-10T11:04:25.040602+01:00 (1) debug: setting up hb on 61821
+2025-10-10T11:04:25.151161+01:00 (10) info: iopub: sending execute_input message
+2025-10-10T11:04:25.189874+01:00 (10) debug: shell got a message: kernel_info_request
+2025-10-10T11:04:25.190346+01:00 (10) info: shell: sending kernel_info_reply message
+2025-10-10T11:04:25.199870+01:00 (10) info: iopub: sending status message
+2025-10-10T11:04:25.207976+01:00 (4) debug: ctl got a message: kernel_info_request
+2025-10-10T11:04:25.210047+01:00 (10) debug: shell got a message: kernel_info_request
+2025-10-10T11:04:25.210240+01:00 (10) info: shell: sending kernel_info_reply message
+2025-10-10T11:04:25.217840+01:00 (10) info: iopub: sending status message
+2025-10-10T11:04:25.227753+01:00 (10) debug: shell got a message: execute_request
+2025-10-10T11:04:25.228159+01:00 (10) info: iopub: sending status message
+2025-10-10T11:04:25.245531+01:00 (11) info: iopub: sending execute_input message
+2025-10-10T11:04:25.259455+01:00 (11) info: iopub: sending execute_result message
+2025-10-10T11:04:25.275009+01:00 (11) info: iopub: sending status message
+2025-10-10T11:04:25.287837+01:00 (11) info: shell: sending execute_reply message
+2025-10-10T11:04:25.365435+01:00 (11) debug: shell got a message: execute_request
+2025-10-10T11:04:25.365758+01:00 (11) info: iopub: sending status message
+2025-10-10T11:04:25.373870+01:00 (10) info: iopub: sending status message
+2025-10-10T11:06:03.761626+01:00 (10) debug: shell got a message: execute_request
+2025-10-10T11:06:03.762634+01:00 (10) info: iopub: sending status message
+2025-10-10T11:06:04.168531+01:00 (11) info: iopub: sending execute_input message
+2025-10-10T11:06:04.172868+01:00 (11) info: iopub: sending execute_result message
+2025-10-10T11:06:04.177256+01:00 (11) info: iopub: sending status message
+2025-10-10T11:06:04.184291+01:00 (10) info: shell: sending execute_reply message
+2025-10-10T11:06:04.258364+01:00 (10) debug: shell got a message: execute_request
+2025-10-10T11:06:04.258701+01:00 (10) info: iopub: sending status message
+2025-10-10T11:06:04.268443+01:00 (11) info: iopub: sending status message
+2025-10-10T11:06:14.328928+01:00 (10) debug: shell got a message: execute_request
+2025-10-10T11:06:14.330503+01:00 (10) info: iopub: sending status message
+2025-10-10T11:06:14.368297+01:00 (11) info: iopub: sending execute_input message
+2025-10-10T11:06:14.386271+01:00 (11) info: iopub: sending execute_result message
+2025-10-10T11:06:14.390996+01:00 (11) info: iopub: sending status message
+2025-10-10T11:06:14.396175+01:00 (11) info: shell: sending execute_reply message
+2025-10-10T11:06:14.465516+01:00 (11) debug: shell got a message: execute_request
+2025-10-10T11:06:14.465825+01:00 (11) info: iopub: sending status message
+2025-10-10T11:06:14.473648+01:00 (10) info: iopub: sending status message
+2025-10-10T11:06:22.690915+01:00 (11) debug: shell got a message: execute_request
+2025-10-10T11:06:22.691348+01:00 (11) info: iopub: sending status message
+2025-10-10T11:06:22.720918+01:00 (10) info: iopub: sending execute_input message
+2025-10-10T11:06:22.725927+01:00 (10) info: iopub: sending execute_result message
+2025-10-10T11:06:22.737828+01:00 (10) info: iopub: sending status message
+2025-10-10T11:06:22.743590+01:00 (10) info: shell: sending execute_reply message
+2025-10-10T11:06:22.824495+01:00 (10) debug: shell got a message: execute_request
+2025-10-10T11:06:22.824831+01:00 (10) info: iopub: sending status message
+2025-10-10T11:06:22.833125+01:00 (10) info: iopub: sending status message
+2025-10-10T11:08:22.379000+01:00 (11) debug: shell got a message: execute_request
+2025-10-10T11:08:22.383142+01:00 (11) info: iopub: sending status message
+2025-10-10T11:08:22.468800+01:00 (10) info: iopub: sending execute_input message
+2025-10-10T11:08:22.474057+01:00 (10) info: iopub: sending execute_result message
+2025-10-10T11:08:22.480669+01:00 (10) info: iopub: sending status message
+2025-10-10T11:08:22.486305+01:00 (11) info: shell: sending execute_reply message
+2025-10-10T11:08:22.498105+01:00 (11) debug: shell got a message: comm_info_request
+2025-10-10T11:08:22.500641+01:00 (11) debug: comm_info_request ${}
+2025-10-10T11:08:22.501731+01:00 (11) info: shell: sending comm_info_reply message
+2025-10-10T11:08:22.513004+01:00 (11) debug: shell got a message: execute_request
+2025-10-10T11:08:22.513237+01:00 (11) info: iopub: sending status message
+2025-10-10T11:08:22.520115+01:00 (10) info: iopub: sending status message
+2025-10-10T11:08:24.274044+01:00 (10) debug: shell got a message: execute_request
+2025-10-10T11:08:24.274338+01:00 (10) info: iopub: sending status message
+2025-10-10T11:08:24.318246+01:00 (11) info: iopub: sending execute_input message
+2025-10-10T11:08:24.326220+01:00 (11) info: iopub: sending execute_result message
+2025-10-10T11:08:24.331472+01:00 (11) info: iopub: sending status message
+2025-10-10T11:08:24.336441+01:00 (11) info: shell: sending execute_reply message
+2025-10-10T11:08:24.409147+01:00 (11) debug: shell got a message: execute_request
+2025-10-10T11:08:24.409419+01:00 (11) info: iopub: sending status message
+2025-10-10T11:08:24.418392+01:00 (10) info: iopub: sending status message
+2025-10-10T11:08:26.772481+01:00 (11) debug: shell got a message: execute_request
+2025-10-10T11:08:26.772886+01:00 (11) info: iopub: sending status message
+2025-10-10T11:08:26.794653+01:00 (11) info: iopub: sending execute_input message
+2025-10-10T11:08:26.800254+01:00 (11) info: iopub: sending execute_result message
+2025-10-10T11:08:26.808754+01:00 (11) info: iopub: sending status message
+2025-10-10T11:08:26.815002+01:00 (10) info: shell: sending execute_reply message
+2025-10-10T11:08:26.828627+01:00 (10) debug: shell got a message: execute_request
+2025-10-10T11:08:26.828876+01:00 (10) info: iopub: sending status message
+2025-10-10T11:08:26.837824+01:00 (10) info: iopub: sending status message
+2025-10-10T11:08:45.504233+01:00 (10) debug: shell got a message: execute_request
+2025-10-10T11:08:45.504630+01:00 (10) info: iopub: sending status message
+2025-10-10T11:08:45.525842+01:00 (10) info: iopub: sending execute_input message
+2025-10-10T11:08:45.535269+01:00 (10) info: iopub: sending execute_result message
+2025-10-10T11:08:45.540942+01:00 (10) info: iopub: sending status message
+2025-10-10T11:08:45.547369+01:00 (10) info: shell: sending execute_reply message
+2025-10-10T11:08:45.563178+01:00 (10) debug: shell got a message: execute_request
+2025-10-10T11:08:45.563632+01:00 (10) info: iopub: sending status message
+2025-10-10T11:08:45.570387+01:00 (11) info: iopub: sending status message
+2025-10-10T11:09:24.649105+01:00 (10) debug: shell got a message: execute_request
+2025-10-10T11:09:24.650574+01:00 (10) info: iopub: sending status message
+2025-10-10T11:09:24.694884+01:00 (11) info: iopub: sending execute_input message
+2025-10-10T11:09:24.700138+01:00 (11) info: iopub: sending execute_result message
+2025-10-10T11:09:24.704572+01:00 (11) info: iopub: sending status message
+2025-10-10T11:09:24.709335+01:00 (10) info: shell: sending execute_reply message
+2025-10-10T11:09:24.780642+01:00 (10) debug: shell got a message: execute_request
+2025-10-10T11:09:24.780878+01:00 (10) info: iopub: sending status message
+2025-10-10T11:09:24.789494+01:00 (11) info: iopub: sending status message
+2025-10-10T11:09:32.443127+01:00 (11) debug: shell got a message: execute_request
+2025-10-10T11:09:32.443465+01:00 (11) info: iopub: sending status message
+2025-10-10T11:09:32.472333+01:00 (11) info: iopub: sending execute_input message
+2025-10-10T11:09:32.480164+01:00 (11) info: iopub: sending execute_result message
+2025-10-10T11:09:32.485214+01:00 (11) info: iopub: sending status message
+2025-10-10T11:09:32.490409+01:00 (11) info: shell: sending execute_reply message
+2025-10-10T11:09:32.562538+01:00 (11) debug: shell got a message: execute_request
+2025-10-10T11:09:32.562852+01:00 (11) info: iopub: sending status message
+2025-10-10T11:09:32.570971+01:00 (10) info: iopub: sending status message
+2025-10-10T11:09:43.305816+01:00 (10) debug: shell got a message: execute_request
+2025-10-10T11:09:43.306330+01:00 (10) info: iopub: sending status message
+2025-10-10T11:09:43.334114+01:00 (11) info: iopub: sending execute_input message
+2025-10-10T11:09:43.339413+01:00 (11) info: iopub: sending execute_result message
+2025-10-10T11:09:43.344248+01:00 (11) info: iopub: sending status message
+2025-10-10T11:09:43.354009+01:00 (10) info: shell: sending execute_reply message
+2025-10-10T11:09:43.369141+01:00 (10) debug: shell got a message: execute_request
+2025-10-10T11:09:43.369360+01:00 (10) info: iopub: sending status message
+2025-10-10T11:09:43.376954+01:00 (11) info: iopub: sending status message
+2025-10-10T11:09:57.162280+01:00 (11) debug: shell got a message: execute_request
+2025-10-10T11:09:57.162718+01:00 (11) info: iopub: sending status message
+2025-10-10T11:09:57.186986+01:00 (10) info: iopub: sending execute_input message
+2025-10-10T11:09:57.192679+01:00 (10) info: iopub: sending execute_result message
+2025-10-10T11:09:57.197915+01:00 (10) info: iopub: sending status message
+2025-10-10T11:09:57.206656+01:00 (11) info: shell: sending execute_reply message
+2025-10-10T11:09:57.274005+01:00 (11) debug: shell got a message: execute_request
+2025-10-10T11:09:57.274340+01:00 (11) info: iopub: sending status message
+2025-10-10T11:09:57.283968+01:00 (11) info: iopub: sending status message
+2025-10-10T11:10:09.532480+01:00 (11) debug: shell got a message: execute_request
+2025-10-10T11:10:09.533426+01:00 (11) info: iopub: sending status message
+2025-10-10T11:10:09.559176+01:00 (10) info: iopub: sending execute_input message
+2025-10-10T11:10:09.564159+01:00 (10) info: iopub: sending execute_result message
+2025-10-10T11:10:09.582997+01:00 (10) info: iopub: sending status message
+2025-10-10T11:10:09.587970+01:00 (11) info: shell: sending execute_reply message
+2025-10-10T11:10:09.658445+01:00 (11) debug: shell got a message: execute_request
+2025-10-10T11:10:09.658780+01:00 (11) info: iopub: sending status message
+2025-10-10T11:10:09.671037+01:00 (10) info: iopub: sending status message
+2025-10-10T11:10:12.541947+01:00 (10) debug: shell got a message: execute_request
+2025-10-10T11:10:12.542240+01:00 (10) info: iopub: sending status message
+2025-10-10T11:10:12.563161+01:00 (10) info: iopub: sending execute_input message
+2025-10-10T11:10:12.572743+01:00 (10) info: iopub: sending execute_result message
+2025-10-10T11:10:12.578917+01:00 (10) info: iopub: sending status message
+2025-10-10T11:10:12.584590+01:00 (11) info: shell: sending execute_reply message
+2025-10-10T11:10:12.647917+01:00 (11) debug: shell got a message: execute_request
+2025-10-10T11:10:12.648222+01:00 (11) info: iopub: sending status message
+2025-10-10T11:10:12.660531+01:00 (11) info: iopub: sending status message
+2025-10-10T11:10:14.563132+01:00 (10) debug: shell got a message: execute_request
+2025-10-10T11:10:14.563588+01:00 (10) info: iopub: sending status message
+2025-10-10T11:10:14.587331+01:00 (10) info: iopub: sending execute_input message
+2025-10-10T11:10:14.593642+01:00 (10) info: iopub: sending execute_result message
+2025-10-10T11:10:14.602777+01:00 (10) info: iopub: sending status message
+2025-10-10T11:10:14.609194+01:00 (10) info: shell: sending execute_reply message
+2025-10-10T11:10:14.625274+01:00 (10) debug: shell got a message: execute_request
+2025-10-10T11:10:14.625499+01:00 (10) info: iopub: sending status message
+2025-10-10T11:10:14.634054+01:00 (11) info: iopub: sending status message
+2025-10-10T11:10:21.765209+01:00 (11) debug: shell got a message: execute_request
+2025-10-10T11:10:21.765742+01:00 (11) info: iopub: sending status message
+2025-10-10T11:10:21.787424+01:00 (11) info: iopub: sending execute_input message
+2025-10-10T11:10:21.797886+01:00 (11) info: iopub: sending execute_result message
+2025-10-10T11:10:21.803040+01:00 (11) info: iopub: sending status message
+2025-10-10T11:10:21.809550+01:00 (10) info: shell: sending execute_reply message
+2025-10-10T11:10:21.822198+01:00 (10) debug: shell got a message: execute_request
+2025-10-10T11:10:21.822407+01:00 (10) info: iopub: sending status message
+2025-10-10T11:10:21.832167+01:00 (11) info: iopub: sending status message
+2025-10-10T11:10:26.337500+01:00 (10) debug: shell got a message: execute_request
+2025-10-10T11:10:26.337853+01:00 (10) info: iopub: sending status message
+2025-10-10T11:10:26.369870+01:00 (10) info: iopub: sending execute_input message
+2025-10-10T11:10:26.374932+01:00 (10) info: iopub: sending execute_result message
+2025-10-10T11:10:26.379471+01:00 (10) info: iopub: sending status message
+2025-10-10T11:10:26.384972+01:00 (11) info: shell: sending execute_reply message
+2025-10-10T11:10:26.460308+01:00 (11) debug: shell got a message: execute_request
+2025-10-10T11:10:26.460531+01:00 (11) info: iopub: sending status message
+2025-10-10T11:10:26.467813+01:00 (11) info: iopub: sending status message
+2025-10-10T11:10:31.614414+01:00 (10) debug: shell got a message: execute_request
+2025-10-10T11:10:31.615671+01:00 (10) info: iopub: sending status message
+2025-10-10T11:10:31.643126+01:00 (11) info: iopub: sending execute_input message
+2025-10-10T11:10:31.648130+01:00 (11) info: iopub: sending execute_result message
+2025-10-10T11:10:31.663796+01:00 (11) info: iopub: sending status message
+2025-10-10T11:10:31.669608+01:00 (11) info: shell: sending execute_reply message
+2025-10-10T11:10:31.685827+01:00 (11) debug: shell got a message: execute_request
+2025-10-10T11:10:31.686027+01:00 (11) info: iopub: sending status message
+2025-10-10T11:10:31.692086+01:00 (11) info: iopub: sending status message
+2025-10-10T11:15:48.075795+01:00 (10) debug: shell got a message: execute_request
+2025-10-10T11:15:48.083277+01:00 (10) info: iopub: sending status message
+2025-10-10T11:15:48.176147+01:00 (11) info: iopub: sending execute_input message
+2025-10-10T11:15:48.185888+01:00 (11) info: iopub: sending execute_result message
+2025-10-10T11:15:48.209066+01:00 (11) info: iopub: sending status message
+2025-10-10T11:15:48.216779+01:00 (11) info: shell: sending execute_reply message
+2025-10-10T11:15:48.376069+01:00 (11) debug: shell got a message: execute_request
+2025-10-10T11:15:48.376364+01:00 (11) info: iopub: sending status message
+2025-10-10T11:15:48.386591+01:00 (10) info: iopub: sending status message
+2025-10-27T17:46:43.350622Z (1) info: starting jupyter kernel
+2025-10-27T17:46:43.358229Z (1) debug: read /Users/stephenroe/Library/Jupyter/runtime/kernel-24b54980-e968-47bd-9a7d-1e8979b167b3.json
+2025-10-27T17:46:43.358414Z (1) debug: listening on tcp://127.0.0.1
+2025-10-27T17:46:43.358915Z (1) debug: setting up control on 51820
+2025-10-27T17:46:43.444133Z (1) debug: setting up shell on 51816
+2025-10-27T17:46:43.444560Z (1) debug: setting up iopub on 51817
+2025-10-27T17:46:43.444842Z (1) debug: setting up hb on 51819
+2025-10-27T17:46:43.570032Z (10) info: iopub: sending execute_input message
+2025-10-27T17:46:43.627151Z (10) debug: shell got a message: kernel_info_request
+2025-10-27T17:46:43.627624Z (10) info: shell: sending kernel_info_reply message
+2025-10-27T17:46:43.638112Z (10) info: iopub: sending status message
+2025-10-27T17:46:43.646836Z (4) debug: ctl got a message: kernel_info_request
+2025-10-27T17:46:43.649698Z (10) debug: shell got a message: kernel_info_request
+2025-10-27T17:46:43.649897Z (10) info: shell: sending kernel_info_reply message
+2025-10-27T17:46:43.658228Z (10) info: iopub: sending status message
+2025-10-27T17:46:43.669657Z (10) debug: shell got a message: execute_request
+2025-10-27T17:46:43.670263Z (10) info: iopub: sending status message
+2025-10-27T17:46:43.697937Z (11) info: iopub: sending execute_input message
+2025-10-27T17:46:43.708125Z (11) info: iopub: sending execute_result message
+2025-10-27T17:46:43.716003Z (11) info: iopub: sending status message
+2025-10-27T17:46:43.728768Z (11) info: shell: sending execute_reply message
+2025-10-27T17:46:43.877229Z (11) debug: shell got a message: execute_request
+2025-10-27T17:46:43.877529Z (11) info: iopub: sending status message
+2025-10-27T17:46:43.886906Z (10) info: iopub: sending status message
+2025-10-27T17:46:49.732272Z (11) debug: shell got a message: execute_request
+2025-10-27T17:46:49.732611Z (11) info: iopub: sending status message
+2025-10-27T17:46:50.150986Z (11) info: iopub: sending execute_input message
+2025-10-27T17:46:50.158681Z (11) info: iopub: sending execute_result message
+2025-10-27T17:46:50.165247Z (11) info: iopub: sending status message
+2025-10-27T17:46:50.171536Z (11) info: shell: sending execute_reply message
+2025-10-27T17:46:50.209327Z (11) debug: shell got a message: execute_request
+2025-10-27T17:46:50.209599Z (11) info: iopub: sending status message
+2025-10-27T17:46:50.219775Z (10) info: iopub: sending status message
+2025-10-27T17:46:54.059493Z (10) debug: shell got a message: execute_request
+2025-10-27T17:46:54.059882Z (10) info: iopub: sending status message
+2025-10-27T17:46:54.308396Z (11) info: iopub: sending execute_input message
+2025-10-27T17:46:54.313287Z (11) info: iopub: sending execute_result message
+2025-10-27T17:46:54.319634Z (11) info: iopub: sending status message
+2025-10-27T17:46:54.325036Z (11) info: shell: sending execute_reply message
+2025-10-27T17:46:54.356573Z (11) debug: shell got a message: execute_request
+2025-10-27T17:46:54.356858Z (11) info: iopub: sending status message
+2025-10-27T17:46:54.386242Z (10) info: iopub: sending execute_input message
+2025-10-27T17:46:54.391397Z (10) info: iopub: sending execute_result message
+2025-10-27T17:46:54.396779Z (10) info: iopub: sending status message
+2025-10-27T17:46:54.405515Z (10) info: shell: sending execute_reply message
+2025-10-27T17:46:54.421070Z (10) debug: shell got a message: execute_request
+2025-10-27T17:46:54.421356Z (10) info: iopub: sending status message
+2025-10-27T17:46:54.430860Z (11) info: iopub: sending status message
+2025-10-27T17:46:54.443874Z (11) debug: shell got a message: execute_request
+2025-10-27T17:46:54.444170Z (11) info: iopub: sending status message
+2025-10-27T17:46:54.466210Z (11) info: iopub: sending execute_input message
+2025-10-27T17:46:54.473895Z (11) info: iopub: sending execute_result message
+2025-10-27T17:46:54.479090Z (11) info: iopub: sending status message
+2025-10-27T17:46:54.484608Z (11) info: shell: sending execute_reply message
+2025-10-27T17:46:54.498387Z (11) debug: shell got a message: execute_request
+2025-10-27T17:46:54.498695Z (11) info: iopub: sending status message
+2025-10-27T17:46:54.506629Z (10) info: iopub: sending status message
+2025-10-27T17:46:54.518467Z (10) debug: shell got a message: execute_request
+2025-10-27T17:46:54.518972Z (10) info: iopub: sending status message
+2025-10-27T17:46:54.537249Z (10) info: iopub: sending execute_input message
+2025-10-27T17:46:54.543251Z (10) info: iopub: sending execute_result message
+2025-10-27T17:46:54.550076Z (10) info: iopub: sending status message
+2025-10-27T17:46:54.559459Z (11) info: shell: sending execute_reply message
+2025-10-27T17:46:54.571930Z (11) debug: shell got a message: execute_request
+2025-10-27T17:46:54.572250Z (11) info: iopub: sending status message
+2025-10-27T17:46:54.583110Z (10) info: iopub: sending status message
+2025-10-27T17:46:54.596008Z (11) debug: shell got a message: execute_request
+2025-10-27T17:46:54.596292Z (11) info: iopub: sending status message
+2025-10-27T17:46:54.604813Z (11) info: iopub: sending status message
+2025-10-27T17:46:54.626032Z (10) debug: shell got a message: execute_request
+2025-10-27T17:46:54.626277Z (10) info: iopub: sending status message
+2025-10-27T17:46:54.645373Z (11) info: iopub: sending execute_input message
+2025-10-27T17:46:54.650435Z (11) info: iopub: sending execute_result message
+2025-10-27T17:46:54.655872Z (11) info: iopub: sending status message
+2025-10-27T17:46:54.663205Z (10) info: shell: sending execute_reply message
+2025-10-27T17:46:54.675054Z (10) debug: shell got a message: comm_info_request
+2025-10-27T17:46:54.676634Z (10) debug: comm_info_request ${}
+2025-10-27T17:46:54.677380Z (10) info: shell: sending comm_info_reply message
+2025-10-27T17:46:54.698811Z (10) debug: shell got a message: comm_info_request
+2025-10-27T17:46:54.699112Z (10) debug: comm_info_request ${}
+2025-10-27T17:46:54.699289Z (10) info: shell: sending comm_info_reply message
+2025-10-27T17:46:54.715417Z (10) debug: shell got a message: execute_request
+2025-10-27T17:46:54.716209Z (10) info: iopub: sending status message
+2025-10-27T17:46:54.730396Z (10) info: iopub: sending status message
+2025-10-27T17:46:54.740419Z (11) debug: shell got a message: execute_request
+2025-10-27T17:46:54.740674Z (11) info: iopub: sending status message
+2025-10-27T17:46:54.753363Z (11) info: iopub: sending execute_input message
+2025-10-27T17:46:54.758163Z (11) info: iopub: sending execute_result message
+2025-10-27T17:46:54.767867Z (11) info: iopub: sending status message
+2025-10-27T17:46:54.774127Z (11) info: shell: sending execute_reply message
+2025-10-27T17:46:54.804212Z (11) debug: shell got a message: execute_request
+2025-10-27T17:46:54.804610Z (11) info: iopub: sending status message
+2025-10-27T17:46:54.820631Z (11) info: iopub: sending execute_input message
+2025-10-27T17:46:54.826833Z (11) info: iopub: sending execute_result message
+2025-10-27T17:46:54.833713Z (11) info: iopub: sending status message
+2025-10-27T17:46:54.842040Z (10) info: shell: sending execute_reply message
+2025-10-27T17:46:54.855451Z (10) debug: shell got a message: execute_request
+2025-10-27T17:46:54.855726Z (10) info: iopub: sending status message
+2025-10-27T17:46:54.867633Z (10) info: iopub: sending status message
+2025-10-27T17:46:54.881495Z (10) debug: shell got a message: execute_request
+2025-10-27T17:46:54.881965Z (10) info: iopub: sending status message
+2025-10-27T17:46:54.894291Z (11) info: iopub: sending status message
+2025-10-27T17:48:28.794796Z (1) info: starting jupyter kernel
+2025-10-27T17:48:28.801874Z (1) debug: read /Users/stephenroe/Library/Jupyter/runtime/kernel-47371b24-89c8-4381-b485-cf306c7e00f8.json
+2025-10-27T17:48:28.802099Z (1) debug: listening on tcp://127.0.0.1
+2025-10-27T17:48:28.802625Z (1) debug: setting up control on 52568
+2025-10-27T17:48:28.814330Z (1) debug: setting up shell on 52564
+2025-10-27T17:48:28.814685Z (1) debug: setting up iopub on 52565
+2025-10-27T17:48:28.814916Z (1) debug: setting up hb on 52567
+2025-10-27T17:48:28.924426Z (10) info: iopub: sending execute_input message
+2025-10-27T17:48:28.958157Z (10) debug: shell got a message: kernel_info_request
+2025-10-27T17:48:28.958608Z (10) info: shell: sending kernel_info_reply message
+2025-10-27T17:48:28.967913Z (10) info: iopub: sending status message
+2025-10-27T17:48:28.977133Z (8) debug: ctl got a message: kernel_info_request
+2025-10-27T17:48:28.979029Z (10) debug: shell got a message: kernel_info_request
+2025-10-27T17:48:28.979171Z (10) info: shell: sending kernel_info_reply message
+2025-10-27T17:48:28.984713Z (10) info: iopub: sending status message
+2025-10-27T17:48:28.995417Z (10) debug: shell got a message: execute_request
+2025-10-27T17:48:28.995833Z (10) info: iopub: sending status message
+2025-10-27T17:48:31.892113Z (11) info: iopub: sending execute_input message
+2025-10-27T17:48:31.897223Z (11) info: iopub: sending execute_result message
+2025-10-27T17:48:31.907577Z (11) info: iopub: sending status message
+2025-10-27T17:48:31.918581Z (11) info: shell: sending execute_reply message
+2025-10-27T17:48:31.973953Z (11) debug: shell got a message: execute_request
+2025-10-27T17:48:31.974263Z (11) info: iopub: sending status message
+2025-10-27T17:48:33.697255Z (11) info: iopub: sending execute_input message
+2025-10-27T17:48:33.786879Z (11) info: iopub: sending execute_result message
+2025-10-27T17:48:33.791689Z (11) info: iopub: sending status message
+2025-10-27T17:48:33.797162Z (11) info: shell: sending execute_reply message
+2025-10-27T17:48:33.831004Z (11) debug: shell got a message: execute_request
+2025-10-27T17:48:33.831291Z (11) info: iopub: sending status message
+2025-10-27T17:48:35.170639Z (11) info: iopub: sending execute_input message
+2025-10-27T17:48:35.176094Z (11) info: iopub: sending execute_result message
+2025-10-27T17:48:35.180918Z (11) info: iopub: sending status message
+2025-10-27T17:48:35.188350Z (10) info: shell: sending execute_reply message
+2025-10-27T17:48:35.210992Z (10) debug: shell got a message: execute_request
+2025-10-27T17:48:35.211324Z (10) info: iopub: sending status message
+2025-10-27T17:48:35.234401Z (10) info: iopub: sending execute_input message
+2025-10-27T17:48:35.241582Z (10) info: iopub: sending execute_result message
+2025-10-27T17:48:35.246684Z (10) info: iopub: sending status message
+2025-10-27T17:48:35.252214Z (10) info: shell: sending execute_reply message
+2025-10-27T17:48:48.757477Z (10) debug: shell got a message: execute_request
+2025-10-27T17:48:48.758008Z (10) info: iopub: sending status message
+2025-10-27T17:48:49.414144Z (10) info: iopub: sending execute_input message
+2025-10-27T17:48:49.422902Z (10) info: iopub: sending execute_result message
+2025-10-27T17:48:49.438531Z (10) info: iopub: sending status message
+2025-10-27T17:48:49.445589Z (10) info: shell: sending execute_reply message
+2025-10-27T17:48:58.874393Z (10) debug: shell got a message: execute_request
+2025-10-27T17:48:58.874663Z (10) info: iopub: sending status message
+2025-10-27T17:48:58.894185Z (11) info: iopub: sending execute_input message
+2025-10-27T17:48:58.898895Z (11) info: iopub: sending execute_result message
+2025-10-27T17:48:58.903589Z (11) info: iopub: sending status message
+2025-10-27T17:48:58.911565Z (10) info: shell: sending execute_reply message
+2025-10-27T17:51:10.786116Z (11) debug: shell got a message: comm_info_request
+2025-10-27T17:51:10.789613Z (11) debug: comm_info_request ${}
+2025-10-27T17:51:10.791075Z (11) info: shell: sending comm_info_reply message
+2025-10-27T17:52:52.296920Z (1) info: starting jupyter kernel
+2025-10-27T17:52:52.304003Z (1) debug: read /Users/stephenroe/Library/Jupyter/runtime/kernel-98e73d0c-b61d-4acf-8e3e-1a8fb3b13667.json
+2025-10-27T17:52:52.304235Z (1) debug: listening on tcp://127.0.0.1
+2025-10-27T17:52:52.307484Z (1) debug: setting up control on 56107
+2025-10-27T17:52:52.317882Z (1) debug: setting up shell on 56103
+2025-10-27T17:52:52.318540Z (1) debug: setting up iopub on 56104
+2025-10-27T17:52:52.318804Z (1) debug: setting up hb on 56106
+2025-10-27T17:52:52.425878Z (10) info: iopub: sending execute_input message
+2025-10-27T17:52:52.460261Z (10) debug: shell got a message: kernel_info_request
+2025-10-27T17:52:52.460716Z (10) info: shell: sending kernel_info_reply message
+2025-10-27T17:52:52.470165Z (10) info: iopub: sending status message
+2025-10-27T17:52:52.478826Z (8) debug: ctl got a message: kernel_info_request
+2025-10-27T17:52:52.481264Z (10) debug: shell got a message: kernel_info_request
+2025-10-27T17:52:52.481442Z (10) info: shell: sending kernel_info_reply message
+2025-10-27T17:52:52.487070Z (10) info: iopub: sending status message
+2025-10-27T17:52:52.497966Z (10) debug: shell got a message: execute_request
+2025-10-27T17:52:52.498386Z (10) info: iopub: sending status message
+2025-10-27T17:52:52.532784Z (11) info: iopub: sending execute_input message
+2025-10-27T17:52:52.539570Z (11) info: iopub: sending execute_result message
+2025-10-27T17:52:52.544728Z (11) info: iopub: sending status message
+2025-10-27T17:52:52.551182Z (11) info: shell: sending execute_reply message
+2025-10-27T17:52:52.625754Z (11) debug: shell got a message: execute_request
+2025-10-27T17:52:52.626115Z (11) info: iopub: sending status message
+2025-10-27T17:52:52.635899Z (11) info: iopub: sending status message
+2025-10-27T17:53:03.423082Z (10) debug: shell got a message: execute_request
+2025-10-27T17:53:03.424276Z (10) info: iopub: sending status message
+2025-10-27T17:53:04.556163Z (10) info: iopub: sending execute_input message
+2025-10-27T17:53:04.564909Z (10) info: iopub: sending execute_result message
+2025-10-27T17:53:04.575298Z (10) info: iopub: sending status message
+2025-10-27T17:53:04.583070Z (11) info: shell: sending execute_reply message
+2025-10-27T17:53:04.653650Z (11) debug: shell got a message: execute_request
+2025-10-27T17:53:04.653977Z (11) info: iopub: sending status message
+2025-10-27T17:53:04.665291Z (10) info: iopub: sending status message
+2025-10-27T17:54:24.849169Z (10) debug: shell got a message: execute_request
+2025-10-27T17:54:24.850379Z (10) info: iopub: sending status message
+2025-10-27T17:54:26.038291Z (11) info: iopub: sending execute_input message
+2025-10-27T17:54:26.047328Z (11) info: iopub: sending execute_result message
+2025-10-27T17:54:26.067323Z (11) info: iopub: sending status message
+2025-10-27T17:54:26.074218Z (10) info: shell: sending execute_reply message
+2025-10-27T17:54:26.143602Z (10) debug: shell got a message: execute_request
+2025-10-27T17:54:26.143904Z (10) info: iopub: sending status message
+2025-10-27T17:54:26.162370Z (10) info: iopub: sending status message
+2025-10-27T17:56:29.448196Z (10) debug: shell got a message: execute_request
+2025-10-27T17:56:29.449540Z (10) info: iopub: sending status message
+2025-10-27T17:56:32.200539Z (10) info: iopub: sending execute_input message
+2025-10-27T17:56:32.207608Z (10) info: iopub: sending execute_result message
+2025-10-27T17:56:32.215370Z (10) info: iopub: sending status message
+2025-10-27T17:56:32.230186Z (10) info: shell: sending execute_reply message
+2025-10-27T17:56:32.303522Z (10) debug: shell got a message: execute_request
+2025-10-27T17:56:32.303852Z (10) info: iopub: sending status message
+2025-10-27T17:56:32.312700Z (10) info: iopub: sending status message
+2025-10-27T17:57:04.567897Z (10) debug: shell got a message: execute_request
+2025-10-27T17:57:04.569820Z (10) info: iopub: sending status message
+2025-10-27T17:57:04.608313Z (11) info: iopub: sending execute_input message
+2025-10-27T17:57:04.613371Z (11) info: iopub: sending execute_result message
+2025-10-27T17:57:04.617991Z (11) info: iopub: sending status message
+2025-10-27T17:57:04.630998Z (11) info: shell: sending execute_reply message
+2025-10-27T17:57:04.703639Z (11) debug: shell got a message: execute_request
+2025-10-27T17:57:04.703907Z (11) info: iopub: sending status message
+2025-10-27T17:57:04.712732Z (10) info: iopub: sending status message
+2025-10-27T17:57:19.974191Z (10) debug: shell got a message: execute_request
+2025-10-27T17:57:19.975098Z (10) info: iopub: sending status message
+2025-10-27T17:57:21.743267Z (10) info: iopub: sending execute_input message
+2025-10-27T17:57:21.749907Z (10) info: iopub: sending execute_result message
+2025-10-27T17:57:21.756498Z (10) info: iopub: sending status message
+2025-10-27T17:57:21.766930Z (10) info: shell: sending execute_reply message
+2025-10-27T17:57:21.844435Z (10) debug: shell got a message: execute_request
+2025-10-27T17:57:21.844834Z (10) info: iopub: sending status message
+2025-10-27T17:57:21.856309Z (10) info: iopub: sending status message
+2025-10-29T19:05:07.140803Z (1) info: starting jupyter kernel
+2025-10-29T19:05:07.148091Z (1) debug: read /Users/stephenroe/Library/Jupyter/runtime/kernel-7c0e1899-9c43-4056-bb0f-0bd413ba2428.json
+2025-10-29T19:05:07.148304Z (1) debug: listening on tcp://127.0.0.1
+2025-10-29T19:05:07.148823Z (1) debug: setting up control on 49870
+2025-10-29T19:05:07.177252Z (1) debug: setting up shell on 49866
+2025-10-29T19:05:07.179667Z (1) debug: setting up iopub on 49867
+2025-10-29T19:05:07.180123Z (1) debug: setting up hb on 49869
+2025-10-29T19:05:07.294410Z (10) info: iopub: sending execute_input message
+2025-10-29T19:05:07.343640Z (10) debug: shell got a message: kernel_info_request
+2025-10-29T19:05:07.344080Z (10) info: shell: sending kernel_info_reply message
+2025-10-29T19:05:07.353545Z (10) info: iopub: sending status message
+2025-10-29T19:05:07.362926Z (4) debug: ctl got a message: kernel_info_request
+2025-10-29T19:05:07.364529Z (10) debug: shell got a message: kernel_info_request
+2025-10-29T19:05:07.364678Z (10) info: shell: sending kernel_info_reply message
+2025-10-29T19:05:07.372089Z (10) info: iopub: sending status message
+2025-10-29T19:05:07.381738Z (10) debug: shell got a message: execute_request
+2025-10-29T19:05:07.382161Z (10) info: iopub: sending status message
+2025-10-29T19:05:07.685912Z (11) info: iopub: sending execute_input message
+2025-10-29T19:05:07.692523Z (11) info: iopub: sending execute_result message
+2025-10-29T19:05:07.697288Z (11) info: iopub: sending status message
+2025-10-29T19:05:07.703387Z (10) info: shell: sending execute_reply message
+2025-10-29T19:05:07.816678Z (10) debug: shell got a message: execute_request
+2025-10-29T19:05:07.817047Z (10) info: iopub: sending status message
+2025-10-29T19:05:07.830328Z (11) info: iopub: sending status message
+2025-10-29T19:07:59.304662Z (10) debug: shell got a message: execute_request
+2025-10-29T19:07:59.306936Z (10) info: iopub: sending status message
+2025-10-29T19:07:59.567067Z (11) info: iopub: sending execute_input message
+2025-10-29T19:07:59.573338Z (11) info: iopub: sending execute_result message
+2025-10-29T19:07:59.578160Z (11) info: iopub: sending status message
+2025-10-29T19:07:59.583944Z (11) info: shell: sending execute_reply message
+2025-10-29T19:07:59.659658Z (11) debug: shell got a message: execute_request
+2025-10-29T19:07:59.659956Z (11) info: iopub: sending status message
+2025-10-29T19:07:59.670058Z (11) info: iopub: sending status message
+2025-10-29T19:17:36.564909Z (1) info: starting jupyter kernel
+2025-10-29T19:17:36.571464Z (1) debug: read /Users/stephenroe/Library/Jupyter/runtime/kernel-5351ddd7-2ecb-4712-821e-ac6f2025e39f.json
+2025-10-29T19:17:36.571639Z (1) debug: listening on tcp://127.0.0.1
+2025-10-29T19:17:36.572133Z (1) debug: setting up control on 54526
+2025-10-29T19:17:36.581125Z (1) debug: setting up shell on 54522
+2025-10-29T19:17:36.581431Z (1) debug: setting up iopub on 54523
+2025-10-29T19:17:36.581656Z (1) debug: setting up hb on 54525
+2025-10-29T19:17:36.717894Z (10) info: iopub: sending execute_input message
+2025-10-29T19:17:36.753109Z (10) debug: shell got a message: kernel_info_request
+2025-10-29T19:17:36.753579Z (10) info: shell: sending kernel_info_reply message
+2025-10-29T19:17:36.763153Z (10) info: iopub: sending status message
+2025-10-29T19:17:36.771808Z (4) debug: ctl got a message: kernel_info_request
+2025-10-29T19:17:36.773183Z (10) debug: shell got a message: kernel_info_request
+2025-10-29T19:17:36.773323Z (10) info: shell: sending kernel_info_reply message
+2025-10-29T19:17:36.781199Z (10) info: iopub: sending status message
+2025-10-29T19:17:36.790681Z (10) debug: shell got a message: execute_request
+2025-10-29T19:17:36.791090Z (10) info: iopub: sending status message
+2025-10-29T19:17:39.993054Z (10) info: iopub: sending execute_input message
+2025-10-29T19:17:39.999449Z (10) info: iopub: sending execute_result message
+2025-10-29T19:17:40.008406Z (10) info: iopub: sending status message
+2025-10-29T19:17:40.015542Z (10) info: shell: sending execute_reply message
+2025-10-29T19:17:40.099843Z (10) debug: shell got a message: execute_request
+2025-10-29T19:17:40.100312Z (10) info: iopub: sending status message
+2025-10-29T19:17:40.113261Z (11) info: iopub: sending status message
+2025-10-29T19:18:26.796728Z (11) debug: shell got a message: execute_request
+2025-10-29T19:18:26.797234Z (11) info: iopub: sending status message
+2025-10-29T19:18:28.096652Z (11) info: iopub: sending execute_input message
+2025-10-29T19:18:28.104242Z (11) info: iopub: sending execute_result message
+2025-10-29T19:18:28.111034Z (11) info: iopub: sending status message
+2025-10-29T19:18:28.120218Z (11) info: shell: sending execute_reply message
+2025-10-29T19:18:28.199395Z (11) debug: shell got a message: execute_request
+2025-10-29T19:18:28.199716Z (11) info: iopub: sending status message
+2025-10-29T19:18:28.208982Z (10) info: iopub: sending status message
+2025-10-29T19:18:45.239539Z (10) debug: shell got a message: execute_request
+2025-10-29T19:18:45.239981Z (10) info: iopub: sending status message
+2025-10-29T19:18:46.526939Z (10) info: iopub: sending execute_input message
+2025-10-29T19:18:46.534652Z (10) info: iopub: sending execute_result message
+2025-10-29T19:18:46.541774Z (10) info: iopub: sending status message
+2025-10-29T19:18:46.552016Z (10) info: shell: sending execute_reply message
+2025-10-29T19:18:46.628146Z (10) debug: shell got a message: execute_request
+2025-10-29T19:18:46.628448Z (10) info: iopub: sending status message
+2025-10-29T19:18:46.639329Z (11) info: iopub: sending status message
+2025-11-03T15:30:47.967779Z (1) info: starting jupyter kernel
+2025-11-03T15:30:47.974753Z (1) debug: read /Users/stephenroe/Library/Jupyter/runtime/kernel-64e08bf5-6e6e-47d5-b876-b06b52c0acf9.json
+2025-11-03T15:30:47.974929Z (1) debug: listening on tcp://127.0.0.1
+2025-11-03T15:30:47.975409Z (1) debug: setting up control on 52547
+2025-11-03T15:30:48.001605Z (1) debug: setting up shell on 52543
+2025-11-03T15:30:48.001944Z (1) debug: setting up iopub on 52544
+2025-11-03T15:30:48.002232Z (1) debug: setting up hb on 52546
+2025-11-03T15:30:48.125231Z (10) info: iopub: sending execute_input message
+2025-11-03T15:30:48.173609Z (10) debug: shell got a message: kernel_info_request
+2025-11-03T15:30:48.174057Z (10) info: shell: sending kernel_info_reply message
+2025-11-03T15:30:48.183846Z (10) info: iopub: sending status message
+2025-11-03T15:30:48.193202Z (8) debug: ctl got a message: kernel_info_request
+2025-11-03T15:30:48.196172Z (10) debug: shell got a message: kernel_info_request
+2025-11-03T15:30:48.196334Z (10) info: shell: sending kernel_info_reply message
+2025-11-03T15:30:48.202911Z (10) info: iopub: sending status message
+2025-11-03T15:30:48.215558Z (10) debug: shell got a message: execute_request
+2025-11-03T15:30:48.216015Z (10) info: iopub: sending status message
+2025-11-03T15:30:49.501223Z (10) info: iopub: sending execute_input message
+2025-11-03T15:30:49.508404Z (10) info: iopub: sending execute_result message
+2025-11-03T15:30:49.514418Z (10) info: iopub: sending status message
+2025-11-03T15:30:49.521248Z (10) info: shell: sending execute_reply message
+2025-11-03T15:30:49.593601Z (10) debug: shell got a message: execute_request
+2025-11-03T15:30:49.593817Z (10) info: iopub: sending status message
+2025-11-03T15:30:49.603571Z (11) info: iopub: sending status message
+2025-11-03T15:34:22.528980Z (11) debug: shell got a message: execute_request
+2025-11-03T15:34:22.534384Z (11) info: iopub: sending status message
+2025-11-03T15:34:27.392215Z (11) info: iopub: sending execute_input message
+2025-11-03T15:34:27.416190Z (11) info: iopub: sending execute_result message
+2025-11-03T15:34:27.422744Z (11) info: iopub: sending status message
+2025-11-03T15:34:27.434045Z (11) info: shell: sending execute_reply message
+2025-11-03T15:34:27.516664Z (11) debug: shell got a message: execute_request
+2025-11-03T15:34:27.516955Z (11) info: iopub: sending status message
+2025-11-03T15:34:27.534101Z (11) info: iopub: sending status message
+2025-11-03T15:36:29.980338Z (10) debug: shell got a message: execute_request
+2025-11-03T15:36:29.981926Z (10) info: iopub: sending status message
+2025-11-03T15:36:30.546203Z (10) info: iopub: sending execute_input message
+2025-11-03T15:36:30.562111Z (10) info: iopub: sending execute_result message
+2025-11-03T15:36:30.567792Z (10) info: iopub: sending status message
+2025-11-03T15:36:30.574103Z (10) info: shell: sending execute_reply message
+2025-11-03T15:36:30.653266Z (10) debug: shell got a message: execute_request
+2025-11-03T15:36:30.653511Z (10) info: iopub: sending status message
+2025-11-03T15:36:30.661595Z (11) info: iopub: sending status message
+2025-11-03T15:36:38.933450Z (11) debug: shell got a message: execute_request
+2025-11-03T15:36:38.933811Z (11) info: iopub: sending status message
+2025-11-03T15:36:39.078924Z (11) info: iopub: sending execute_input message
+2025-11-03T15:36:39.083834Z (11) info: iopub: sending execute_result message
+2025-11-03T15:36:39.089650Z (11) info: iopub: sending status message
+2025-11-03T15:36:39.095807Z (10) info: shell: sending execute_reply message
+2025-11-03T15:36:39.174690Z (10) debug: shell got a message: execute_request
+2025-11-03T15:36:39.174998Z (10) info: iopub: sending status message
+2025-11-03T15:36:39.184259Z (11) info: iopub: sending status message
+2025-11-03T15:36:50.696300Z (10) debug: shell got a message: execute_request
+2025-11-03T15:36:50.696874Z (10) info: iopub: sending status message
+2025-11-03T15:36:55.947764Z (10) info: iopub: sending execute_input message
+2025-11-03T15:36:55.955595Z (10) info: iopub: sending execute_result message
+2025-11-03T15:36:55.966463Z (10) info: iopub: sending status message
+2025-11-03T15:36:55.973430Z (10) info: shell: sending execute_reply message
+2025-11-03T15:36:56.055577Z (10) debug: shell got a message: execute_request
+2025-11-03T15:36:56.055943Z (10) info: iopub: sending status message
+2025-11-03T15:36:56.065221Z (11) info: iopub: sending status message
+2025-11-03T15:37:50.395438Z (10) debug: shell got a message: execute_request
+2025-11-03T15:37:50.395694Z (10) info: iopub: sending status message
+2025-11-03T15:37:54.120190Z (10) info: iopub: sending execute_input message
+2025-11-03T15:37:54.128942Z (10) info: iopub: sending execute_result message
+2025-11-03T15:37:54.136184Z (10) info: iopub: sending status message
+2025-11-03T15:37:54.147315Z (10) info: shell: sending execute_reply message
+2025-11-03T15:37:54.223305Z (10) debug: shell got a message: execute_request
+2025-11-03T15:37:54.223609Z (10) info: iopub: sending status message
+2025-11-03T15:37:54.234629Z (11) info: iopub: sending status message
+2025-11-03T15:39:26.347881Z (11) debug: shell got a message: execute_request
+2025-11-03T15:39:26.349410Z (11) info: iopub: sending status message
+2025-11-03T15:39:34.478899Z (11) info: iopub: sending execute_input message
+2025-11-03T15:39:34.486786Z (11) info: iopub: sending execute_result message
+2025-11-03T15:39:34.499583Z (11) info: iopub: sending status message
+2025-11-03T15:39:34.506037Z (11) info: shell: sending execute_reply message
+2025-11-03T15:39:34.589894Z (11) debug: shell got a message: execute_request
+2025-11-03T15:39:34.590251Z (11) info: iopub: sending status message
+2025-11-03T15:39:34.599548Z (10) info: iopub: sending status message
+2025-11-03T15:44:23.020174Z (10) debug: shell got a message: execute_request
+2025-11-03T15:44:23.021220Z (10) info: iopub: sending status message
+2025-11-03T15:44:27.887008Z (10) info: iopub: sending execute_input message
+2025-11-03T15:44:27.908358Z (10) info: iopub: sending execute_result message
+2025-11-03T15:44:27.915809Z (10) info: iopub: sending status message
+2025-11-03T15:44:27.929771Z (10) info: shell: sending execute_reply message
+2025-11-03T15:44:28.000895Z (10) debug: shell got a message: execute_request
+2025-11-03T15:44:28.001530Z (10) info: iopub: sending status message
+2025-11-03T15:44:28.019526Z (11) info: iopub: sending status message
+2025-11-03T15:45:09.764506Z (10) debug: shell got a message: execute_request
+2025-11-03T15:45:09.767206Z (10) info: iopub: sending status message
+2025-11-03T15:45:16.205531Z (10) info: iopub: sending execute_input message
+2025-11-03T15:45:16.212550Z (10) info: iopub: sending execute_result message
+2025-11-03T15:45:16.219961Z (10) info: iopub: sending status message
+2025-11-03T15:45:16.235097Z (10) info: shell: sending execute_reply message
+2025-11-03T15:45:16.304721Z (10) debug: shell got a message: execute_request
+2025-11-03T15:45:16.305048Z (10) info: iopub: sending status message
+2025-11-03T15:45:16.315443Z (11) info: iopub: sending status message
+2025-11-03T15:46:07.452154Z (10) debug: shell got a message: execute_request
+2025-11-03T15:46:07.455791Z (10) info: iopub: sending status message
+2025-11-03T15:46:16.911137Z (10) info: iopub: sending execute_input message
+2025-11-03T15:46:16.918483Z (10) info: iopub: sending execute_result message
+2025-11-03T15:46:16.934686Z (10) info: iopub: sending status message
+2025-11-03T15:46:16.940972Z (11) info: shell: sending execute_reply message
+2025-11-03T15:46:17.020053Z (11) debug: shell got a message: execute_request
+2025-11-03T15:46:17.020384Z (11) info: iopub: sending status message
+2025-11-03T15:46:17.030644Z (10) info: iopub: sending status message
+2025-11-03T15:49:05.241200Z (10) debug: shell got a message: execute_request
+2025-11-03T15:49:05.243370Z (10) info: iopub: sending status message
+2025-11-03T15:49:14.480847Z (10) info: iopub: sending execute_input message
+2025-11-03T15:49:14.497606Z (10) info: iopub: sending execute_result message
+2025-11-03T15:49:14.506139Z (10) info: iopub: sending status message
+2025-11-03T15:49:14.516017Z (10) info: shell: sending execute_reply message
+2025-11-03T15:49:14.588155Z (10) debug: shell got a message: execute_request
+2025-11-03T15:49:14.588463Z (10) info: iopub: sending status message
+2025-11-03T15:49:14.600382Z (11) info: iopub: sending status message
+2025-11-03T15:53:42.725089Z (11) debug: shell got a message: execute_request
+2025-11-03T15:53:42.726249Z (11) info: iopub: sending status message
+2025-11-03T15:53:52.202404Z (11) info: iopub: sending execute_input message
+2025-11-03T15:53:52.209104Z (11) info: iopub: sending execute_result message
+2025-11-03T15:53:52.218813Z (11) info: iopub: sending status message
+2025-11-03T15:53:52.238307Z (11) info: shell: sending execute_reply message
+2025-11-03T15:53:52.312932Z (11) debug: shell got a message: execute_request
+2025-11-03T15:53:52.313263Z (11) info: iopub: sending status message
+2025-11-03T15:53:52.324514Z (10) info: iopub: sending status message
+2025-11-03T15:58:54.072849Z (10) debug: shell got a message: execute_request
+2025-11-03T15:58:54.078139Z (10) info: iopub: sending status message
+2025-11-03T15:58:54.130097Z (10) info: iopub: sending execute_input message
+2025-11-03T15:58:54.135967Z (10) info: iopub: sending execute_result message
+2025-11-03T15:58:54.142073Z (10) info: iopub: sending status message
+2025-11-03T15:58:54.149176Z (11) info: shell: sending execute_reply message
+2025-11-03T15:58:54.180102Z (11) debug: shell got a message: execute_request
+2025-11-03T15:58:54.180367Z (11) info: iopub: sending status message
+2025-11-03T15:58:54.191335Z (11) info: iopub: sending status message
+2025-11-03T15:59:04.523666Z (11) debug: shell got a message: execute_request
+2025-11-03T15:59:04.524052Z (11) info: iopub: sending status message
+2025-11-03T15:59:17.311664Z (11) info: iopub: sending execute_input message
+2025-11-03T15:59:17.326302Z (11) info: iopub: sending execute_result message
+2025-11-03T15:59:17.335558Z (11) info: iopub: sending status message
+2025-11-03T15:59:17.343478Z (11) info: shell: sending execute_reply message
+2025-11-03T15:59:17.426729Z (11) debug: shell got a message: execute_request
+2025-11-03T15:59:17.427219Z (11) info: iopub: sending status message
+2025-11-03T15:59:17.438495Z (10) info: iopub: sending status message
+2025-11-03T16:00:54.786895Z (10) debug: shell got a message: execute_request
+2025-11-03T16:00:54.789589Z (10) info: iopub: sending status message
+2025-11-03T16:01:02.071355Z (10) info: iopub: sending execute_input message
+2025-11-03T16:01:02.078430Z (10) info: iopub: sending execute_result message
+2025-11-03T16:01:02.093417Z (10) info: iopub: sending status message
+2025-11-03T16:01:02.100458Z (10) info: shell: sending execute_reply message
+2025-11-03T16:01:02.188377Z (10) debug: shell got a message: execute_request
+2025-11-03T16:01:02.188624Z (10) info: iopub: sending status message
+2025-11-03T16:01:02.202166Z (11) info: iopub: sending status message
+2025-11-17T17:15:57.441396Z (1) info: starting jupyter kernel
+2025-11-17T17:15:57.447824Z (1) debug: read /Users/stephenroe/Library/Jupyter/runtime/kernel-2fb89401-208c-4352-8280-f181514d0a8f.json
+2025-11-17T17:15:57.447993Z (1) debug: listening on tcp://127.0.0.1
+2025-11-17T17:15:57.448469Z (1) debug: setting up control on 50449
+2025-11-17T17:15:57.539985Z (1) debug: setting up shell on 50445
+2025-11-17T17:15:57.540380Z (1) debug: setting up iopub on 50446
+2025-11-17T17:15:57.540663Z (1) debug: setting up hb on 50448
+2025-11-17T17:15:57.677679Z (10) info: iopub: sending execute_input message
+2025-11-17T17:15:57.737481Z (10) debug: shell got a message: kernel_info_request
+2025-11-17T17:15:57.737933Z (10) info: shell: sending kernel_info_reply message
+2025-11-17T17:15:57.747741Z (10) info: iopub: sending status message
+2025-11-17T17:15:57.755710Z (4) debug: ctl got a message: kernel_info_request
+2025-11-17T17:15:57.758856Z (10) debug: shell got a message: kernel_info_request
+2025-11-17T17:15:57.759034Z (10) info: shell: sending kernel_info_reply message
+2025-11-17T17:15:57.766624Z (10) info: iopub: sending status message
+2025-11-17T17:15:57.777509Z (10) debug: shell got a message: execute_request
+2025-11-17T17:15:57.777967Z (10) info: iopub: sending status message
+2025-11-17T17:15:57.801766Z (11) info: iopub: sending execute_input message
+2025-11-17T17:15:57.808813Z (11) info: iopub: sending execute_result message
+2025-11-17T17:15:57.815419Z (11) info: iopub: sending status message
+2025-11-17T17:15:57.823159Z (10) info: shell: sending execute_reply message
+2025-11-17T17:16:05.049563Z (9) info: Got sigint
+2025-11-17T17:16:05.050313Z (9) info: iopub: sending stream message
+2025-11-17T17:16:05.060193Z (4) debug: ctl got a message: shutdown_request
+2025-11-17T17:16:05.060700Z (4) info: Restarting
+
+2025-11-17T17:16:05.062256Z (11) info: iopub: sending stream message
+2025-11-17T17:16:05.071505Z (11) info: iopub: sending stream message
+2025-11-17T17:16:05.081146Z (11) info: iopub: sending stream message
+2025-11-17T17:16:05.133795Z (11) info: control: sending shutdown_reply message
+2025-11-17T17:16:05.143765Z (11) info: iopub: sending execute_input message
+2025-11-17T17:16:05.148722Z (11) info: iopub: sending stream message
+2025-11-17T17:16:08.369166Z (1) info: starting jupyter kernel
+2025-11-17T17:16:08.383359Z (1) debug: read /Users/stephenroe/Library/Jupyter/runtime/kernel-7190987f-f427-4703-b0ab-255803ba48de.json
+2025-11-17T17:16:08.383731Z (1) debug: listening on tcp://127.0.0.1
+2025-11-17T17:16:08.384682Z (1) debug: setting up control on 50570
+2025-11-17T17:16:08.394319Z (1) debug: setting up shell on 50566
+2025-11-17T17:16:08.394713Z (1) debug: setting up iopub on 50567
+2025-11-17T17:16:08.394928Z (1) debug: setting up hb on 50569
+2025-11-17T17:16:08.519182Z (10) info: iopub: sending execute_input message
+2025-11-17T17:16:15.318100Z (10) debug: shell got a message: kernel_info_request
+2025-11-17T17:16:15.318808Z (10) info: shell: sending kernel_info_reply message
+2025-11-17T17:16:15.329174Z (10) info: iopub: sending status message
+2025-11-17T17:16:15.340187Z (8) debug: ctl got a message: kernel_info_request
+2025-11-17T17:16:15.342224Z (10) debug: shell got a message: kernel_info_request
+2025-11-17T17:16:15.342386Z (10) info: shell: sending kernel_info_reply message
+2025-11-17T17:16:15.348585Z (10) info: iopub: sending status message
+2025-11-17T17:16:15.359866Z (10) debug: shell got a message: execute_request
+2025-11-17T17:16:15.360277Z (10) info: iopub: sending status message
+2025-11-17T17:16:15.394200Z (10) info: iopub: sending execute_input message
+2025-11-17T17:16:15.402863Z (10) info: iopub: sending execute_result message
+2025-11-17T17:16:15.408837Z (10) info: iopub: sending status message
+2025-11-17T17:16:15.419854Z (10) info: shell: sending execute_reply message
+2025-11-17T17:16:17.009284Z (10) debug: shell got a message: execute_request
+2025-11-17T17:16:17.009888Z (10) info: iopub: sending status message
+2025-11-17T17:16:20.208098Z (11) info: iopub: sending execute_input message
+2025-11-17T17:16:20.214204Z (11) info: iopub: sending execute_result message
+2025-11-17T17:16:20.219601Z (11) info: iopub: sending status message
+2025-11-17T17:16:20.225188Z (10) info: shell: sending execute_reply message
+2025-11-17T17:16:21.902796Z (10) debug: shell got a message: execute_request
+2025-11-17T17:16:21.903896Z (10) info: iopub: sending status message
+2025-11-17T17:16:47.618352Z (11) info: iopub: sending execute_input message
+2025-11-17T17:16:47.632241Z (11) info: iopub: sending execute_result message
+2025-11-17T17:16:47.641405Z (11) info: iopub: sending status message
+2025-11-17T17:16:47.652314Z (10) info: shell: sending execute_reply message
+2025-11-17T17:16:47.665925Z (10) debug: shell got a message: comm_info_request
+2025-11-17T17:16:47.667886Z (10) debug: comm_info_request ${}
+2025-11-17T17:16:47.668625Z (10) info: shell: sending comm_info_reply message
+2025-11-17T17:19:41.213783Z (10) debug: shell got a message: execute_request
+2025-11-17T17:19:41.215797Z (10) info: iopub: sending status message
+2025-11-17T17:19:41.339849Z (11) info: iopub: sending execute_input message
+2025-11-17T17:19:41.354448Z (11) info: iopub: sending execute_result message
+2025-11-17T17:19:41.359807Z (11) info: iopub: sending status message
+2025-11-17T17:19:41.366016Z (10) info: shell: sending execute_reply message
+2025-11-17T17:19:43.611617Z (10) debug: shell got a message: execute_request
+2025-11-17T17:19:43.611974Z (10) info: iopub: sending status message
+2025-11-17T17:19:49.503295Z (11) info: iopub: sending execute_input message
+2025-11-17T17:19:49.518184Z (11) info: iopub: sending execute_result message
+2025-11-17T17:19:49.527376Z (11) info: iopub: sending status message
+2025-11-17T17:19:49.535114Z (10) info: shell: sending execute_reply message
+2025-11-17T17:19:59.942777Z (10) debug: shell got a message: execute_request
+2025-11-17T17:19:59.943116Z (10) info: iopub: sending status message
+2025-11-17T17:20:01.289797Z (11) info: iopub: sending execute_input message
+2025-11-17T17:20:01.302131Z (11) info: iopub: sending execute_result message
+2025-11-17T17:20:01.317065Z (11) info: iopub: sending status message
+2025-11-17T17:20:01.325067Z (11) info: shell: sending execute_reply message
+2025-11-17T17:20:04.344600Z (11) debug: shell got a message: execute_request
+2025-11-17T17:20:04.344914Z (11) info: iopub: sending status message
+2025-11-17T17:20:04.374765Z (10) info: iopub: sending execute_input message
+2025-11-17T17:20:04.379537Z (10) info: iopub: sending execute_result message
+2025-11-17T17:20:04.384374Z (10) info: iopub: sending status message
+2025-11-17T17:20:04.391951Z (11) info: shell: sending execute_reply message
+2025-11-17T17:21:47.737162Z (11) debug: shell got a message: execute_request
+2025-11-17T17:21:47.738010Z (11) info: iopub: sending status message
+2025-11-17T17:21:49.078909Z (10) info: iopub: sending execute_input message
+2025-11-17T17:21:49.090272Z (10) info: iopub: sending execute_result message
+2025-11-17T17:21:49.110094Z (10) info: iopub: sending status message
+2025-11-17T17:21:49.118729Z (10) info: shell: sending execute_reply message
+2025-11-17T17:21:50.830425Z (10) debug: shell got a message: execute_request
+2025-11-17T17:21:50.830764Z (10) info: iopub: sending status message
+2025-11-17T17:21:52.135727Z (10) info: iopub: sending execute_input message
+2025-11-17T17:21:52.140593Z (10) info: iopub: sending execute_result message
+2025-11-17T17:21:52.145780Z (10) info: iopub: sending status message
+2025-11-17T17:21:52.150714Z (11) info: shell: sending execute_reply message
+2025-11-17T17:22:00.282874Z (11) debug: shell got a message: execute_request
+2025-11-17T17:22:00.283423Z (11) info: iopub: sending status message
+2025-11-17T17:22:04.522556Z (10) info: iopub: sending execute_input message
+2025-11-17T17:22:04.526791Z (10) info: iopub: sending execute_result message
+2025-11-17T17:22:04.531430Z (10) info: iopub: sending status message
+2025-11-17T17:22:04.538323Z (10) info: shell: sending execute_reply message
+2025-11-17T17:22:12.268901Z (10) debug: shell got a message: execute_request
+2025-11-17T17:22:12.269292Z (10) info: iopub: sending status message
+2025-11-17T17:22:12.298007Z (11) info: iopub: sending execute_input message
+2025-11-17T17:22:12.303005Z (11) info: iopub: sending execute_result message
+2025-11-17T17:22:12.310355Z (11) info: iopub: sending status message
+2025-11-17T17:22:12.315290Z (10) info: shell: sending execute_reply message
+2025-11-17T17:22:15.308081Z (10) debug: shell got a message: execute_request
+2025-11-17T17:22:15.308397Z (10) info: iopub: sending status message
+2025-11-17T17:22:17.569474Z (11) info: iopub: sending execute_input message
+2025-11-17T17:22:17.577134Z (11) info: iopub: sending execute_result message
+2025-11-17T17:22:17.591120Z (11) info: iopub: sending status message
+2025-11-17T17:22:17.598063Z (10) info: shell: sending execute_reply message
+2025-11-17T17:22:27.312506Z (10) debug: shell got a message: execute_request
+2025-11-17T17:22:27.313466Z (10) info: iopub: sending status message
+2025-11-17T17:22:29.769408Z (10) info: iopub: sending execute_input message
+2025-11-17T17:22:29.774596Z (10) info: iopub: sending execute_result message
+2025-11-17T17:22:29.787405Z (10) info: iopub: sending status message
+2025-11-17T17:22:29.793177Z (10) info: shell: sending execute_reply message
+2025-11-17T17:22:59.376308Z (1) info: starting jupyter kernel
+2025-11-17T17:22:59.384254Z (1) debug: read /Users/stephenroe/Library/Jupyter/runtime/kernel-a42e8527-3bcc-4363-bda3-f4092befc9ed.json
+2025-11-17T17:22:59.384459Z (1) debug: listening on tcp://127.0.0.1
+2025-11-17T17:22:59.384945Z (1) debug: setting up control on 53357
+2025-11-17T17:22:59.396187Z (1) debug: setting up shell on 53353
+2025-11-17T17:22:59.396502Z (1) debug: setting up iopub on 53354
+2025-11-17T17:22:59.396703Z (1) debug: setting up hb on 53356
+2025-11-17T17:22:59.528526Z (10) info: iopub: sending execute_input message
+2025-11-17T17:22:59.564441Z (10) debug: shell got a message: kernel_info_request
+2025-11-17T17:22:59.564933Z (10) info: shell: sending kernel_info_reply message
+2025-11-17T17:22:59.574742Z (10) info: iopub: sending status message
+2025-11-17T17:22:59.584232Z (8) debug: ctl got a message: kernel_info_request
+2025-11-17T17:22:59.587216Z (10) debug: shell got a message: kernel_info_request
+2025-11-17T17:22:59.587363Z (10) info: shell: sending kernel_info_reply message
+2025-11-17T17:22:59.593686Z (10) info: iopub: sending status message
+2025-11-17T17:22:59.605611Z (10) debug: shell got a message: execute_request
+2025-11-17T17:22:59.606000Z (10) info: iopub: sending status message
+2025-11-17T17:23:00.169079Z (9) info: Got sigint
+2025-11-17T17:23:00.170225Z (9) info: iopub: sending stream message
+2025-11-17T17:23:00.422184Z (10) info: iopub: sending execute_input message
+2025-11-17T17:23:00.427785Z (10) info: iopub: sending execute_result message
+2025-11-17T17:23:00.434630Z (10) info: iopub: sending status message
+2025-11-17T17:23:00.442643Z (10) info: shell: sending execute_reply message
+2025-11-17T17:23:02.637092Z (10) debug: shell got a message: execute_request
+2025-11-17T17:23:02.637539Z (10) info: iopub: sending status message
+2025-11-17T17:23:04.334958Z (10) info: iopub: sending execute_input message
+2025-11-17T17:23:04.340723Z (10) info: iopub: sending execute_result message
+2025-11-17T17:23:04.346230Z (10) info: iopub: sending status message
+2025-11-17T17:23:04.353768Z (10) info: shell: sending execute_reply message
+2025-11-17T17:27:13.396277Z (1) info: starting jupyter kernel
+2025-11-17T17:27:13.402886Z (1) debug: read /Users/stephenroe/Library/Jupyter/runtime/kernel-87193187-e3a9-4215-9d5d-6fe57d79a369.json
+2025-11-17T17:27:13.403070Z (1) debug: listening on tcp://127.0.0.1
+2025-11-17T17:27:13.403549Z (1) debug: setting up control on 56815
+2025-11-17T17:27:13.418823Z (1) debug: setting up shell on 56811
+2025-11-17T17:27:13.419173Z (1) debug: setting up iopub on 56812
+2025-11-17T17:27:13.419399Z (1) debug: setting up hb on 56814
+2025-11-17T17:27:13.525111Z (10) info: iopub: sending execute_input message
+2025-11-17T17:27:13.560856Z (10) debug: shell got a message: kernel_info_request
+2025-11-17T17:27:13.561297Z (10) info: shell: sending kernel_info_reply message
+2025-11-17T17:27:13.570317Z (10) info: iopub: sending status message
+2025-11-17T17:27:13.578955Z (8) debug: ctl got a message: kernel_info_request
+2025-11-17T17:27:13.581281Z (10) debug: shell got a message: kernel_info_request
+2025-11-17T17:27:13.581410Z (10) info: shell: sending kernel_info_reply message
+2025-11-17T17:27:13.586862Z (10) info: iopub: sending status message
+2025-11-17T17:27:13.597548Z (10) debug: shell got a message: execute_request
+2025-11-17T17:27:13.597942Z (10) info: iopub: sending status message
+2025-11-17T17:27:13.633003Z (10) info: iopub: sending execute_input message
+2025-11-17T17:27:13.637927Z (10) info: iopub: sending execute_result message
+2025-11-17T17:27:13.642483Z (10) info: iopub: sending status message
+2025-11-17T17:27:13.650464Z (10) info: shell: sending execute_reply message
+2025-11-17T17:27:13.679625Z (10) debug: shell got a message: execute_request
+2025-11-17T17:27:13.679863Z (10) info: iopub: sending status message
+2025-11-17T17:27:13.688691Z (11) info: iopub: sending status message
+2025-11-17T17:28:25.608258Z (10) debug: shell got a message: execute_request
+2025-11-17T17:28:25.610518Z (10) info: iopub: sending status message
+2025-11-17T17:28:25.656237Z (10) info: iopub: sending execute_input message
+2025-11-17T17:28:25.661771Z (10) info: iopub: sending execute_result message
+2025-11-17T17:28:25.675176Z (10) info: iopub: sending status message
+2025-11-17T17:28:25.680947Z (10) info: shell: sending execute_reply message
+2025-11-17T17:28:25.712164Z (10) debug: shell got a message: execute_request
+2025-11-17T17:28:25.712468Z (10) info: iopub: sending status message
+2025-11-17T17:28:25.721448Z (11) info: iopub: sending status message
+2025-11-17T17:29:06.909248Z (10) debug: shell got a message: execute_request
+2025-11-17T17:29:06.910323Z (10) info: iopub: sending status message
+2025-11-17T17:29:10.336322Z (11) info: iopub: sending execute_input message
+2025-11-17T17:29:10.343249Z (11) info: iopub: sending execute_result message
+2025-11-17T17:29:10.353149Z (11) info: iopub: sending status message
+2025-11-17T17:29:10.359861Z (10) info: shell: sending execute_reply message
+2025-11-17T17:29:10.447789Z (10) debug: shell got a message: execute_request
+2025-11-17T17:29:10.448453Z (10) info: iopub: sending status message
+2025-11-17T17:29:10.460800Z (10) info: iopub: sending status message
+2025-11-17T17:29:49.319999Z (10) debug: shell got a message: execute_request
+2025-11-17T17:29:49.320849Z (10) info: iopub: sending status message
+2025-11-17T17:29:49.378344Z (11) info: iopub: sending execute_input message
+2025-11-17T17:29:49.382947Z (11) info: iopub: sending execute_result message
+2025-11-17T17:29:49.397542Z (11) info: iopub: sending status message
+2025-11-17T17:29:49.405851Z (11) info: shell: sending execute_reply message
+2025-11-17T17:29:49.444056Z (11) debug: shell got a message: execute_request
+2025-11-17T17:29:49.444360Z (11) info: iopub: sending status message
+2025-11-17T17:29:49.452869Z (10) info: iopub: sending status message
+2025-11-17T17:29:50.676336Z (11) debug: shell got a message: execute_request
+2025-11-17T17:29:50.676806Z (11) info: iopub: sending status message
+2025-11-17T17:29:50.700963Z (11) info: iopub: sending execute_input message
+2025-11-17T17:29:50.706580Z (11) info: iopub: sending execute_result message
+2025-11-17T17:29:50.712208Z (11) info: iopub: sending status message
+2025-11-17T17:29:50.721924Z (11) info: shell: sending execute_reply message
+2025-11-17T17:29:50.743637Z (11) debug: shell got a message: execute_request
+2025-11-17T17:29:50.743886Z (11) info: iopub: sending status message
+2025-11-17T17:29:50.752288Z (11) info: iopub: sending status message
+2025-11-17T17:29:51.953649Z (11) debug: shell got a message: execute_request
+2025-11-17T17:29:51.954029Z (11) info: iopub: sending status message
+2025-11-17T17:29:53.623058Z (10) info: iopub: sending execute_input message
+2025-11-17T17:29:53.634935Z (10) info: iopub: sending execute_result message
+2025-11-17T17:29:53.653304Z (10) info: iopub: sending status message
+2025-11-17T17:29:53.661031Z (10) info: shell: sending execute_reply message
+2025-11-17T17:29:53.702101Z (10) debug: shell got a message: execute_request
+2025-11-17T17:29:53.702437Z (10) info: iopub: sending status message
+2025-11-17T17:29:53.710134Z (10) info: iopub: sending status message
+2025-11-17T17:31:03.143372Z (10) debug: shell got a message: execute_request
+2025-11-17T17:31:03.144315Z (10) info: iopub: sending status message
+2025-11-17T17:31:03.171468Z (11) info: iopub: sending execute_input message
+2025-11-17T17:31:03.176603Z (11) info: iopub: sending execute_result message
+2025-11-17T17:31:03.181622Z (11) info: iopub: sending status message
+2025-11-17T17:31:03.197813Z (10) info: shell: sending execute_reply message
+2025-11-17T17:31:03.268414Z (10) debug: shell got a message: execute_request
+2025-11-17T17:31:03.268946Z (10) info: iopub: sending status message
+2025-11-17T17:31:03.282995Z (11) info: iopub: sending status message
+2025-11-17T17:31:21.283787Z (10) debug: shell got a message: execute_request
+2025-11-17T17:31:21.285152Z (10) info: iopub: sending status message
+2025-11-17T17:31:22.741688Z (10) info: iopub: sending execute_input message
+2025-11-17T17:31:22.747127Z (10) info: iopub: sending execute_result message
+2025-11-17T17:31:22.753343Z (10) info: iopub: sending status message
+2025-11-17T17:31:22.765840Z (11) info: shell: sending execute_reply message
+2025-11-17T17:31:22.843505Z (11) debug: shell got a message: execute_request
+2025-11-17T17:31:22.843920Z (11) info: iopub: sending status message
+2025-11-17T17:31:22.857144Z (10) info: iopub: sending status message
+2025-11-17T17:31:53.998837Z (10) debug: shell got a message: execute_request
+2025-11-17T17:31:54.003098Z (10) info: iopub: sending status message
+2025-11-17T17:31:55.218544Z (10) info: iopub: sending execute_input message
+2025-11-17T17:31:55.225235Z (10) info: iopub: sending execute_result message
+2025-11-17T17:31:55.231709Z (10) info: iopub: sending status message
+2025-11-17T17:31:55.247795Z (11) info: shell: sending execute_reply message
+2025-11-17T17:31:55.331481Z (11) debug: shell got a message: execute_request
+2025-11-17T17:31:55.331853Z (11) info: iopub: sending status message
+2025-11-17T17:31:55.344354Z (11) info: iopub: sending status message
+2025-11-17T17:32:43.873313Z (11) debug: shell got a message: execute_request
+2025-11-17T17:32:43.877275Z (11) info: iopub: sending status message
+2025-11-17T17:32:45.254468Z (11) info: iopub: sending execute_input message
+2025-11-17T17:32:45.266287Z (11) info: iopub: sending execute_result message
+2025-11-17T17:32:45.272523Z (11) info: iopub: sending status message
+2025-11-17T17:32:45.290448Z (11) info: shell: sending execute_reply message
+2025-11-17T17:32:45.373832Z (11) debug: shell got a message: execute_request
+2025-11-17T17:32:45.374174Z (11) info: iopub: sending status message
+2025-11-17T17:32:45.390830Z (11) info: iopub: sending status message
+2025-11-17T17:33:39.943236Z (11) debug: shell got a message: execute_request
+2025-11-17T17:33:39.944522Z (11) info: iopub: sending status message
+2025-11-17T17:33:40.007776Z (10) info: iopub: sending execute_input message
+2025-11-17T17:33:40.012194Z (10) info: iopub: sending execute_result message
+2025-11-17T17:33:40.028804Z (10) info: iopub: sending status message
+2025-11-17T17:33:40.037696Z (11) info: shell: sending execute_reply message
+2025-11-17T17:33:40.130405Z (11) debug: shell got a message: execute_request
+2025-11-17T17:33:40.130685Z (11) info: iopub: sending status message
+2025-11-17T17:33:40.140172Z (10) info: iopub: sending status message
+2025-11-17T17:33:42.678571Z (10) debug: shell got a message: execute_request
+2025-11-17T17:33:42.678937Z (10) info: iopub: sending status message
+2025-11-17T17:33:42.702873Z (11) info: iopub: sending execute_input message
+2025-11-17T17:33:42.708004Z (11) info: iopub: sending execute_result message
+2025-11-17T17:33:42.715452Z (11) info: iopub: sending status message
+2025-11-17T17:33:42.721107Z (11) info: shell: sending execute_reply message
+2025-11-17T17:33:42.749883Z (11) debug: shell got a message: execute_request
+2025-11-17T17:33:42.750176Z (11) info: iopub: sending status message
+2025-11-17T17:33:42.756066Z (10) info: iopub: sending status message
+2025-11-17T17:33:47.550100Z (10) debug: shell got a message: execute_request
+2025-11-17T17:33:47.550810Z (10) info: iopub: sending status message
+2025-11-17T17:33:55.201230Z (11) info: iopub: sending execute_input message
+2025-11-17T17:33:55.229162Z (11) info: iopub: sending execute_result message
+2025-11-17T17:33:55.238747Z (11) info: iopub: sending status message
+2025-11-17T17:33:55.252166Z (10) info: shell: sending execute_reply message
+2025-11-17T17:33:55.333283Z (10) debug: shell got a message: execute_request
+2025-11-17T17:33:55.333805Z (10) info: iopub: sending status message
+2025-11-17T17:33:55.345541Z (10) info: iopub: sending status message
+2025-11-17T17:36:03.567958Z (10) debug: shell got a message: execute_request
+2025-11-17T17:36:03.569320Z (10) info: iopub: sending status message
+2025-11-17T17:36:03.607510Z (11) info: iopub: sending execute_input message
+2025-11-17T17:36:03.611877Z (11) info: iopub: sending execute_result message
+2025-11-17T17:36:03.622263Z (11) info: iopub: sending status message
+2025-11-17T17:36:03.627048Z (10) info: shell: sending execute_reply message
+2025-11-17T17:36:03.656067Z (10) debug: shell got a message: execute_request
+2025-11-17T17:36:03.656583Z (10) info: iopub: sending status message
+2025-11-17T17:36:03.671775Z (10) info: iopub: sending status message
+2025-11-17T17:36:04.623964Z (10) debug: shell got a message: execute_request
+2025-11-17T17:36:04.624779Z (10) info: iopub: sending status message
+2025-11-17T17:36:04.651562Z (10) info: iopub: sending execute_input message
+2025-11-17T17:36:04.663445Z (10) info: iopub: sending execute_result message
+2025-11-17T17:36:04.668627Z (10) info: iopub: sending status message
+2025-11-17T17:36:04.673665Z (10) info: shell: sending execute_reply message
+2025-11-17T17:36:04.700727Z (10) debug: shell got a message: execute_request
+2025-11-17T17:36:04.701130Z (10) info: iopub: sending status message
+2025-11-17T17:36:04.707799Z (10) info: iopub: sending status message
+2025-11-17T17:36:05.787950Z (10) debug: shell got a message: execute_request
+2025-11-17T17:36:05.788434Z (10) info: iopub: sending status message
+2025-11-17T17:36:13.264772Z (11) info: iopub: sending execute_input message
+2025-11-17T17:36:13.275838Z (11) info: iopub: sending execute_result message
+2025-11-17T17:36:13.292685Z (11) info: iopub: sending status message
+2025-11-17T17:36:13.300587Z (11) info: shell: sending execute_reply message
+2025-11-17T17:36:13.358678Z (11) debug: shell got a message: execute_request
+2025-11-17T17:36:13.359041Z (11) info: iopub: sending status message
+2025-11-17T17:36:13.367018Z (10) info: iopub: sending status message
+2025-11-17T17:36:46.438202Z (10) debug: shell got a message: execute_request
+2025-11-17T17:36:46.439247Z (10) info: iopub: sending status message
+2025-11-17T17:36:46.484566Z (11) info: iopub: sending execute_input message
+2025-11-17T17:36:46.490148Z (11) info: iopub: sending execute_result message
+2025-11-17T17:36:46.494260Z (11) info: iopub: sending status message
+2025-11-17T17:36:46.504891Z (11) info: shell: sending execute_reply message
+2025-11-17T17:36:46.592164Z (11) debug: shell got a message: execute_request
+2025-11-17T17:36:46.592403Z (11) info: iopub: sending status message
+2025-11-17T17:36:46.601309Z (10) info: iopub: sending status message
+2025-11-17T17:36:54.618163Z (10) debug: shell got a message: execute_request
+2025-11-17T17:36:54.619341Z (10) info: iopub: sending status message
+2025-11-17T17:36:54.669693Z (11) info: iopub: sending execute_input message
+2025-11-17T17:36:54.675744Z (11) info: iopub: sending execute_result message
+2025-11-17T17:36:54.681765Z (11) info: iopub: sending status message
+2025-11-17T17:36:54.695587Z (11) info: shell: sending execute_reply message
+2025-11-17T17:36:54.726649Z (11) debug: shell got a message: execute_request
+2025-11-17T17:36:54.726879Z (11) info: iopub: sending status message
+2025-11-17T17:36:54.735097Z (10) info: iopub: sending status message
