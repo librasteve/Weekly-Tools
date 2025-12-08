@@ -2,7 +2,7 @@
 use Cro::HTTP::Client;
 use Air::Functional;
 
-my $week = DateTime.now - 7 * 24 * 60 * 60;   # FIXME
+my $week = DateTime.now - 7 * 24 * 60 * 60;
 
 my %authors = (
     'raku-community-modules' => 'Various Artistes',
@@ -39,6 +39,7 @@ my %authors = (
     'jubilatious1' => 'jubilatious1',
     'schultzdavid' => 'David Schultz',
     'timo'        => 'timo',
+    'ShimmerFairy' => 'ShimmerFairy',
 );
 
 
@@ -47,11 +48,12 @@ my %authors = (
 # add commits
 # pull not pulls on links
 
-my $owner = 'rakudo';
+#my $owner = 'rakudo';
 #my $owner = 'MoarVM';
-#my $owner = 'Raku';
+my $owner = 'Raku';
 
-my $repo  = 'rakudo';
+my $repo  = 'raku.org';
+#my $repo  = 'rakudo';
 #my $repo  = 'nqp';
 #my $repo  = 'MoarVM';
 #my $repo  = 'doc';
@@ -60,6 +62,7 @@ my $repo  = 'rakudo';
 my $info  = 'commits';
 #my $info  = 'pulls';
 #my $info  = 'issues';
+
 my $token = %*ENV<GITHUB_TOKEN>;
 
 my $client = Cro::HTTP::Client.new(
@@ -83,21 +86,23 @@ sub fetch {
 sub fix($url is rw) {
     $url.=subst: /api\./, '';
     $url.=subst: /repos\//, '';
+    $url.=subst: /pulls\//, 'pull/';
     $url;
 }
 
 my @issues = |await fetch;
-#say @issues[0].keys;
+say @issues[0].keys;
 
 say ul [
     for @issues -> %i {
+#        last unless %i<created-at>;
         if %i<created_at>.DateTime > $week {
             my $href = %i<url>.&fix;
 
             li [
                 a :$href, %i<title>;
                 ' by ';
-                em %authors{%i<user><login>};
+                em (%authors{%i<user><login>} // %i<user><login>);
             ]
         }
     }
