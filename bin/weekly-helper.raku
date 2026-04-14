@@ -4,54 +4,6 @@ use DOM::Tiny;
 use Air::Functional :BASE;
 use Air::Base;
 
-my %authors = (
-    'zef:raku-community-modules' => 'Various Artistes',
-    'zef:l10n'        => 'Various Artistes',
-    'zef:FCO'         => 'Fernando Correa de Oliveira',
-    'zef:antononcube' => 'Anton Antonov',
-    'zef:finanalyst'  => 'Richard Hainsworth',
-    'zef:librasteve'  => 'Steve Roe',
-    'zef:avuserow'    => 'Adrian Kreher',
-    'zef:lizmat'      => 'Elizabeth Mattijsen',
-    'zef:jjatria'     => 'JJ Atria',
-    'zef:wayland'     => 'Tim Nelson',
-    'zef:grizzlysmit' => 'Francis Grizzly Smit',
-    'zef:melezhik'    => 'Alexey Melezhik',
-    'zef:dwarring'    => 'David Warring',
-    'zef:bduggan'     => 'Brian Duggan',
-    'zef:tony-o'      => 'Tony O\'Dell',
-    'zef:ingy'        => 'Ingy döt Net',
-    'github:nkh'      => 'Nadim Khemir',
-    'zef:nkh'         => 'Nadim Khemir',
-    'zef:patrickb'    => 'Patrick Böker',
-    'zef:arunvickram' => 'Arun Vickram',
-    'zef:kuerbis'     => 'Matthäus Kiem',
-    'zef:japhb'       => 'Geoffrey Broadwell',
-    'zef:ab5tract'    => 'John Longwalker',
-    'zef:arkiuat'     => 'Eric Forste',
-    'zef:tbrowder'    => 'Tom Browder',
-    'zef:martimm'     => 'Marcel Timmerman',
-    'zef:raiph'       => 'Ralph Mellor',
-    'zef:masterduke'  => 'Daniel Green',
-    'zef:nige123'     => 'Nigel Hamilton',
-    'cpan:NINE'       => 'Stefan Seifert',
-    'zef:massa'       => 'Massa Humberto',
-    'github:Raku'     => 'Core Mongers',
-    'github:FCO'      => 'Fernando Correa de Oliveira',
-    'zef:vushu'       => 'vushu',
-    'github:grondilu' => 'grondilu',
-    'zef:coke'        => 'Will Coleda',
-    'zef:jonathanstowe' => 'Jonathan Stowe',
-    'zef:martimm'     => 'Marcel Timmerman',
-    'zef:knarkhov'    => 'kostas',
-    'zef:kpye'        => 'Kevin Pye',
-    'zef:skaji'       => 'skaji',
-    'zef:winfredraj'  => 'Winfred Raj',
-    'zef:apogee'      => 'Matt Doughty',
-    'zef:ugexe'       => 'Nick Logan',
-    'zef:Zer0-Tolerance' => 'Zer0-Tolerance',
-    'zef:sp1983'      => 'sp1983',
-);
 
 # version and datetime indexes
 my $aut = 2;
@@ -88,37 +40,6 @@ sub fetch-table-data($url) {
     }
 }
 
-sub output-table-data(@rows, :$HTML=1) {
-    if !$HTML {
-        for @rows -> @cells {
-            say "@cells[0] by @cells[2].";
-        }
-    }
-
-    if $HTML {
-        for @rows -> @cells {
-            say (
-                li [ a(:href(@cells[1]), @cells[0]), safe(' by '), em(@cells[2]), safe('.') ]
-            )
-        }
-    }
-}
-
-sub output-hash-data(%hash, :$HTML=1) {
-    if !$HTML {
-        for %hash.kv -> $author, @items {
-            say @items.map(*[0]).join(', ') ~ ' by ' ~ $author,
-        }
-    }
-
-    if $HTML {
-        say ul do for %hash.kv -> $author, @items {
-            given @items.map( {a(:href(.[1]), .[0]).HTML } ).join(',') {
-                li safe( $_ ~ ' by ' ~ em $author );
-            }
-        }
-    }
-}
 
 my $url = 'https://raku.land/recent';
 react {
@@ -157,9 +78,6 @@ react {
             for @latest -> @cells {
                 say @cells[0] ~ ': ' ~ @cells[3] if @cells[$vsi] < v0.0.10
             }
-
-#            my @sorted = @latest.sort: { $^b[$dti] <=> $^a[$dti] };
-#            output-table-data @sorted;
 
         } else {
             say "No table found at $url";
