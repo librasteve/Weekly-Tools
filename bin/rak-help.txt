@@ -1,0 +1,238 @@
+rak.raku - 21st century grep / find / ack / ag / rg on steroids
+---------------------------------------------------------------
+Arguments overview:
+‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+
+Pattern specification:
+Either as first argument, or as --pattern=foo option, or as pattern(s)
+in --patterns-from=file option.
+
+ Special markers:
+ '/ << bar >> /'          Raku regex indicated by being bounded by / /
+ '{ .ends-with("bar") }'  Raku code indicated by being bounded by { }
+ '*.starts-with("foo")'   Raku WhateverCode starting with *
+ 's:foo bar'              Multiple patterns, split on whitespace:
+ jp:foo                   JSON path specification (with --json-per-xxx)
+ §string   String should match as a word
+ ^string   String should match at start of line
+ string$   String should match at end of line
+ ^string$  String should match with line entirely
+ string    String should match anywhere in line
+ !string   String should NOT match anywhere in line
+ &string   Additional string should ALSO match anywhere in line
+
+ Pattern type overrides:
+ --type=auto         Interpret special markers in pattern as above (default)
+ --type=regex        Interpret pattern as a regex (without special markers)
+ --type=code         Interpret pattern as code (without special markers)
+ --type=json-path    Interpret pattern as a JSON path (without jp: prefix)
+ --type=words        Pattern must match as a word
+ --type=starts-with  Pattern must match at start of line
+ --type=ends-with    Pattern must match at end of line
+ --type=equal        Pattern must match entirely
+ --type=not          Pattern must NOT match
+ --type=split        Multiple patterns, split on whitespace
+ --type=contains     Pattern must match anywhere (default if no markers)
+
+ Additional patterns:
+ --and=bar           Must ALSO match anywhere in line
+ --andnot=bar        Must ALSO NOT match anywhere in line
+ --or=bar            May ALSO match anywhere in line
+ --ornot=bar         May ALSO NOT match anywhere in line
+
+String search pattern modifiers:
+ --ignorecase  Ignore distinction between upper, lower and title case letters
+ --ignoremark  Only compare base characters, ignore additional marks
+ --smartcase   As --ignorecase if pattern does *NOT* contain any uppercase
+ --smartmark   As --ignoremark if pattern does *NOT* contain any accents
+
+Item producers:
+ --per-line[=producer]  Produce lines for pattern matching
+ --per-file[=producer]  Produce whole file for pattern matching
+ --encoding[=utf8-c8]   Encoding to be used when reading text files
+ --find            Produce absolute paths for pattern matching
+ --csv-per-line    Produce rows from Text::CSV object for pattern matching
+ --pdf-info        Produce meta-info of PDF file as a single hash
+ --pdf-per-file    Produce text of PDF file as a single string
+ --pdf-per-line    Produce text of PDF file as lines of text
+ --json-per-file   Interpret whole file as a single JSON for matching
+ --json-per-elem   Interpret whole file as JSON, match each top level element
+ --json-per-line   Interpret each line as JSON for pattern matching
+ --blame-per-file  Produce Git::Blame::File object for pattern matcing
+ --blame-per-line  Produce Git::Blame::Line objects for pattern matching
+ --mbc             Produce one MoarVM::Bytecode object per file for matching
+ --mbc-frames      Produce MoarVM::Bytecode::Frame objects for matching
+ --mbc-strings     Produce MoarVM::Bytecode string-heap strings for matching
+ --unicode         Produce names of codepoints for pattern matching
+
+Code pattern helpers:
+ --repository=lib      First look for any modules to load in the "lib" directory
+ --module=foo          Load module "foo" before compiling Raku code pattern
+ --quietly             Disable warnings when executing pattern (default: False)
+ --silently[=out,err]  Capture output when executing pattern (default: False)
+
+Haystack specification:
+ path1 path2 ...          All other arguments are paths (default: current dir)
+ --paths=specification    Comma separated list of paths instead of ^^
+ --files-from=file        Read files to inspect from given file
+ --paths-from=file        Read path specifications from given file
+ --under-version-control  Select paths that are under version control
+ --recurse-symlinked-dir  Recurse into symlinked directories? (default: don't)
+ --recurse-unmatched-dir  Recurse into directories not matching (default: don't)
+ --eco-code[=name]        All code in local ecosystem cache
+ --eco-doc[=name]         All documentation in local ecosystem cache
+ --eco-meta[=name]        One or more Raku ecosystem's module's META
+ --eco-provides[=name]    All code in modules in local ecosystem cache
+ --eco-scripts[=name]     All code in scripts in local ecosystem cache
+ --eco-tests[=name]       All code in test files in local ecosystem cache
+ --rakudo-all             All files in Rakudo
+ --rakudo-c               All C programming language files in Rakudo
+ --rakudo-doc             All documentation files
+ --rakudo-java            All Java programming language files in Rakudo
+ --rakudo-js              All Javascript programming language files in Rakudo
+ --rakudo-nqp             All NQP related files in Rakudo
+ --rakudo-perl            All Perl programming language files in Rakudo
+ --rakudo-raku            All Raku Programming Language files in Rakudo
+ --rakudo-shell           All shell scripts / batch files in Rakudo
+ --rakudo-test            All testing related files in Rakudo
+ --rakudo-yaml            All files containing YAML of some sort in Rakudo
+
+Filesystem filters:
+ --accessed=condition    Check on epoch when file was last accessed
+ --accept=code           Given an IO of a file, return if file acceptable
+ --auto-decompress       File may be gzipped (.gz) or bzip2ed (.bz2)
+ --blocks=condition      Number of filesystem blocks used by file
+ --created=condition     Check on epoch when file was created
+ --deny=code             Given an IO of a file, return if **NOT** acceptable
+ --device-number         Number of device on which file is located
+ --dir=expression        Directory basename filter, default: not ^.
+ --exec=program          Run program, include if successful
+ --extensions=spec       By group (e.g. #raku) and/or comma separated
+ --file=expression       File basename filter, default: all
+ --filesize=condition    Number of bytes of data used by file
+ --group=selector        File is owned by group names / expression
+ --gid=condition         File is owned by given gid
+ --hard-links=condition  Number of hard-links to file on file system
+ --has-setgid            Has SETGID bit set in attributes
+ --has-setuid            Has SETUID bit set in attributes
+ --inode=condition       Inode number of file on file system
+ --is-empty              File does (not) contain any data
+ --is-executable         File can (not) be executed by owner
+ --is-group-executable   File can (not) be executed by group members of owner
+ --is-group-readable     File can (not) be read by group members of owner
+ --is-group-writable     File can (not) be written to by group members of owner
+ --is-moarvm             File is (not) a MoarVM bytecode file
+ --is-owned-by-group     File is (not) owned by group of user
+ --is-owned-by-user      File is (not) owned by user
+ --is-pdf                File is (not) a PDF file
+ --is-readable           File can (not) be read by owner
+ --is-sticky             Has STICKY bit set in attributes
+ --is-symbolic-link      File is (not) a symbolic link
+ --is-text               File contains (does not contain) text
+ --is-world-executable   File can (not) be executed by anybody
+ --is-world-readable     File can (not) be read by anybody
+ --is-world-writable     File can (not) be written to by anybody
+ --is-writable           File can (not) be written to by owner
+ --meta-modified=cond    Check on epoch when meta-info of file was last changed
+ --mode=condition        The full mode value of the file
+ --modified=condition    Check on epoch when file was last changed
+ --shell=action          Run shell command, include if successful
+ --user=selector         File is owned by user names / expression
+ --uid=condition         File is owned by given uid
+
+Result modifiers:
+ --also-first=N            List first N lines if there is a match
+ --always-first=N          List first N lines always
+ --context=N               List N lines around any line with a match
+ --before-context=N        List N lines before any line with a match
+ --after-context=N         List N lines after any line with a match
+ --paragraph-context       List all lines in the same paragraph around a match
+ --passthru-context        List all lines if there is at least one match
+ --passthru                List all lines always
+ --invert-match            Select lines that do **not** match
+ --max-matches-per-file=N  Maximum number of matches per file, default: all
+ --count-only              Only return count of matches
+ --stats-only              Only return statistics of the search
+ --files-with-matches      Only return filenames with matches
+ --files-without-matches   Only return filenames without matches
+ --matches-only            Only produce the actual matches
+ --unique                  Only return unique lines
+ --frequencies             Only return lines and their frequencies
+ --classify=classifier     Classify lines by a key (or not)
+ --categorize=categorizer  Classify lines by zero or more keys
+
+Listing modifiers:
+ --human                     Force defaults as if a human is watching
+ --absolute                  Show paths as absolute paths
+ --break[=string]            String to show between different files
+ --group-matches             Show filename only once on a separate line
+ --show-blame                Show git blame information if possible
+ --show-filename             Show the filename in which match occurred
+ --file-separator-null       Separate filenames with null bytes
+ --show-item-number          Show the item number in which match occurred
+ --summary-if-larger-than=N  Summarize matching line if longer than N chars
+ --trim                      Remove whitespace, true if no context
+ --highlight                 Highlight any matches
+ --highlight-before=xxx      String to put before match
+ --highlight-after=yyy       String to put after match
+ --proximate[=N]             Grouping of matched lines
+ --only-first[=N]            Only N results, default N = 1, absence = 1000
+ --output-file=filename      Store output to indicated file (default: STDOUT)
+ --output-dir=directory      Store output ino indicated directory / group
+ --pager                     Pager to use (default: RAK_PAGER // none)
+ --stats                     Also show statistics
+
+Content modifiers:
+ --modify-files        Change content of files using the Callable pattern
+ --backup[=extension]  Make backup of file with extension (default: .bak)
+ --rename-files        Rename files using the Callable pattern
+ --dryrun              Don't actually make any changes, just run the process
+ --no-modifications    Do not allow any modifications to be made
+
+Resource usage:
+ --batch[=N]          Max number of files to process in a thread (default: 64)
+ --degree[=N | code]  Max workers to use for processing (default: cores - 1)
+
+Special options:
+ --edit[=editor]        Go edit the result in an editor, (default EDITOR or vim)
+ --vimgrep              Produce output in :vimgrep format
+ --checkout=string      Checkout branch if pattern matches single branch name
+ --sourcery             Treat pattern as code, use candidates as result
+ --backtrace            Interpret text as a Raku backtrace, use as result
+ --execute-raku[=code]  Run raku code for exception, use as result
+
+Option management:
+ --save=name            Translate --name to all other options specified,
+                        remove if --save was the only option specified
+ --description=text     Add description to custom option
+ --ack                  Activate "ack" compatibility options
+ --list-custom-options  List all previously saved options
+
+General options:
+ --help          Show this
+ --help=subject  Show additional help about subject, out of:
+   argument   | code       | content  | debugging | examples | faq
+   filesystem | general    | haystack | item      | listing  | option
+   pattern    | philosophy | resource | result    | special  | string
+ --help foo      Search for "foo" in all help subjects
+ --help=faq foo  Search for "foo" in subject "faq"
+ --progress      Show search progress on STDERR
+ --version       Show version information
+ --verbose       Be more verbose, if applicable
+
+Debugging options:
+ --dont-catch             Let code exceptions be thrown with backtrace
+ --list-known-extensions  Show all known extensions and their group namep
+ --list-expanded-options  List all options given after having been expanded
+ --rak                    Show arguments to "rak" plumbing before running
+
+Argument format:
+ foo        Positional argument
+ --foo      Option "foo" is True
+ --/foo     Option "foo" is False
+ --no-foo   Option "foo" is False
+ --foo=bar  Option "foo" is "bar"
+ -fo        Single letter options "f" and "o" True
+ -/ba       Single letter options "b" and "a" False
+ -j2        Single letter option "j" with value 2
+

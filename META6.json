@@ -1,25 +1,19 @@
 {
-  "auth": "zef:librasteve",
-  "authors": [
-    "librasteve"
-  ],
-  "build-depends": [
-  ],
-  "depends": [
-  ],
-  "description": "blah blah blah",
-  "license": "Artistic-2.0",
-  "name": "Weekly::Tools",
-  "perl": "6.d",
-  "provides": {
-    "Weekly::Tools": "lib/Weekly/Tools.rakumod"
-  },
-  "resources": [
-  ],
-  "source-url": "https://github.com/librasteve/Weekly-Tools.git",
-  "tags": [
-  ],
-  "test-depends": [
-  ],
-  "version": "0.0.1"
+    "name": "Weekly::Tools",
+    "description": "blah blah blah",
+    "version": "0.0.1",
+    "authors": [
+        "librasteve"
+    ],
+    "auth": "zef:librasteve",
+    "depends": [
+        "DOM::Tiny",
+        "Jupyter::Chatbook"
+    ],
+    "build-depends": [],
+    "provides": {
+        "Weekly::Tools": "lib/Weekly/Tools.rakumod"
+    },
+    "license": "Artistic-2.0",
+    "source-url": "https://github.com/librasteve/Weekly-Tools.git"
 }

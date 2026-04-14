@@ -8,8 +8,9 @@ Weekly::Tools
 SYNOPSIS
 ========
 
-```raku
+```
 weekly-helper.raku
+gh-prs2.raku
 ```
 
 DESCRIPTION
@@ -23,9 +24,24 @@ ROADMAP
 
 ### HackerNews Search
 
-```site:https://news.ycombinator.com raku```  < put this is a browser and use Google Tools to limit to last week
+```site:https://news.ycombinator.com raku```  
 
-then integrate with rak https://chatgpt.com/share/68dab109-df04-8009-bc4c-99449b305f4f
+ - put this is a browser and use Google Tools to limit to last week
+ - get first 3 pages
+ - then integrate with rak https://chatgpt.com/share/68dab109-df04-8009-bc4c-99449b305f4f
+
+### Bluesky, Mastodon Comments
+
+### Better weekly-helper
+
+### Better gh-prs2
+
+### Combined w-h and gh-prs
+
+ - combine name lookup
+
+
+
 
 
 AUTHOR

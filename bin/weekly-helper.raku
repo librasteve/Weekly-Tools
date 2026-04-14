@@ -37,6 +37,20 @@ my %authors = (
     'cpan:NINE'       => 'Stefan Seifert',
     'zef:massa'       => 'Massa Humberto',
     'github:Raku'     => 'Core Mongers',
+    'github:FCO'      => 'Fernando Correa de Oliveira',
+    'zef:vushu'       => 'vushu',
+    'github:grondilu' => 'grondilu',
+    'zef:coke'        => 'Will Coleda',
+    'zef:jonathanstowe' => 'Jonathan Stowe',
+    'zef:martimm'     => 'Marcel Timmerman',
+    'zef:knarkhov'    => 'kostas',
+    'zef:kpye'        => 'Kevin Pye',
+    'zef:skaji'       => 'skaji',
+    'zef:winfredraj'  => 'Winfred Raj',
+    'zef:apogee'      => 'Matt Doughty',
+    'zef:ugexe'       => 'Nick Logan',
+    'zef:Zer0-Tolerance' => 'Zer0-Tolerance',
+    'zef:sp1983'      => 'sp1983',
 );
 
 # version and datetime indexes
