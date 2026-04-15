@@ -10,83 +10,59 @@ use Data::Dump::Tree;
 my $date = Date.today;
 my $dir = "../data";
 
-sub next-filename {
+sub save-body($body) {
     my $max = 0;
     for dir($dir) -> $file {
         if $file.basename ~~ /^ 'dists-' $date '-' (\d**3) $/ {
             $max max= +$0;
         }
     }
-    sprintf("%s-%s-%03d", 'dists', $date, $max+1);
+    my $filename = sprintf("%s-%s-%03d", 'dists', $date, $max+1);
+    say "Saved $filename";
+    spurt "$dir/$filename", $body;
 }
 
-#my $filename = next-filename();
-#spurt "$dir/$filename", "<html>some content</html>";
-#
-#say "Saved to $filename";
-
-sub latest-file {
+sub previous-body {
     my @files = dir($dir).grep({
         .basename ~~ /^ 'dists-' \d**4 '-' \d**2 '-' \d**2 '-' \d**3 $/
     });
-    @files.sort(*.basename).tail;
+
+    my $file = @files.sort(*.basename)[*-2];
+    say "Loaded $file";
+    slurp $file;
 }
 
-my $file = latest-file();
-my $content = slurp $file;
-say "Loaded $file:";
-say $content;
+sub fetch-dists($url = 'https://360.zef.pm') {
+    start {
+        my $resp = await Cro::HTTP::Client.get($url);
+        my $body = await $resp.body-text;
+        $body;
+    }
+}
 
 
-#sub fetch-table-data($url) {
-#    start {
-#        my $resp = await Cro::HTTP::Client.get($url);
-#        return await $resp.body-text;
-#    }
-#}
-#
-#
-#my $url = 'https://360.zef.pm';
-#
-#my $dist-file = "$path/dists-$dt.txt";
-#
-#react {
-#    whenever fetch-table-data($url) -> $body {
-#        spurt $dist-file, $body;
-#
-#        my $raku = $body.&from-json;
-#
-#
-#
-#        my %dists;
-#
-#        for |$raku -> $item {
-#            my $name = $item<dist>.split(':ver')[0];
-#            %dists{$name} = 1
-#        }
-#
-#
-#        repl;
-#
-#        say %dists.keys;
-#        say +%dists.keys;
-#
-#        spurt $dist-file, %dists.&to-json;
-#
-#        my %dists-last = (slurp $dist-file).&from-json;
-#
-#        repl;
-#
-#        exit;
-#    }
-#}
+react {
+    whenever fetch-dists -> $body {
+        save-body $body;
 
-#`[
-thoughts
-  - use 360 throughout
-  - store as JSON (ie HTML)
-  - need to store all 360 as json (not just the dist keys)
-]
+        my @raku = $body.&from-json;
 
+        @raku = previous-body.&from-json;   #iamerejh
 
+        say @raku.head.keys.sort;
+
+        my %dists;
+
+        for @raku -> $item {
+            my $name = $item<name>;
+            %dists{$name} = 1
+        }
+
+        say %dists.keys;
+        say +%dists.keys;
+        repl;
+
+        exit;
+    }
+}
 
