@@ -1,66 +1,4 @@
-#!/usr/bin/env raku
 use Cro::HTTP::Client;
-
-my @new-names;
-
-### Part I - Get and Save https://360.zef.pm
-
-use JSON::Fast;
-use Data::Dump::Tree;
-
-my $date = Date.today;
-my $dir = "../data";
-
-sub fetch-dists-json($url = 'https://360.zef.pm') {
-    start {
-        my $resp = await Cro::HTTP::Client.get($url);
-        my $body = await $resp.body-text;
-        $body;
-    }
-}
-
-sub save-this($body) {
-    my $max = 0;
-    for dir($dir) -> $file {
-        if $file.basename ~~ /^ 'dists-' $date '-' (\d**3) $/ {
-            $max max= +$0;
-        }
-    }
-    my $filename = sprintf("%s-%s-%03d", 'dists', $date, $max+1);
-    say "Saving $filename";
-    spurt "$dir/$filename", $body;
-}
-
-sub prev-body {
-    my @files = dir($dir).grep({
-        .basename ~~ /^ 'dists-' \d**4 '-' \d**2 '-' \d**2 '-' \d**3 $/
-    });
-
-    my $file = @files.sort(*.basename)[*-2];
-    say "Loading $file";
-    slurp $file;
-}
-
-sub get-data($body, :$key) {
-    my @raku = $body.&from-json;
-    #say @raku.head.keys.sort;
-
-    @raku.map({ .{$key} }).unique;
-}
-
-react {
-    whenever fetch-dists-json() -> $this-body {
-        save-this $this-body;
-
-        say my @this-names = $this-body.&get-data(:key<name>);
-        my @prev-names = prev-body().&get-data(:key<name>);
-
-        @new-names = (@this-names (-) @prev-names).keys;
-    }
-}
-
-### Part II - Get and Process https://raku.land/recent
-
 use DOM::Tiny;
 use Air::Functional :BASE;
 use Air::Base;
@@ -170,8 +108,6 @@ sub output-hash-data(%hash, :$HTML=1) {
 my $url = 'https://raku.land/recent';
 react {
     whenever fetch-table-data($url) -> @rows {
-        say @new-names;
-
         if @rows {
             my $week = DateTime.now - 7 * 24 * 60 * 60;
 
@@ -216,4 +152,3 @@ react {
         exit;
     }
 }
-

@@ -18,7 +18,7 @@ sub save-body($body) {
         }
     }
     my $filename = sprintf("%s-%s-%03d", 'dists', $date, $max+1);
-    say "Saved $filename";
+    say "Saving $filename";
     spurt "$dir/$filename", $body;
 }
 
@@ -28,7 +28,7 @@ sub previous-body {
     });
 
     my $file = @files.sort(*.basename)[*-2];
-    say "Loaded $file";
+    say "Loading $file";
     slurp $file;
 }
 
@@ -42,12 +42,12 @@ sub fetch-dists($url = 'https://360.zef.pm') {
 
 
 react {
-    whenever fetch-dists -> $body {
+    whenever fetch-dists() -> $body {
         save-body $body;
 
         my @raku = $body.&from-json;
 
-        @raku = previous-body.&from-json;   #iamerejh
+#        @raku = previous-body.&from-json;   #iamerejh
 
         say @raku.head.keys.sort;
 
