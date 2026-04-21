@@ -59,12 +59,15 @@ react {
     }
 }
 
+
 ### Part II - Get and Process https://raku.land/recent
 
 use DOM::Tiny;
 use Air::Functional :BASE;
 use Air::Base;
+use Weekly::Tools::Nicks;
 
+#zef
 my %authors = (
     'zef:raku-community-modules' => 'Various Artistes',
     'zef:l10n'        => 'Various Artistes',
@@ -100,6 +103,8 @@ my %authors = (
     'github:Raku'     => 'Core Mongers',
 );
 
+my %fezzn = Authors.new.fezzn;
+
 # version and datetime indexes
 my $aut = 2;
 my $vsi = 3;
@@ -120,7 +125,7 @@ sub fetch-table-data($url) {
                     @cells.push: $a.text.trim;
                     @cells.push: "https://raku.land" ~ $a<href>;
                     $a<href> ~~ /^ \/ (<-[\/]>+) /;
-                    @cells.push: %authors{~$0} // ~$0;
+                    @cells.push: %fezzn{~$0} // ~$0;
                 } elsif my $t = $cell.at('time') {
                     @cells.push: $t<datetime>.DateTime;
                 } elsif my $v = $cell.text.trim ~~ /^ \d+ \. \d+ \. \d+ $/  {    # parse "0.2.2" etc.

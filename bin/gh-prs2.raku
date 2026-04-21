@@ -1,12 +1,14 @@
 #!/usr/bin/env raku
 use Cro::HTTP::Client;
 use Air::Functional;
+use Weekly::Tools::Nicks;
 
 use Data::Dump::Tree;
 
 
 my $week = DateTime.now - 7 * 24 * 60 * 60;
 
+#github
 my %authors = (
     'raku-community-modules' => 'Various Artistes',
     'l10n'          => 'Various Artistes',
@@ -39,7 +41,7 @@ my %authors = (
     'NINE'          => 'Stefan Seifert',
     'massa'         => 'Massa Humberto',
     'Raku'          => 'Core Mongers',
-    'jubilatious1'  => 'jubilatious1',
+    'jubilatious1'  => 'William Michels',
     'schultzdavid'  => 'David Schultz',
     'timo'          => 'Timo Paulssen',
     'ShimmerFairy'  => 'ShimmerFairy',
@@ -49,8 +51,17 @@ my %authors = (
     '2colours'      => 'Márton Polgár',
     'dontlaugh'     => 'Coleman McFarlane',
     'm-doughty'     => 'Matt Doughty',
-    '4zv4l'         => 'Alex Daniel',  #?
+    '4zv4l'         => 'Alex Daniel',
+    'AlexDaniel'    => 'Alex Daniel',
+    'codesections'  => 'Daniel Sockwell',
+    'jnthn'         => 'Jonathan Worthington',
+    'ugexe'         => 'Nick Logan',
+    'tyil'          => 'Patrick Spek',
+    'niner'         => 'Stefan Seifert',
+    'vrurg'         => 'Vadim Belman',
 );
+
+my %nicks = Authors.new.nicks;
 
 my $token = %*ENV<GITHUB_TOKEN>;
 
@@ -112,7 +123,8 @@ sub do-list(@tuple) {
             %i .= &remap;
 
             if %i<created_at>.DateTime > $week {
-                my $byline = %authors{%i<author>} // %i<author>;
+                my $byline = %nicks{%i<author>} // %i<author>;
+#                my $byline = %authors{%i<author>} // %i<author>;
                 li [
                     a :href(%i<url>), %i<title>;
                     { span ' by '; em $byline; } unless $repo eq 'problem-solving';

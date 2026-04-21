@@ -1,0 +1,38 @@
+use Test;
+use Weekly::Tools::Nicks;
+
+# Normalize and compare ignoring order differences
+sub normalize(Str $str) {
+    $str.trans(' ' => '').comb.sort.join
+}
+
+my $expect;
+my $got;
+
+my %a = (
+foo => { x => 1, y => [1, 2] },
+bar => [3, 4],
+baz => 42,
+);
+
+my %b = (
+foo => { y => [3], z => 2 },
+bar => [5],
+);
+
+$expect = '$$$(((((()))))),,,,,,,,1122233445::::::[[]]aabbfoorxyzz{{}}';
+$got = merge(%a, %b).raku.&normalize;
+is $got eq $expect, True, 'merge';
+
+
+my %c = (
+    foo => ['john doe', 'eric snork'],
+    bar => 'dave whom',
+);
+
+$expect = '"""""""""""",,===>>>aabcddeeeffhhijkmnnoooooooorrrsvw{}';
+$got = evert(%c).raku.&normalize;
+is $got eq $expect, True, 'evert';
+
+
+done-testing;
