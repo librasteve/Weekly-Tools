@@ -67,42 +67,6 @@ use Air::Functional :BASE;
 use Air::Base;
 use Weekly::Tools::Nicks;
 
-#zef
-my %authors = (
-    'zef:raku-community-modules' => 'Various Artistes',
-    'zef:l10n'        => 'Various Artistes',
-    'zef:FCO'         => 'Fernando Correa de Oliveira',
-    'zef:antononcube' => 'Anton Antonov',
-    'zef:finanalyst'  => 'Richard Hainsworth',
-    'zef:librasteve'  => 'Steve Roe',
-    'zef:avuserow'    => 'Adrian Kreher',
-    'zef:lizmat'      => 'Elizabeth Mattijsen',
-    'zef:jjatria'     => 'JJ Atria',
-    'zef:wayland'     => 'Tim Nelson',
-    'zef:grizzlysmit' => 'Francis Grizzly Smit',
-    'zef:melezhik'    => 'Alexey Melezhik',
-    'zef:dwarring'    => 'David Warring',
-    'zef:bduggan'     => 'Brian Duggan',
-    'zef:tony-o'      => 'Tony O\'Dell',
-    'zef:ingy'        => 'Ingy döt Net',
-    'github:nkh'      => 'Nadim Khemir',
-    'zef:nkh'         => 'Nadim Khemir',
-    'zef:patrickb'    => 'Patrick Böker',
-    'zef:arunvickram' => 'Arun Vickram',
-    'zef:kuerbis'     => 'Matthäus Kiem',
-    'zef:japhb'       => 'Geoffrey Broadwell',
-    'zef:ab5tract'    => 'John Longwalker',
-    'zef:arkiuat'     => 'Eric Forste',
-    'zef:tbrowder'    => 'Tom Browder',
-    'zef:martimm'     => 'Marcel Timmerman',
-    'zef:raiph'       => 'Ralph Mellor',
-    'zef:masterduke'  => 'Daniel Green',
-    'zef:nige123'     => 'Nigel Hamilton',
-    'cpan:NINE'       => 'Stefan Seifert',
-    'zef:massa'       => 'Massa Humberto',
-    'github:Raku'     => 'Core Mongers',
-);
-
 my %fezzn = Authors.new.fezzn;
 
 # version and datetime indexes
@@ -209,7 +173,7 @@ react {
             output-hash-data %by-author;
 
             for @latest -> @cells {
-                say @cells[0] ~ ': ' ~ @cells[3] if @cells[$vsi] < v0.0.10
+                say @cells[0] ~ ': ' ~ @cells[3] if (@cells[$vsi] cmp v0.0.10) ~~ Less
             }
 
 #            my @sorted = @latest.sort: { $^b[$dti] <=> $^a[$dti] };
