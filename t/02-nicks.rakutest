@@ -21,7 +21,7 @@ my %b = (
 );
 
 $expect = '$$$(((((()))))),,,,,,,,1122233445::::::[[]]aabbfoorxyzz{{}}';
-$got = merge(%a, %b).raku.&normalize;
+$got = combine(%a, %b).raku.&normalize;
 is $got eq $expect, True, 'merge';
 
 

@@ -1,15 +1,15 @@
 unit module Nicks;
 
-multi sub merge(Hash \a, \b --> Hash()) is export {
+multi sub combine(Hash \a, \b --> Hash()) is export {
     (a.keys ∪ b.keys).keys
         .map: -> $k {
         $k =>
             (a{$k}:exists) && (b{$k}:exists)
-            ?? merge(a{$k}, b{$k})
+            ?? combine(a{$k}, b{$k})
             !! a{$k} // b{$k}
     }
 }
-multi sub merge(\a, \b --> Array()) is export {
+multi sub combine(\a, \b --> Array()) is export {
     (|a, |b).unique
 }
 

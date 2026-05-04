@@ -7,62 +7,7 @@ use Data::Dump::Tree;
 
 
 my $week = DateTime.now - 7 * 24 * 60 * 60;
-
-#github
-my %authors = (
-    'raku-community-modules' => 'Various Artistes',
-    'l10n'          => 'Various Artistes',
-    'FCO'           => 'Fernando Correa de Oliveira',
-    'antononcube'   => 'Anton Antonov',
-    'finanalyst'    => 'Richard Hainsworth',
-    'librasteve'    => 'Steve Roe',
-    'avuserow'      => 'Adrian Kreher',
-    'lizmat'        => 'Elizabeth Mattijsen',
-    'jjatria'       => 'JJ Atria',
-    'wayland'       => 'Tim Nelson',
-    'grizzlysmit'   => 'Francis Grizzly Smit',
-    'melezhik'      => 'Alexey Melezhik',
-    'dwarring'      => 'David Warring',
-    'bduggan'       => 'Brian Duggan',
-    'tony-o'        => 'Tony O\'Dell',
-    'ingy'          => 'Ingy döt Net',
-    'nkh'           => 'Nadim Khemir',
-    'patrickbkr'    => 'Patrick Böker',
-    'arunvickram'   => 'Arun Vickram',
-    'kuerbis'       => 'Matthäus Kiem',
-    'japhb'         => 'Geoffrey Broadwell',
-    'ab5tract'      => 'John Longwalker',
-    'arkiuat'       => 'Eric Forste',
-    'tbrowder'      => 'Tom Browder',
-    'martimm'       => 'Marcel Timmerman',
-    'raiph'         => 'Ralph Mellor',
-    'masterduke'    => 'Daniel Green',
-    'nige123'       => 'Nigel Hamilton',
-    'NINE'          => 'Stefan Seifert',
-    'massa'         => 'Massa Humberto',
-    'Raku'          => 'Core Mongers',
-    'jubilatious1'  => 'William Michels',
-    'schultzdavid'  => 'David Schultz',
-    'timo'          => 'Timo Paulssen',
-    'ShimmerFairy'  => 'ShimmerFairy',
-    '0rir'          => '0rir',
-    'coke'          => 'Will Coleda',
-    'frou'          => 'Duncan Holm',
-    '2colours'      => 'Márton Polgár',
-    'dontlaugh'     => 'Coleman McFarlane',
-    'm-doughty'     => 'Matt Doughty',
-    '4zv4l'         => 'Alex Daniel',
-    'AlexDaniel'    => 'Alex Daniel',
-    'codesections'  => 'Daniel Sockwell',
-    'jnthn'         => 'Jonathan Worthington',
-    'ugexe'         => 'Nick Logan',
-    'tyil'          => 'Patrick Spek',
-    'niner'         => 'Stefan Seifert',
-    'vrurg'         => 'Vadim Belman',
-);
-
 my %nicks = Authors.new.nicks;
-
 my $token = %*ENV<GITHUB_TOKEN>;
 
 my $client = Cro::HTTP::Client.new(
@@ -123,7 +68,6 @@ sub do-list(@tuple) {
 
             if %i<created_at>.DateTime > $week {
                 my $byline = %nicks{%i<author>} // %i<author>;
-#                my $byline = %authors{%i<author>} // %i<author>;
                 li [
                     a :href(%i<url>), %i<title>;
                     { span ' by '; em $byline; } unless $repo eq 'problem-solving';
