@@ -196,7 +196,7 @@ react {
 #            }
 
         } else {
-            say "No table found at $url";
+            note "No table found at $url";
         }
         exit;
     }

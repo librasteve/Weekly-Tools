@@ -62,19 +62,19 @@ sub do-list(@tuple) {
         %r
     }
 
-    ul [
-        for @items -> %i {
-            %i .= &remap;
+    my @lis;
+    for @items -> %i {
+        %i .= &remap;
 
-            if %i<created_at>.DateTime > $week {
-                my $byline = %nicks{%i<author>} // %i<author>;
-                li [
-                    a :href(%i<url>), %i<title>;
-                    { span ' by '; em $byline; } unless $repo eq 'problem-solving';
-                ]
-            }
+        if %i<created_at>.DateTime > $week {
+            my $byline = %nicks{%i<author>} // %i<author>;
+            @lis.push: li [
+                a :href(%i<url>), %i<title>;
+                { span ' by '; em $byline; } unless $repo eq 'problem-solving';
+            ];
         }
-    ];
+    }
+    @lis
 }
 
 #   ($owner, $repo, $info)
@@ -100,11 +100,12 @@ my @headings = [
 my $html;
 
 for @headings -> ($heading, $count) {
-    $html ~= div [
-        h3 $heading;
-        div [do-list(@tuples[$++]) for ^$count];
-    ];
+    my @lis;
+    @lis.append: do-list(@tuples[$++]) for ^$count;
+    if @lis {
+        $html ~= h3($heading) ~ ul(@lis);
+    }
 }
 
-say $html.trim;
+print $html;
 
