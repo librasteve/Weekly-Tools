@@ -78,6 +78,8 @@ class Authors is export {
         'Zer0-Tolerance'        => ['Zer0-Tolerance'],
         'sp1983'                => ['sp1983'],
         'cro'                   => ['cro'],
+        'Matthew Stuckwisch'    => ['guifa'],
+        'Skaji'                 => ['skaji'],
     );
 
     has %.nicks;

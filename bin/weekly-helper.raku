@@ -89,8 +89,9 @@ sub fetch-table-data($url) {
 
         my @rows;
         for $table.find('tr') -> $tr {
+            next if $tr.at('th');
             my @cells;
-            for $tr.find('th, td') -> $cell {
+            for $tr.find('td') -> $cell {
                 if my $a = $cell.at('a') {
                     @cells.push: $a.text.trim;
                     @cells.push: "https://raku.land" ~ $a<href>;
@@ -144,12 +145,14 @@ sub output-hash-data(%hash, :$HTML=1) {
 
 my $url = 'https://raku.land/recent';
 react {
-    whenever fetch-table-data($url) -> @rows {
+    my $p1 = fetch-table-data($url);
+    my $p2 = fetch-table-data("$url?page=2");
+    whenever Promise.allof($p1, $p2) {
+        my @rows = |$p1.result, |$p2.result;
         print "<!-- Compared $prev-filename to $latest-filename -->";
         if @rows {
             my $week = DateTime.now - 7 * 24 * 60 * 60;
 
-            my @head = @rows.shift;
             my @recent = @rows.grep: { @^row[$dti] > $week }
 
             my %by-module;

@@ -32,11 +32,10 @@ ROADMAP
 
 ### Bluesky, Mastodon Comments
 
-### Better weekly-helper
-
-### Better gh-prs2
-
 ### Combined w-h and gh-prs
+
+ - check 'by' in gh-prs
+ - prompt for unrecognised authors (need external yml?)
 
 
 
