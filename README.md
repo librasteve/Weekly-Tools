@@ -38,8 +38,6 @@ ROADMAP
 
 ### Combined w-h and gh-prs
 
- - combine name lookup
-
 
 
 
