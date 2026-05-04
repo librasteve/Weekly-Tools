@@ -1,15 +1,15 @@
 unit module Nicks;
 
-multi sub combine(Hash \a, \b --> Hash()) is export {
+multi sub merge(Hash \a, \b --> Hash()) is export {
     (a.keys ∪ b.keys).keys
         .map: -> $k {
         $k =>
             (a{$k}:exists) && (b{$k}:exists)
-            ?? combine(a{$k}, b{$k})
+            ?? merge(a{$k}, b{$k})
             !! a{$k} // b{$k}
     }
 }
-multi sub combine(\a, \b --> Array()) is export {
+multi sub merge(\a, \b --> Array()) is export {
     (|a, |b).unique
 }
 
@@ -75,6 +75,9 @@ class Authors is export {
         'Wenzel P. P. Peppmeyer'=> ['gfldex'],
         'Zoltan Ness'           => ['Z-raku'],
         'ccmywish'              => ['ccmywish'],
+        'Zer0-Tolerance'        => ['Zer0-Tolerance'],
+        'sp1983'                => ['sp1983'],
+        'cro'                   => ['cro'],
     );
 
     has %.nicks;

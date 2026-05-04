@@ -119,7 +119,6 @@ sub do-list(@tuple) {
 
     ul [
         for @items -> %i {
-#ddt %i if %i<url> ~~ / 9e25edce4fc4c3b8f6fb718777ca31bdded4c845 /;
             %i .= &remap;
 
             if %i<created_at>.DateTime > $week {
