@@ -2,6 +2,7 @@
 use Cro::HTTP::Client;
 
 my @new-names;
+my ($prev-filename, $latest-filename);
 
 ### Part I - Get and Save https://360.zef.pm
 
@@ -20,42 +21,47 @@ sub fetch-dists-json($url = 'https://360.zef.pm') {
 }
 
 sub save-this($body) {
-    my $max = 0;
-    for dir($dir) -> $file {
-        if $file.basename ~~ /^ 'dists-' $date '-' (\d**3) $/ {
-            $max max= +$0;
-        }
-    }
-    my $filename = sprintf("%s-%s-%03d", 'dists', $date, $max+1);
-    say "Saving $filename";
-    spurt "$dir/$filename", $body;
+    note "Saving dists-$date";
+    spurt "$dir/dists-$date", $body;
+    "dists-$date"
 }
 
 sub prev-body {
+    my $target = Date.today - 7;
     my @files = dir($dir).grep({
-        .basename ~~ /^ 'dists-' \d**4 '-' \d**2 '-' \d**2 '-' \d**3 $/
+        .basename ~~ /^ 'dists-' (\d**4 '-' \d**2 '-' \d**2) $/
+        && abs(Date.new(~$0) - $target) <= 2
     });
 
-    my $file = @files.sort(*.basename)[*-2];
-    say "Loading $file";
-    slurp $file;
+    my $file = @files.sort({ abs(Date.new(.basename.substr(6)) - $target) }).head;
+    note "Loading $file";
+    (slurp($file), $file.basename)
 }
 
 sub get-data($body, :$key) {
     my @raku = $body.&from-json;
-    #say @raku.head.keys.sort;
-
     @raku.map({ .{$key} }).unique;
 }
 
-react {
-    whenever fetch-dists-json() -> $this-body {
-        save-this $this-body;
+sub process-dists($body) {
+    my @this-names = $body.&get-data(:key<name>);
+    my ($prev-body-text, $pf) = prev-body();
+    $prev-filename = $pf;
+    my @prev-names = $prev-body-text.&get-data(:key<name>);
+    @new-names = (@this-names (-) @prev-names).keys;
+}
 
-        say my @this-names = $this-body.&get-data(:key<name>);
-        my @prev-names = prev-body().&get-data(:key<name>);
-
-        @new-names = (@this-names (-) @prev-names).keys;
+my $today-path = "$dir/dists-$date";
+if $today-path.IO.e && (now - $today-path.IO.modified) < 3600 {
+    note "Using cached dists-$date (updated within last hour)";
+    $latest-filename = "dists-$date";
+    process-dists slurp($today-path);
+} else {
+    react {
+        whenever fetch-dists-json() -> $this-body {
+            $latest-filename = save-this $this-body;
+            process-dists $this-body;
+        }
     }
 }
 
@@ -128,7 +134,7 @@ sub output-hash-data(%hash, :$HTML=1) {
     }
 
     if $HTML {
-        say ul do for %hash.kv -> $author, @items {
+        print ul do for %hash.kv -> $author, @items {
             given @items.map( {a(:href(.[1]), .[0]).HTML } ).join(',') {
                 li safe( $_ ~ ' by ' ~ em $author );
             }
@@ -139,8 +145,7 @@ sub output-hash-data(%hash, :$HTML=1) {
 my $url = 'https://raku.land/recent';
 react {
     whenever fetch-table-data($url) -> @rows {
-        say @new-names;
-
+        print "<!-- Compared $prev-filename to $latest-filename -->";
         if @rows {
             my $week = DateTime.now - 7 * 24 * 60 * 60;
 
@@ -164,20 +169,31 @@ react {
             }
             my @latest = %by-module.values;
 
-            my %by-author;
+            my %by-author-new;
+            my %by-author-updated;
             for @latest -> @row {
                 my $author = @row[$aut];
-                %by-author{$author}.push: @row;
+                if @row[0] ∈ @new-names {
+                    %by-author-new{$author}.push: @row;
+                } else {
+                    %by-author-updated{$author}.push: @row;
+                }
             }
 
-            output-hash-data %by-author;
-
-            for @latest -> @cells {
-                say @cells[0] ~ ': ' ~ @cells[3] if (@cells[$vsi] cmp v0.0.10) ~~ Less
+            if %by-author-new {
+                print h3 'New Modules';
+                output-hash-data %by-author-new;
             }
 
-#            my @sorted = @latest.sort: { $^b[$dti] <=> $^a[$dti] };
-#            output-table-data @sorted;
+            if %by-author-updated {
+                print h3 'Updated Modules';
+                output-hash-data %by-author-updated;
+            }
+
+#            # rough way to check new list
+#            for @latest -> @cells {
+#                say @cells[0] ~ ': ' ~ @cells[3] if (@cells[$vsi] cmp v0.0.10) ~~ Less
+#            }
 
         } else {
             say "No table found at $url";
