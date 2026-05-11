@@ -37,8 +37,8 @@ ROADMAP
  - check 'by' in gh-prs
  - prompt for unrecognised authors (need external yml?)
 
-
-
+### RakuAST Stats
+looking back at historic editions rakudoweekly.blog there has been a summary of progress on RakuAST by counting remaining tests to pass - please get the latest stats from GH
 
 
 AUTHOR
@@ -50,6 +50,7 @@ COPYRIGHT AND LICENSE
 =====================
 
 Copyright 2025 Henley Cloud Consulting Ltd.
+Copyright 2026 Stephen Roe.
 
 This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 
