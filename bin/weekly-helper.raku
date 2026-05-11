@@ -22,7 +22,8 @@ my @headings = [
 #    ['Core Developments',           0],
 ];
 
-my (@new-names, $prev-filename, $latest-filename) = load-dists();
+my ($prev-filename, $latest-filename, $new-names) = load-dists();
+note "New dist count: {$new-names.elems} — first few: {$new-names.head(5).join(', ')}";
 
 render-github(@tuples, @headings);
-render-rakuland(@new-names, :$prev-filename, :$latest-filename);
+render-rakuland($new-names, :$prev-filename, :$latest-filename);

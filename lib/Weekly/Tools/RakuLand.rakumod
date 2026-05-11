@@ -48,14 +48,15 @@ sub output-hash-data(%hash) {
     }
 }
 
-sub render-rakuland(@new-names, :$prev-filename, :$latest-filename) is export {
+sub render-rakuland($new-names, :$prev-filename, :$latest-filename) is export {
     my $url = 'https://raku.land/recent';
     react {
         my $p1 = fetch-table-data($url);
         my $p2 = fetch-table-data("$url?page=2");
+
         whenever Promise.allof($p1, $p2) {
             my @rows = |$p1.result, |$p2.result;
-            print "<!-- Compared $prev-filename to $latest-filename -->";
+            print "\n<!-- Compared $prev-filename to $latest-filename -->";
             my $week = DateTime.now - 7 * 24 * 60 * 60;
             my @recent = @rows.grep: { @^row[$dti] > $week };
 
@@ -70,9 +71,10 @@ sub render-rakuland(@new-names, :$prev-filename, :$latest-filename) is export {
             my (%new, %updated);
             for %by-module.values -> @row {
                 my $author = @row[$aut];
-                if @row[0] ∈ @new-names { %new{$author}.push:     @row }
+                if @row[0] ∈ $new-names { %new{$author}.push:     @row }
                 else                    { %updated{$author}.push: @row }
             }
+
 
             if %new     { print h3 'New Modules';     output-hash-data %new     }
             if %updated { print h3 'Updated Modules'; output-hash-data %updated }
