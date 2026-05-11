@@ -2,6 +2,7 @@
 use lib '.';
 use Weekly::Tools::Dists;
 use Weekly::Tools::RakuLand;
+use Weekly::Tools::GitHub;
 
 my @tuples = [
     <Raku problem-solving issues>,

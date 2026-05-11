@@ -15,7 +15,10 @@
     "build-depends": [],
     "provides": {
         "Weekly::Tools": "lib/Weekly/Tools.rakumod",
-        "Weekly::Tools::Nicks": "lib/Weekly/Tools/Nicks.rakumod"
+        "Weekly::Tools::Nicks": "lib/Weekly/Tools/Nicks.rakumod",
+        "Weekly::Tools::Dists": "lib/Weekly/Tools/Dists.rakumod",
+        "Weekly::Tools::RakuLand": "lib/Weekly/Tools/RakuLand.rakumod",
+        "Weekly::Tools::GitHub": "lib/Weekly/Tools/GitHub.rakumod"
     },
     "license": "Artistic-2.0",
     "source-url": "https://github.com/librasteve/Weekly-Tools.git"
