@@ -83,6 +83,7 @@ class Authors is export {
         'cro'                   => ['cro'],
         'Matthew Stuckwisch'    => ['guifa'],
         'Skaji'                 => ['skaji'],
+        'Greg Donald'           => ['gdonald'],
     );
 
     has %.nicks;

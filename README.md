@@ -40,6 +40,10 @@ ROADMAP
 ### RakuAST Stats
 looking back at historic editions rakudoweekly.blog there has been a summary of progress on RakuAST by counting remaining tests to pass - please get the latest stats from GH
 
+### Prompt for missing nick
+ie if zef: still in the output
+auto follow th GH path
+
 
 AUTHOR
 ======
