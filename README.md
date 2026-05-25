@@ -22,20 +22,23 @@ Weekly::Tools - a set of ad hoc "helper" scripts to get the raku weekly written
 ROADMAP
 =======
 
-### HackerNews Search
+### Google Comments Search
 
-```site:https://news.ycombinator.com raku```  
+use Google CSE
 
- - put this is a browser and use Google Tools to limit to last week
- - get first 3 pages
- - then integrate with rak https://chatgpt.com/share/68dab109-df04-8009-bc4c-99449b305f4f
+1. Google API key — already have one? If not: console.cloud.google.com → enable "Custom Search API" → create credentials → copy key →
+   export GOOGLE_API_KEY=...
+
+2. CSE ID — programmablesearchengine.google.com → create engine → set to "Search the entire web" → copy the cx ID → export
+   GOOGLE_CSE_ID=...
+
+Then run as:
+GOOGLE_API_KEY=$GOOGLE_API_KEY GOOGLE_CSE_ID=$GOOGLE_CSE_ID raku -I. bin/google-search.raku > scum.html
+
+iamerejh
 
 ### Bluesky, Mastodon Comments
 
-### Combined w-h and gh-prs
-
- - check 'by' in gh-prs
- - prompt for unrecognised authors (need external yml?)
 
 ### RakuAST Stats
 looking back at historic editions rakudoweekly.blog there has been a summary of progress on RakuAST by counting remaining tests to pass - please get the latest stats from GH
