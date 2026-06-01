@@ -24,18 +24,7 @@ ROADMAP
 
 ### Google Comments Search
 
-use Google CSE
-
-1. Google API key — already have one? If not: console.cloud.google.com → enable "Custom Search API" → create credentials → copy key →
-   export GOOGLE_API_KEY=...
-
-2. CSE ID — programmablesearchengine.google.com → create engine → set to "Search the entire web" → copy the cx ID → export
-   GOOGLE_CSE_ID=...
-
-Then run as:
-GOOGLE_API_KEY=$GOOGLE_API_KEY GOOGLE_CSE_ID=$GOOGLE_CSE_ID raku -I. bin/google-search.raku > scum.html
-
-iamerejh
+screen scraoe
 
 ### Bluesky, Mastodon Comments
 
