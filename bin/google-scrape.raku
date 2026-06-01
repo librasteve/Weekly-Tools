@@ -3,6 +3,7 @@ use lib '.';
 use DOM::Tiny;
 use Air::Functional :BASE;
 use Air::Base;
+use Weekly::Tools::Nicks;
 
 sub fetch-page(Int $start) {
     my $url = "https://www.google.com/search?q=raku+programming+language&tbs=qdr:w&start=$start&hl=en&num=10";
@@ -39,6 +40,27 @@ sub snippet(Str $text) {
     $out
 }
 
+my %nicks = Authors.new.nicks;
+
+sub byline(Str $href) {
+    my $nicks := %nicks;
+    given $href {
+        when / 'github.com/' (<-[/]>+) / {
+            $nicks{~$0} // ~$0
+        }
+        when / ['x.com' | 'twitter.com'] '/' (<-[/]>+) / {
+            $nicks{~$0} // ~$0
+        }
+        when / 'reddit.com/r/' (<-[/]>+) / {
+            'r/' ~ $0
+        }
+        default {
+            $href ~~ / ^ 'https://' ([ <-[/]>+ ]) /;
+            ~$0 // $href
+        }
+    }
+}
+
 sub find-link($h3) {
     my $node = $h3.parent;
     while $node {
@@ -49,15 +71,19 @@ sub find-link($h3) {
     Nil
 }
 
+sub strip-tags(Str $html) {
+    $html.subst(/ '<' <-[>]>* '>' /, ' ', :g).subst(/\s+/, ' ', :g).trim
+}
+
 sub result-context($a-node) {
-    my $node = $a-node;
-    for ^4 {
-        last unless $node.parent && $node.parent.tag ne 'body';
+    my $link-len = strip-tags(~$a-node).chars;
+    my $node = $a-node.parent;
+    while $node && $node.tag ne 'body' {
+        my $text = strip-tags(~$node);
+        return $text if $text.chars > $link-len + 50;
         $node = $node.parent;
     }
-    (~$node).subst(/ '<' <-[>]>* '>' /, ' ', :g)
-             .subst(/\s+/, ' ', :g)
-             .trim
+    ''
 }
 
 my @lis;
@@ -72,7 +98,8 @@ for 0, 10, 20 -> $start {
         my $title = $h3.text.trim;
         next unless $title;
         my $snip  = snippet(result-context($a));
-        @lis.push: li [ a(:href($href), $title), ' — ', $snip ];
+        my $by    = byline($href);
+        @lis.push: li [ a(:href($href), $title), ' — ', $snip, ' by ', em($by) ];
     }
 }
 
