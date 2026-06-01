@@ -10,12 +10,12 @@ SYNOPSIS
 
 ```
 raku -I. bin/weekly-helper.raku
-raku -I. bin/google-scrape.raku
-raku -I. bin/hn-search.raku
 raku -I. bin/lobsters-search.raku
 raku -I. bin/stackoverflow-search.raku
 raku -I. bin/mastodon-search.raku
 raku -I. bin/bsky-search.raku
+raku -I. bin/hn-search.raku
+raku -I. bin/google-scrape.raku
 ```
 
 DESCRIPTION
