@@ -9,13 +9,13 @@ SYNOPSIS
 ========
 
 ```
-raku -I. bin/weekly-helper.raku      > scum.html
-raku -I. bin/google-scrape.raku     >> scum.html
-raku -I. bin/hn-search.raku         >> scum.html
-raku -I. bin/lobsters-search.raku   >> scum.html
-raku -I. bin/stackoverflow-search.raku >> scum.html
-raku -I. bin/mastodon-search.raku   >> scum.html
-raku -I. bin/bsky-search.raku       >> scum.html
+raku -I. bin/weekly-helper.raku
+raku -I. bin/google-scrape.raku
+raku -I. bin/hn-search.raku
+raku -I. bin/lobsters-search.raku
+raku -I. bin/stackoverflow-search.raku
+raku -I. bin/mastodon-search.raku
+raku -I. bin/bsky-search.raku
 ```
 
 DESCRIPTION
