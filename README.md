@@ -9,11 +9,13 @@ SYNOPSIS
 ========
 
 ```
-raku -I. bin/weekly-helper.raku  > scum.html
-raku -I. bin/google-scrape.raku >> scum.html
-raku -I. bin/hn-search.raku     >> scum.html
-raku -I. bin/mastodon-search.raku >> scum.html
-raku -I. bin/bsky-search.raku   >> scum.html
+raku -I. bin/weekly-helper.raku      > scum.html
+raku -I. bin/google-scrape.raku     >> scum.html
+raku -I. bin/hn-search.raku         >> scum.html
+raku -I. bin/lobsters-search.raku   >> scum.html
+raku -I. bin/stackoverflow-search.raku >> scum.html
+raku -I. bin/mastodon-search.raku   >> scum.html
+raku -I. bin/bsky-search.raku       >> scum.html
 ```
 
 DESCRIPTION
@@ -21,9 +23,6 @@ DESCRIPTION
 
 Weekly::Tools - a set of ad hoc "helper" scripts to get the raku weekly written
 
-
-ROADMAP
-=======
 
 ### Google Comments Search
 
@@ -38,14 +37,30 @@ Queries the Algolia HN API for comments mentioning `raku` (word boundary) in the
 Deduplicates by story, resolves author handles via `Weekly::Tools::Nicks`, outputs linked snippets.
 Script: `bin/hn-search.raku`
 
+### Lobsters Comments Search
+
+Scrapes `lobste.rs/search?q=raku&what=comments&order=newest`, filters to past 7 days.
+Resolves author handles via `Weekly::Tools::Nicks`.
+Script: `bin/lobsters-search.raku`
+
+### Stack Overflow Questions
+
+Scrapes `stackoverflow.com/questions/tagged/raku?tab=Newest`, filters to past 7 days.
+Script: `bin/stackoverflow-search.raku`
+
 ### Bluesky, Mastodon Comments
 
 AppleScript drives real Chrome to scrape Bluesky search results for `#rakulang` (Latest tab), filtered to last 7 days.
-Script: `bin/bsky-search.raku`
+Script: `bin/bsky-search.raku` [may need manual login]
 
 Fetches Mastodon public tag timeline for `#rakulang` via the mastodon.social REST API, filtered to last 7 days.
 Script: `bin/mastodon-search.raku`
 
+
+ROADMAP
+=======
+
+### Search Integration
 
 ### RakuAST Stats
 looking back at historic editions rakudoweekly.blog there has been a summary of progress on RakuAST by counting remaining tests to pass - please get the latest stats from GH
