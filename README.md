@@ -9,8 +9,11 @@ SYNOPSIS
 ========
 
 ```
-weekly-helper.raku
-gh-prs2.raku
+raku -I. bin/weekly-helper.raku  > scum.html
+raku -I. bin/google-scrape.raku >> scum.html
+raku -I. bin/hn-search.raku     >> scum.html
+raku -I. bin/mastodon-search.raku >> scum.html
+raku -I. bin/bsky-search.raku   >> scum.html
 ```
 
 DESCRIPTION
@@ -24,9 +27,24 @@ ROADMAP
 
 ### Google Comments Search
 
-screen scraoe
+AppleScript drives real Chrome (with your Google session) to scrape 3 pages of results.
+Query: `raku programming language` with `tbs=qdr:w` past-week filter.
+Requires: Chrome → View → Developer → Allow JavaScript from Apple Events.
+Script: `bin/google-scrape.raku`
+
+### HN Comments Search
+
+Queries the Algolia HN API for comments mentioning `raku` (word boundary) in the past 7 days.
+Deduplicates by story, resolves author handles via `Weekly::Tools::Nicks`, outputs linked snippets.
+Script: `bin/hn-search.raku`
 
 ### Bluesky, Mastodon Comments
+
+AppleScript drives real Chrome to scrape Bluesky search results for `#rakulang` (Latest tab), filtered to last 7 days.
+Script: `bin/bsky-search.raku`
+
+Fetches Mastodon public tag timeline for `#rakulang` via the mastodon.social REST API, filtered to last 7 days.
+Script: `bin/mastodon-search.raku`
 
 
 ### RakuAST Stats
