@@ -9,13 +9,9 @@ SYNOPSIS
 ========
 
 ```
-raku -I. bin/weekly-helper.raku
-raku -I. bin/lobsters-search.raku
-raku -I. bin/stackoverflow-search.raku
-raku -I. bin/mastodon-search.raku
-raku -I. bin/bsky-search.raku
-raku -I. bin/hn-search.raku
-raku -I. bin/google-scrape.raku
+raku -I. bin/weekly-helper.raku    > scum.html
+raku -I. bin/google-scrape.raku   >> scum.html
+raku -I. bin/comments-search.raku >> scum.html
 ```
 
 DESCRIPTION
@@ -31,30 +27,17 @@ Query: `raku programming language` with `tbs=qdr:w` past-week filter.
 Requires: Chrome → View → Developer → Allow JavaScript from Apple Events.
 Script: `bin/google-scrape.raku`
 
-### HN Comments Search
+### Comments Search
 
-Queries the Algolia HN API for comments mentioning `raku` (word boundary) in the past 7 days.
-Deduplicates by story, resolves author handles via `Weekly::Tools::Nicks`, outputs linked snippets.
-Script: `bin/hn-search.raku`
+All comment sources consolidated into `bin/comments-search.raku`. Fetches in parallel:
 
-### Lobsters Comments Search
+- **HN** — Algolia API, comments mentioning `raku` (word boundary), deduped by story, author nicks resolved via `Weekly::Tools::Nicks`
+- **Fediverse** — `mastodon.social` federated tag timeline for `#rakulang` (includes Mastodon, Lemmy, and other ActivityPub platforms)
+- **Bluesky** — AppleScript drives Chrome to scrape `bsky.app/search?q=%23rakulang&sort=latest`
+- **Lobsters** — scrapes `lobste.rs/search?q=raku&what=comments&order=newest`
+- **Stack Overflow** — scrapes `stackoverflow.com/questions/tagged/raku?tab=Newest`
 
-Scrapes `lobste.rs/search?q=raku&what=comments&order=newest`, filters to past 7 days.
-Resolves author handles via `Weekly::Tools::Nicks`.
-Script: `bin/lobsters-search.raku`
-
-### Stack Overflow Questions
-
-Scrapes `stackoverflow.com/questions/tagged/raku?tab=Newest`, filters to past 7 days.
-Script: `bin/stackoverflow-search.raku`
-
-### Bluesky, Mastodon Comments
-
-AppleScript drives real Chrome to scrape Bluesky search results for `#rakulang` (Latest tab), filtered to last 7 days.
-Script: `bin/bsky-search.raku` [may need manual login]
-
-Fetches Mastodon public tag timeline for `#rakulang` via the mastodon.social REST API, filtered to last 7 days.
-Script: `bin/mastodon-search.raku`
+All three filtered to last 7 days. Output has `h3` section headers.
 
 
 ROADMAP
