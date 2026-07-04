@@ -40,9 +40,15 @@ sub render-github(@tuples, @headings) is export {
 
     sub do-list(@tuple) {
         my ($owner, $repo, $info) = @tuple;
-        my @items = |await fetch(|@tuple);
+        my @raw = try { |await fetch(|@tuple) };
+        if $! { note "GitHub $owner/$repo/$info fetch error: $!"; return () }
+        note "GitHub $owner/$repo/$info: {@raw.elems} items fetched";
+        if @raw.elems == 1 && (@raw[0]<message>:exists) {
+            note "GitHub API message: {@raw[0]<message>}";
+            return ();
+        }
         my @lis;
-        for @items -> %i {
+        for @raw -> %i {
             my %r = remap(%i, $info);
             if %r<created_at>.DateTime > $week {
                 my $byline = %nicks{%r<author>} // %r<author>;
@@ -52,11 +58,12 @@ sub render-github(@tuples, @headings) is export {
                 ];
             }
         }
+        note "GitHub $owner/$repo/$info: {@lis.elems} items passed date filter";
         @lis
     }
 
     my $i = 0;
-    my $html;
+    my $html = '';
     for @headings -> ($heading, $count) {
         my @lis;
         @lis.append: do-list(@tuples[$i++]) for ^$count;

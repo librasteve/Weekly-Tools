@@ -11,11 +11,20 @@ sub get-data($body, :$key) {
 
 sub prev-body() {
     my $target = Date.today - 7;
-    my @files = dir($dir).grep({
+    my $today  = Date.today;
+    my @all    = dir($dir).grep({ .basename ~~ /^ 'dists-' (\d**4 '-' \d**2 '-' \d**2) $/ });
+    die "No dist snapshots found in $dir/" unless @all;
+    my @near   = @all.grep({
         .basename ~~ /^ 'dists-' (\d**4 '-' \d**2 '-' \d**2) $/
         && abs(Date.new(~$0) - $target) <= 2
     });
-    my $file = @files.sort({ abs(Date.new(.basename.substr(6)) - $target) }).head;
+    my @older  = @all.grep({
+        .basename ~~ /^ 'dists-' (\d**4 '-' \d**2 '-' \d**2) $/
+        && Date.new(~$0) < $today
+    });
+    my @pool   = @near ?? @near !! @older;
+    die "No previous dist snapshot found (only today's exists)" unless @pool;
+    my $file   = @pool.sort({ abs(Date.new(.basename.substr(6)) - $target) }).head;
     note "Loading $file";
     (slurp($file), $file.basename)
 }
@@ -35,12 +44,20 @@ sub load-dists() is export {
                 my $resp = await Cro::HTTP::Client.get('https://360.zef.pm');
                 await $resp.body-text;
             }) -> $fetched {
-                note "Saving dists-$date";
-                spurt $today-path, $fetched;
-                $latest-filename = "dists-$date";
-                $body = $fetched;
+                if $fetched.chars == 0 {
+                    note "WARNING: 360.zef.pm returned empty body — skipping cache save";
+                } else {
+                    note "Saving dists-$date";
+                    spurt $today-path, $fetched;
+                    $latest-filename = "dists-$date";
+                    $body = $fetched;
+                }
             }
         }
+    }
+
+    unless $body {
+        die "Could not fetch dists from 360.zef.pm (empty response). Try again later.";
     }
 
     my @this-names            = get-data($body,      :key<name>);

@@ -53,7 +53,6 @@ sub render-rakuland($new-names, :$prev-filename, :$latest-filename) is export {
     react {
         my $p1 = fetch-table-data($url);
         my $p2 = fetch-table-data("$url?page=2");
-
         whenever Promise.allof($p1, $p2) {
             my @rows = |$p1.result, |$p2.result;
             print "\n<!-- Compared $prev-filename to $latest-filename -->";

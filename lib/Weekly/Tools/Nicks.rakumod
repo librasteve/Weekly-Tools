@@ -84,9 +84,11 @@ class Authors is export {
         'Matthew Stuckwisch'    => ['guifa'],
         'Skaji'                 => ['skaji'],
         'Greg Donald'           => ['gdonald'],
-        'Filip Sergot'          => ['zjmarlow'],
+        'zjmarlow'              => ['zjmarlow'],
         'Terminal Printers'     => ['terminal-printers'],
         'Siavash Askari Nasr'   => ['CIAvash'],
+        'Rui Vieira'            => ['rmv'],
+        'Itsuki Toyota'         => ['titsuki'],
     );
 
     has %.nicks;

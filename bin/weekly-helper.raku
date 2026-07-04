@@ -22,8 +22,14 @@ my @headings = [
 #    ['Core Developments',           0],
 ];
 
-my ($prev-filename, $latest-filename, $new-names) = load-dists();
-note "New dist count: {$new-names.elems} — first few: {$new-names.head(5).join(', ')}";
+my ($prev-filename, $latest-filename, $new-names);
+my $dists-ok = True;
+
+try {
+    ($prev-filename, $latest-filename, $new-names) = load-dists();
+    note "New dist count: {$new-names.elems} — first few: {$new-names.head(5).join(', ')}";
+    CATCH { default { print "<!-- could not fetch dists: {.message} -->\n"; $dists-ok = False } }
+}
 
 render-github(@tuples, @headings);
-render-rakuland($new-names, :$prev-filename, :$latest-filename);
+render-rakuland($new-names, :$prev-filename, :$latest-filename) if $dists-ok;
